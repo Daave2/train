@@ -76,11 +76,20 @@ const TrainApi = (function () {
             console.log('Fetching departures from Transport API:', depUrl);
 
             const depResponse = await fetch(depUrl);
+
+            // Check for API errors (like usage limits)
             if (!depResponse.ok) {
-                throw new Error(`Transport API error: ${depResponse.status}`);
+                const errorText = await depResponse.text();
+                throw new Error(`Transport API error: ${depResponse.status} - ${errorText}`);
             }
 
             const depData = await depResponse.json();
+
+            // Check for API error response body
+            if (depData.error) {
+                throw new Error(`Transport API error: ${depData.error}`);
+            }
+
             const departures = depData.departures?.all || [];
 
             if (departures.length === 0) {
@@ -150,8 +159,16 @@ const TrainApi = (function () {
             return journeys.slice(0, 8);
 
         } catch (error) {
-            console.error('Transport API failed, falling back to Huxley:', error);
-            return fetchHuxleyJourneys(origin, destination, date, time);
+            console.warn('Transport API failed, falling back to Huxley:', error.message);
+
+            // Fallback to Huxley on ANY error (usage limit, network, etc)
+            const fallbackResults = await fetchHuxleyJourneys(origin, destination, date, time);
+
+            // If fallback also fails/finds nothing, give a specific warning
+            if (fallbackResults.length === 0) {
+                fallbackResults.warning = "Transport API unavailable (usage limit exceeded) and no fallback journeys found. Please try again later or verify your journey details.";
+            }
+            return fallbackResults;
         }
     }
 
