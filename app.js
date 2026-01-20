@@ -66,6 +66,8 @@
         elements.themeToggle = document.getElementById('themeToggle');
         elements.disruptionBanner = document.getElementById('disruptionBanner');
         elements.disruptionClose = document.getElementById('disruptionClose');
+        elements.journeyDetails = document.getElementById('journeyDetails');
+        elements.journeyDetailsBody = document.getElementById('journeyDetailsBody');
     }
 
     /**
@@ -259,6 +261,7 @@
 
         if (!journeys || journeys.length === 0) {
             elements.resultsCount.textContent = 'No journeys found';
+            renderJourneyDetails(null);
 
             // Use specific warning from API if available
             const warningMessage = (journeys && journeys.warning) || "We couldn't find any train services for this route at the selected time.";
@@ -288,7 +291,10 @@
         RouteCard.renderList(journeys, elements.resultsList, (journey, index) => {
             state.selectedJourneyIndex = index;
             updateMap(journeys, index);
+            renderJourneyDetails(journey);
         }, state.selectedJourneyIndex);
+
+        renderJourneyDetails(journeys[state.selectedJourneyIndex]);
     }
 
     /**
@@ -335,6 +341,120 @@
         state.isLoading = show;
         elements.loadingOverlay.classList.toggle('active', show);
         elements.searchButton.disabled = show;
+    }
+
+    /**
+     * Render journey details panel
+     */
+    function renderJourneyDetails(journey) {
+        if (!elements.journeyDetails || !elements.journeyDetailsBody) return;
+
+        if (!journey) {
+            elements.journeyDetailsBody.innerHTML = `
+                <div class="journey-detail-empty">
+                    <p>Select a journey to see live info, calling points, and connection timings.</p>
+                </div>
+            `;
+            return;
+        }
+
+        const statusBadge = getJourneyStatusBadge(journey);
+        const disruptionNote = getJourneyDisruptionNote(journey);
+        const legsMarkup = (journey.legs || []).map((leg, legIndex) => {
+            const connectionMarkup = renderConnection(journey, legIndex);
+            return `
+                <div class="journey-leg">
+                    <div class="journey-leg-header">
+                        <span class="journey-leg-title">${leg.origin?.name || 'Origin'} → ${leg.destination?.name || 'Destination'}</span>
+                        <span class="journey-leg-operator">${leg.operator || 'Operator'}</span>
+                    </div>
+                    <div class="journey-leg-info">
+                        <div>
+                            <span class="journey-leg-label">Depart</span>
+                            <span class="journey-leg-time">${RouteCard.formatTime(leg.departureTime)}</span>
+                        </div>
+                        <div>
+                            <span class="journey-leg-label">Arrive</span>
+                            <span class="journey-leg-time">${RouteCard.formatTime(leg.arrivalTime)}</span>
+                        </div>
+                        <div>
+                            <span class="journey-leg-label">Platform</span>
+                            <span class="journey-leg-time">${leg.platform || 'TBC'}</span>
+                        </div>
+                    </div>
+                    ${leg.isWalk ? '<div class="journey-leg-walk">Walk between stations</div>' : ''}
+                    ${connectionMarkup}
+                </div>
+            `;
+        }).join('');
+
+        elements.journeyDetailsBody.innerHTML = `
+            <div class="journey-detail-status">
+                ${statusBadge}
+                ${disruptionNote}
+            </div>
+            <div class="journey-leg-list">
+                ${legsMarkup || '<div class="journey-detail-empty"><p>No live leg details available for this service.</p></div>'}
+            </div>
+        `;
+    }
+
+    function getJourneyStatusBadge(journey) {
+        if (journey.cancelled) {
+            return '<span class="journey-detail-badge cancelled">Cancelled</span>';
+        }
+        if (journey.departureDelay && journey.departureDelay > 0) {
+            return `<span class="journey-detail-badge delayed">Live: +${journey.departureDelay} min</span>`;
+        }
+        if (journey.departureDelay === -1 || journey.status === 'delayed') {
+            return '<span class="journey-detail-badge delayed">Live: Delayed</span>';
+        }
+        if (journey.status === 'on-time') {
+            return '<span class="journey-detail-badge on-time">Live: On time</span>';
+        }
+        return '<span class="journey-detail-badge scheduled">Live: Scheduled</span>';
+    }
+
+    function getJourneyDisruptionNote(journey) {
+        if (journey.cancelReason) {
+            return `<span class="journey-detail-note">Reason: ${journey.cancelReason}</span>`;
+        }
+        if (journey.delayReason) {
+            return `<span class="journey-detail-note">Delay: ${journey.delayReason}</span>`;
+        }
+        return '<span class="journey-detail-note">Check live boards for platform updates.</span>';
+    }
+
+    function renderConnection(journey, legIndex) {
+        if (!journey.legs || legIndex >= journey.legs.length - 1) return '';
+
+        const currentLeg = journey.legs[legIndex];
+        const nextLeg = journey.legs[legIndex + 1];
+
+        const arrivalMinutes = toMinutes(currentLeg.arrivalTime);
+        const departureMinutes = toMinutes(nextLeg.departureTime);
+
+        if (arrivalMinutes === null || departureMinutes === null) return '';
+
+        let connectionMins = departureMinutes - arrivalMinutes;
+        if (connectionMins < 0) {
+            connectionMins += 24 * 60;
+        }
+
+        const stationName = currentLeg.destination?.name || 'connection';
+        return `
+            <div class="journey-connection">
+                <span class="journey-connection-title">Connection at ${stationName}</span>
+                <span class="journey-connection-time">${connectionMins} min</span>
+            </div>
+        `;
+    }
+
+    function toMinutes(dateString) {
+        if (!dateString) return null;
+        const date = new Date(dateString);
+        if (Number.isNaN(date.getTime())) return null;
+        return date.getHours() * 60 + date.getMinutes();
     }
 
     /**
