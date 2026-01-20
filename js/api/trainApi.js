@@ -551,7 +551,7 @@ const TrainApi = (function () {
             const pathHubs = window.RailGraph.findInterchanges(origin.code, destination.code);
             if (pathHubs && pathHubs.length > 0) {
                 console.log(`RailGraph found path for ${origin.code}->${destination.code} via:`, pathHubs);
-                return pathHubs;
+                return { type: 'sequence', hubs: pathHubs };
             }
         }
 
@@ -634,6 +634,176 @@ const TrainApi = (function () {
     }
 
     /**
+     * Search specific multi-leg sequence (Origin -> Hub1 -> Hub2 ... -> Dest)
+     * Used when RailGraph provides a deterministic path
+     */
+    async function searchMultiLegSequence(origin, destination, hubs, date, time) {
+        console.log(`Searching multi-leg sequence: ${origin.code} -> ${hubs.join(' -> ')} -> ${destination.code}`);
+
+        // This is a naive implementation that chains calls.
+        // For a 2-hub path (3 legs): A->H1, H1->H2, H2->B
+
+        // 1. Search Leg 1: Origin -> Hub1
+        const hub1Code = hubs[0];
+        const legs1 = await fetchLeg(origin.code, hub1Code, date, time);
+        if (legs1.length === 0) return [];
+
+        const validJourneys = [];
+
+        // For each valid 1st leg, try to find connecting 2nd leg
+        for (const leg1 of legs1.slice(0, 3)) { // Limit to top 3 options to save requests
+            const leg1ArrTime = parseTimeToMinutes(leg1.arrivalTime.split('T')[1]);
+            const leg1ArrDate = leg1.arrivalTime.split('T')[0];
+
+            // 2. Search Leg 2: Hub1 -> Hub2 (or Dest if only 1 hub)
+            const nextDestCode = hubs.length > 1 ? hubs[1] : destination.code;
+            const minDepTime = leg1ArrTime + 7; // Min connection 7 mins
+
+            // Format time for next search (HH:MM)
+            const nextDepStr = formatTimeFromMinutes(minDepTime);
+
+            // Note: If crossing midnight, this simple logic might fail, but assuming same day for now
+            const legs2 = await fetchLeg(hub1Code, nextDestCode, leg1ArrDate, nextDepStr);
+
+            for (const leg2 of legs2) {
+                const leg2DepTime = parseTimeToMinutes(leg2.departureTime.split('T')[1]);
+                const leg2ArrTime = parseTimeToMinutes(leg2.arrivalTime.split('T')[1]);
+
+                // Validate connection time window (7 mins to 120 mins)
+                if (leg2DepTime < minDepTime || leg2DepTime > minDepTime + 120) continue;
+
+                // If only 1 hub, we are done
+                if (hubs.length === 1) {
+                    const totalDuration = leg2ArrTime - parseTimeToMinutes(leg1.departureTime.split('T')[1]);
+                    validJourneys.push({
+                        id: `seq-${leg1.id}-${leg2.id}`,
+                        departureTime: leg1.departureTime,
+                        arrivalTime: leg2.arrivalTime,
+                        duration: totalDuration > 0 ? totalDuration : totalDuration + 1440,
+                        changes: 1,
+                        legs: [leg1, leg2]
+                    });
+                }
+                // If 2 hubs, search Leg 3: Hub2 -> Dest
+                else if (hubs.length === 2) {
+                    const hub2Code = hubs[1];
+                    const minDepTime3 = leg2ArrTime + 7;
+                    const nextDepStr3 = formatTimeFromMinutes(minDepTime3);
+                    const leg2ArrDate = leg2.arrivalTime.split('T')[0];
+
+                    const legs3 = await fetchLeg(hub2Code, destination.code, leg2ArrDate, nextDepStr3);
+
+                    for (const leg3 of legs3) {
+                        const leg3DepTime = parseTimeToMinutes(leg3.departureTime.split('T')[1]);
+                        const leg3ArrTime = parseTimeToMinutes(leg3.arrivalTime.split('T')[1]);
+
+                        if (leg3DepTime < minDepTime3 || leg3DepTime > minDepTime3 + 120) continue;
+
+                        const totalDuration = leg3ArrTime - parseTimeToMinutes(leg1.departureTime.split('T')[1]);
+                        validJourneys.push({
+                            id: `seq-${leg1.id}-${leg2.id}-${leg3.id}`,
+                            departureTime: leg1.departureTime,
+                            arrivalTime: leg3.arrivalTime,
+                            duration: totalDuration > 0 ? totalDuration : totalDuration + 1440,
+                            changes: 2,
+                            legs: [leg1, leg2, leg3]
+                        });
+                    }
+                }
+            }
+        }
+
+        return validJourneys;
+    }
+
+    /**
+     * Helper to fetch a single leg (A->B)
+     */
+    async function fetchLeg(fromCode, toCode, date, time) {
+        let url = `${config.huxley.baseUrl}/departures/${fromCode}/to/${toCode}/5`;
+        if (config.huxley.accessToken) url += `?accessToken=${config.huxley.accessToken}`;
+
+        // Add time params
+        // Calculate offset if needed (reusing logic from fetchHuxleyJourneys effectively)
+        // For simplicity here, assume direct Huxley "timeOffset" isn't needed if we trust the API to return near-future
+        // Actually, we DO need to pass time/offset.
+        // Let's rely on standard params logic or just simplified:
+
+        // Simplification: just call fetch and filter locally or assume "now" + offset if strictly needed.
+        // But `time` arg is HH:MM literal. Huxley takes `timeOffset` (mins from now).
+        // We need to convert `time` (HH:MM on `date`) to `timeOffset` relative to `now`.
+
+        const now = new Date();
+        const searchDate = new Date(`${date}T${time}:00`);
+        let diffMinutes = Math.floor((searchDate - now) / (1000 * 60));
+
+        // Cap
+        if (diffMinutes > 119) diffMinutes = 119;
+        // If searching past, allow it? Huxley takes negative? likely yes.
+        if (diffMinutes < -119) diffMinutes = -119;
+
+        if (Math.abs(diffMinutes) > 2) {
+            url += `&timeOffset=${diffMinutes}`;
+        }
+
+        try {
+            const resp = await fetch(url);
+            if (!resp.ok) return [];
+            const data = await resp.json();
+            if (!data.trainServices) return [];
+
+            const results = [];
+            const fromStation = StationData.getByCode(fromCode) || { code: fromCode, name: fromCode };
+            const toStation = StationData.getByCode(toCode) || { code: toCode, name: toCode };
+
+            for (const service of data.trainServices) {
+                // We need arrival time at B.
+                // Service details needed? Huxley /departures/to/ yields `sta`/`eta` at *destination*? 
+                // Huxley docs: returns services filtering by destination. `std` is dep from A. `sta` is arr at B?
+                // Usually for /from/to/, the `eta`/`sta` fields refer to the destination filter station.
+                // Let's verify. If so, we avoid extra fetchServiceDetails calls!
+
+                let arrTime = service.sta || service.eta; // Scheduled Time of Arrival
+                if (arrTime === 'On time') arrTime = service.sta;
+                // If Huxley response for /from/to includes arrival time at 'to', use it.
+                // Testing shows it usually does implicitly or we check `service.destination` list? 
+                // Actually Huxley2 usually returns `arrival_time` in the simplified object if `to` is specified?
+                // Let's assume we need details if not present.
+
+                // Safe bet: fetch details to be sure (like existing logic)
+                // But for performance in multi-leg, maybe skip if possible?
+                // Existing logic `searchSingleHop` calls `fetchServiceDetails` to find arrival at Hub.
+                // We will stick to that pattern for robustness.
+
+                const details = await fetchServiceDetails(service.serviceIdUrlSafe);
+                const accurateArrTime = findArrivalTimeAtHub(details, toCode);
+                if (!accurateArrTime) continue;
+
+                results.push({
+                    id: service.serviceIdUrlSafe,
+                    departureTime: `${date}T${service.std}:00`,
+                    arrivalTime: `${date}T${accurateArrTime}:00`,
+                    operator: service.operator,
+                    platform: service.platform,
+                    origin: fromStation,
+                    destination: toStation
+                });
+            }
+            return results;
+        } catch (e) {
+            console.warn('Leg fetch failed', e);
+            return [];
+        }
+    }
+
+    // Helper to format mins to HH:MM
+    function formatTimeFromMinutes(totalMins) {
+        let h = Math.floor(totalMins / 60) % 24;
+        let m = totalMins % 60;
+        return `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}`;
+    }
+
+    /**
      * Search for connecting journeys via intermediate hub stations
      * Uses intelligent hub selection and parallel API calls
      */
@@ -641,7 +811,19 @@ const TrainApi = (function () {
         const journeys = [];
 
         // Get geographically optimal hubs
-        const optimalHubs = await findOptimalHubs(origin, destination);
+        const optimalData = await findOptimalHubs(origin, destination);
+
+        // Handle RailGraph Sequence (Simple multi-leg chain)
+        if (optimalData && optimalData.type === 'sequence') {
+            const sequenceJourneys = await searchMultiLegSequence(origin, destination, optimalData.hubs, date, time);
+            if (sequenceJourneys.length > 0) return rankAndDeduplicateJourneys(sequenceJourneys);
+
+            // If sequence search fails, fall back to loose search?
+            // Let's degrade to using the hubs as a simple set if sequence fails.
+            optimalData = optimalData.hubs;
+        }
+
+        const optimalHubs = Array.isArray(optimalData) ? optimalData : (optimalData ? optimalData.hubs : []);
 
         if (!optimalHubs || !Array.isArray(optimalHubs)) {
             console.warn('findOptimalHubs returned invalid data:', optimalHubs);
