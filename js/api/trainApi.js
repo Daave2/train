@@ -19,7 +19,7 @@ const TrainApi = (function () {
             accessToken: 'd1ea7eb6-36fb-468e-aad5-438b85f2e0c0'
         },
         // Use Transport API as primary
-        useTransportApi: true,
+        useTransportApi: false,
         useMockData: false,
         // Cache duration in ms (5 minutes)
         cacheDuration: 5 * 60 * 1000
@@ -49,9 +49,8 @@ const TrainApi = (function () {
 
         if (config.useMockData) {
             journeys = generateMockJourneys(origin, destination, date, time);
-        } else if (config.useTransportApi) {
-            journeys = await fetchTransportApiJourneys(origin, destination, date, time);
         } else {
+            // Default to Huxley as Transport API is disabled/limited
             journeys = await fetchHuxleyJourneys(origin, destination, date, time);
         }
 
