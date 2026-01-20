@@ -228,18 +228,23 @@
                 state.viaStation
             );
 
-            state.journeys = journeys;
+            state.journeys = journeys || [];
             state.selectedJourneyIndex = 0;
 
             // Display results
-            displayResults(journeys);
+            displayResults(state.journeys);
 
             // Update map
-            updateMap(journeys);
+            updateMap(state.journeys);
 
         } catch (error) {
             console.error('Search failed:', error);
-            alert('Failed to find journeys. Please try again.');
+            // Manually trigger no-results display on error
+            displayResults([]);
+            // Also alert for good measure if it's a real crash
+            if (error.message !== 'No journeys found') {
+                console.error(error); // Keep silent alert, just log
+            }
         } finally {
             showLoading(false);
         }
@@ -249,9 +254,10 @@
      * Display search results
      */
     function displayResults(journeys) {
+        // Ensure section is visible
+        elements.resultsSection.classList.add('active');
+
         if (!journeys || journeys.length === 0) {
-            // Show "no results" message instead of hiding the section
-            elements.resultsSection.classList.add('active');
             elements.resultsCount.textContent = 'No journeys found';
 
             // Use specific warning from API if available
