@@ -810,7 +810,7 @@ const TrainApi = (function () {
         const journeys = [];
 
         // Get geographically optimal hubs
-        const optimalData = await findOptimalHubs(origin, destination);
+        let optimalData = await findOptimalHubs(origin, destination);
 
         // Handle RailGraph Sequence (Simple multi-leg chain)
         if (optimalData && optimalData.type === 'sequence') {
