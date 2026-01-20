@@ -1,0 +1,5204 @@
+/!! Start of file
+/!! Content type:  stations
+/!! Sequence:      0939
+/!! Generated:     06/01/2026
+/!! Exporter:      RJIS RjEhrNRG v0.1
+/ Alexandra Palace (a routing point)
+AAP,,,,,
+/ Achanalt
+AAT,DIN,,,,
+/ Aberdare
+ABA,PPD,,,,
+/ Altnabreac
+ABC,DIN,,,,
+/ Aberdeen (a routing point)
+ABD,,,,,
+/ Aber
+ABE,CDF,,,,
+/ Abererch
+ABH,G41,,,,
+/ Abbey Wood
+ABW,CTN,SGR,,,
+/ Ashburys
+ABY,G20,GUI,,,
+/ Acton Bridge
+ACB,CRE,G31,RUN,,
+/ Acton Central
+ACC,RMD,WIJ,,,
+/ Acocks Green
+ACG,G72,G73,TYS,,
+/ Achnashellach
+ACH,DIN,,,,
+/ Acklington
+ACK,G11,NCL,,,
+/ Acle
+ACL,IPS,NRW,,,
+/ Achnasheen
+ACN,DIN,,,,
+/ Accrington (a routing point)
+ACR,,,,,
+/ Ascot (Berks) (a routing point)
+ACT,,,,,
+/ Abercynon
+ACY,PPD,,,,
+/ Adlington (Cheshire)
+ADC,CHU,SOT,,,
+/ Adderley Park
+ADD,COV,G02,,,
+/ Ardwick
+ADK,G20,GUI,,,
+/ Adlington (Lancs)
+ADL,BON,PRE,,,
+/ Adisham
+ADM,AFK,DVP,FAV,G68,
+/ Ardrossan Town
+ADN,KWN,,,,
+/ Airdrie
+ADR,BLG,G11,,,
+/ Ardrossan Harbour
+ADS,KWN,,,,
+/ Andover
+ADV,BSK,SAL,,,
+/ Addiewell
+ADW,G11,G67,,,
+/ Ashford International. (a routing point)
+AFK,,,,,
+/ Ashford (Surrey)
+AFS,FEL,SNS,,,
+/ Ansdell And Fairhaven
+AFV,KKM,,,,
+/ Abergele And Pensarn
+AGL,LLJ,SHT,,,
+/ Argyle Street
+AGS,G13,NTN,,,
+/ Aldrington
+AGT,G04,G61,,,
+/ Abergavenny
+AGV,HFD,NWP,,,
+/ Ashtead
+AHD,EPS,LHD,,,
+/ Ashton Under Lyne
+AHN,G20,SYB,,,
+/ Ashurst Kent
+AHS,G08,,,,
+/ Aldershot
+AHT,AHV,GLD,WKM,,
+/ Ash Vale (a routing point)
+AHV,,,,,
+/ Aigburth
+AIG,G18,G70,,,
+/ Aintree
+AIN,G18,G34,PRE,,
+/ Airbles
+AIR,G67,NTN,,,
+/ Albrighton
+ALB,SHR,WVH,,,
+/ Alderley Edge
+ALD,CRE,G69,,,
+/ Alfreton
+ALF,CHD,G09,G43,LBO,
+/ Aslockton
+ALK,G43,GRA,,,
+/ Alnmouth.
+ALM,G11,NCL,,,
+/ Althorne (Essex)
+ALN,WIC,,,,
+/ Alloa
+ALO,STG,,,,
+/ Althorpe (Humberside)
+ALP,BTB,DON,GOO,,
+/ Alresford (Essex)
+ALR,COL,,,,
+/ Altrincham
+ALT,CTR,SPT,,,
+/ Alvechurch
+ALV,BTG,,,,
+/ Allens West
+ALW,DAR,G42,,,
+/ Alexandria
+ALX,G80,,,,
+/ Ambergate
+AMB,G09,,,,
+/ Ammanford
+AMF,CRV,G38,,,
+/ Acton Main Line
+AML,G01,G77,,,
+/ Amersham  Und
+AMR,AYS,G01,,,
+/ Aldermaston
+AMT,G24,G46,,,
+/ Amberley
+AMY,G61,HRH,,,
+/ Ancaster
+ANC,GRA,SLR,,,
+/ Anderston
+AND,G13,PTK,,,
+/ Ashurst New Forest
+ANF,BCU,G26,,,
+/ Angmering
+ANG,G04,G61,,,
+/ Anniesland
+ANL,HYN,WES,,,
+/ Annan
+ANN,CAR,KMK,,,
+/ Ainsdale
+ANS,G18,G34,,,
+/ Anerley
+ANZ,CYP,G01,G08,NXG,
+/ Alton
+AON,AHV,GLD,WKM,,
+/ Appley Bridge
+APB,G18,G34,,,
+/ Appledore (Kent)
+APD,AFK,G15,,,
+/ Appleford
+APF,DID,OXF,,,
+/ Aspley Guise
+APG,BDM,BLY,,,
+/ Appleby
+APP,CAR,G53,,,
+/ Apsley
+APS,BLY,WFJ,,,
+/ Apperley Bridge
+APY,G03,G16,G53,,
+/ Arbroath
+ARB,ABD,DEE,,,
+/ Ardgay
+ARD,DIN,,,,
+/ Arisaig
+ARG,FTW,,,,
+/ Arlesey
+ARL,HIT,PBO,,,
+/ Armadale
+ARM,BLG,G11,,,
+/ Arnside
+ARN,CAR,G64,,,
+/ Arram
+ARR,G48,HUL,,,
+/ Arrochar And Tarbert
+ART,CNR,G80,,,
+/ Arundel
+ARU,G61,HRH,,,
+/ Ardrossan South Beach
+ASB,KWN,,,,
+/ Ashchurch
+ASC,CNM,G35,,,
+/ Ashley Down
+ASD,,,,,G05
+/ Ashfield
+ASF,,,,,G13
+/ Alsager
+ASG,CHU,CRE,SOT,,
+/ Ash
+ASH,AHV,GLD,WKM,,
+/ Askam
+ASK,CAR,G64,,,
+/ Ashington
+ASL,NCL,,,,
+/ Addlestone
+ASN,ACT,G82,SNS,,
+/ Aspatria
+ASP,CAR,G64,,,
+/ Alness
+ASS,DIN,,,,
+/ Aston
+AST,,,,,G02
+/ Ashley
+ASY,CTR,SPT,,,
+/ Attenborough
+ATB,,,,,G43
+/ Atherstone (Warks)
+ATH,NUN,TAM,,,
+/ Attleborough
+ATL,ELY,NRW,PBO,,
+/ Atherton (Manchester)
+ATN,BON,G34,SLD,,
+/ Attadale
+ATT,DIN,,,,
+/ Audley End
+AUD,CBG,G66,,,
+/ Aughton Park
+AUG,G18,G34,PRE,,
+/ Ardlui
+AUI,CNR,G80,,,
+/ Auchinleck
+AUK,CAR,KMK,,,
+/ Aberdour
+AUR,G50,G51,,,
+/ Ascott-under-wychwood
+AUW,G35,OXF,,,
+/ Avoncliff
+AVF,BTH,G46,,,
+/ Aviemore
+AVM,INV,PTH,,,
+/ Avonmouth
+AVN,G05,,,,
+/ Aylesbury Valepw
+AVP,AYS,,,,
+/ Aberdovey
+AVY,G41,,,,
+/ Adwick
+AWK,DON,G22,G30,SWN,
+/ Ashwell And Morden
+AWM,CBG,HIT,,,
+/ Armathwaite
+AWT,CAR,G53,,,
+/ Axminster
+AXM,G12,SAL,,,
+/ Alexandra Parade
+AXP,BLG,SPR,,,
+/ Aylesham
+AYH,AFK,DVP,FAV,G68,
+/ Aylesford
+AYL,AFK,SOO,TON,,
+/ Albany Park
+AYP,DFD,HGR,SGR,,
+/ Ayr
+AYR,G81,,,,
+/ Aylesbury (a routing point)
+AYS,,,,,
+/ Aberystwyth
+AYW,G41,,,,
+/ Barnham
+BAA,G61,HAV,,,
+/ Balcombe
+BAB,HHE,TBD,,,
+/ Bache
+BAC,CTR,HOO,,,
+/ Banstead
+BAD,SUO,,,,
+/ Bagshot
+BAG,ACT,AHV,,,
+/ Bank Hall
+BAH,G18,,,,
+/ Blairhill
+BAI,BLG,G11,,,
+/ Baglan
+BAJ,BGN,G38,,,
+/ Battersea Park
+BAK,CLJ,DMK,G01,,
+/ Balham
+BAL,CLJ,G29,MIJ,,
+/ Bamford
+BAM,CLY,SHF,,,
+/ Banbury
+BAN,,,,,G58
+/ Bare Lane
+BAR,,,,,G64
+/ Bere Alston
+BAS,G21,,,,
+/ Battle
+BAT,G15,TON,,,
+/ Barton On Humber
+BAU,HAB,,,,
+/ Barrow Haven
+BAV,HAB,,,,
+/ Blackwater
+BAW,GLD,WKM,,,
+/ Bayford
+BAY,AAP,SVG,,,
+/ Bishopbriggs
+BBG,G13,G44,STG,,
+/ Bilbrook
+BBK,SHR,WVH,,,
+/ Bat And Ball
+BBL,G83,SEV,,,
+/ Blackburn (a routing point)
+BBN,,,,,
+/ Bordesley
+BBS,G02,TYS,,,
+/ Berry Brow
+BBW,BNY,G40,,,
+/ Burscough Bridge
+BCB,G18,G34,,,
+/ Beccles
+BCC,IPS,NRW,,,
+/ Bracknell
+BCE,ACT,WKM,,,
+/ Beaconsfield
+BCF,PRR,SRU,,,
+/ Birchgrove
+BCG,CDF,,,,
+/ Birchington
+BCH,FAV,G68,,,
+/ Burscough Junction
+BCJ,G18,G34,PRE,,
+/ Buckley
+BCK,G49,SHT,,,
+/ Branchton
+BCN,PTG,,,,
+/ Bicester North
+BCS,G58,PRR,,,
+/ Brockenhurst (a routing point)
+BCU,,,,,
+/ Bruce Grove
+BCV,CHN,SVS,,,
+/ Brockley
+BCY,CYP,G01,G08,NXG,
+/ Brent Cross West
+BCZ,BDM,WHP,,,
+/ Brundall
+BDA,IPS,NRW,,,
+/ Broadbottom
+BDB,GUI,,,,
+/ Bridgeton
+BDG,G13,NTN,,,
+/ Bedhampton
+BDH,,,,,G23
+/ Bradford Interchange
+BDI,,,,,G03
+/ Baldock
+BDK,CBG,HIT,,,
+/ Birkdale
+BDL,G18,G34,,,
+/ Bedford (a routing point)
+BDM,,,,,
+/ Brading
+BDN,G23,,,,
+/ Bradford Forster Square
+BDQ,,,,,G03
+/ Bridlington
+BDT,G48,HUL,,,
+/ Bedwyn
+BDW,G24,G46,,,
+/ Bredbury
+BDY,CLY,G20,GUI,,
+/ Bridge Of Allan
+BEA,PTH,STG,,,
+/ Bebington
+BEB,G18,HOO,,,
+/ Beckenham Hill
+BEC,NHD,SRT,,,
+/ Beeston
+BEE,,,,,G43
+/ Benfleet
+BEF,PSE,,,,
+/ Beltring
+BEG,AFK,SOO,TON,,
+/ Bedworth
+BEH,COV,NUN,,,
+/ Bedlington
+BEJ,NCL,,,,
+/ Beauly
+BEL,DIN,INV,,,
+/ Bempton
+BEM,G48,HUL,,,
+/ Bentham
+BEN,G53,G64,,,
+/ Bermuda Park
+BEP,COV,NUN,,,
+/ Bearley
+BER,G72,G73,TYS,,
+/ Bescar Lane
+BES,G18,G34,,,
+/ Bethnal Green
+BET,G01,HAC,,,
+/ Beaulieu Road
+BEU,BCU,G26,,,
+/ Beverley
+BEV,G48,HUL,,,
+/ Bexhill
+BEX,G15,G84,,,
+/ Ben Rhydding
+BEY,G03,G16,G53,,
+/ Brentford
+BFD,BNS,HOU,,,
+/ Bere Ferrers
+BFE,G21,,,,
+/ Blaenau Ffestiniog
+BFF,LLJ,,,,
+/ Byfleet And New Haw
+BFN,,,,,G82
+/ London Blackfriars
+BFR,,,,,G01
+/ Brundall Gardens
+BGA,IPS,NRW,,,
+/ Bargoed
+BGD,CDF,,,,
+/ Broad Green
+BGE,G18,HUY,,,
+/ Brigg
+BGG,BTB,DON,LCN,RET,
+/ Brighouse
+BGH,G39,G40,,,
+/ Bargeddie
+BGI,G13,G44,G67,,
+/ Bugle
+BGL,PAR,,,,
+/ Bellingham London
+BGM,NHD,SRT,,,
+/ Bridgend (a routing point)
+BGN,,,,,
+/ Bogston
+BGS,PTG,,,,
+/ BARKING RIVSIDE
+BGV,BKG,,,,
+/ Balloch Central
+BHC,G80,,,,
+/ Brithdir
+BHD,CDF,,,,
+/ Bathgate
+BHG,BLG,G11,,,
+/ Birmingham International
+BHI,COV,G02,,,
+/ Bush Hill Park
+BHK,CHN,SVS,,,
+/ Birmingham New Street
+BHM,,,,,G02
+/ Blackhorse Road
+BHO,BKG,GPO,,,
+/ Builth Road
+BHR,CRV,G38,,,
+/ Brockholes
+BHS,BNY,G40,,,
+/ Bishop Auckland
+BIA,DAR,,,,
+/ Billericay
+BIC,SNF,WIC,,,
+/ Bidston
+BID,G18,SHT,,,
+/ Barrow In Furness
+BIF,CAR,G64,,,
+/ Billingshurst
+BIG,G61,HRH,,,
+/ Birkbeck
+BIK,BKJ,CYP,,,
+/ Billingham (Cleveland)
+BIL,G42,NCL,,,
+/ Bingham
+BIN,G43,GRA,,,
+/ Baillieston
+BIO,G13,G44,G67,,
+/ Bishopstone (Sussex)
+BIP,LWS,,,,
+/ Bishops Stortford
+BIS,CHN,G66,,,
+/ Bicester Village
+BIT,OXF,PRR,,,
+/ Biggleswade
+BIW,HIT,PBO,,,
+/ Bingley
+BIY,G03,G16,G53,,
+/ Bookham
+BKA,EFF,LHD,,,
+/ Birkenhead Central
+BKC,G18,HOO,,,
+/ Blakedown
+BKD,G35,G63,,,
+/ Barking (a routing point)
+BKG,,,,,
+/ Blackheath (a routing point)
+BKH,,,,,
+/ Beckenham Junction (a routing point)
+BKJ,,,,,
+/ Bickley
+BKL,,,,,G06
+/ Berkhamsted
+BKM,BLY,WFJ,,,
+/ Birkenhead North
+BKN,G18,SHT,,,
+/ Brookwood
+BKO,AHV,BSK,WOK,,
+/ Birkenhead Park
+BKP,G18,SHT,,,
+/ Birkenhead Hamilton Square
+BKQ,,,,,G18
+/ Blackridge
+BKR,BLG,G11,,,
+/ Bekesbourne
+BKS,AFK,DVP,FAV,G68,
+/ Blake Street
+BKT,G02,LTV,,,
+/ Berkswell
+BKW,COV,G02,,,
+/ Blair Atholl
+BLA,INV,PTH,,,
+/ Battlesbridge
+BLB,WIC,,,,
+/ Baildon
+BLD,G03,G16,G53,,
+/ Bramley (West Yorks)
+BLE,G03,G16,,,
+/ Bellgrove (a routing point)
+BLG,,,,,
+/ Bellshill
+BLH,G67,NTN,,,
+/ Blyth Bebside
+BLI,NCL,,,,
+/ Blackrod
+BLK,BON,PRE,,,
+/ Bardon Mill
+BLL,CAR,NCL,,,
+/ Belmont
+BLM,SUO,,,,
+/ Blundellsands
+BLN,G18,G34,,,
+/ Blaydon
+BLO,CAR,NCL,,,
+/ Belper
+BLP,,,,,G09
+/ Blantyre
+BLT,G67,NTN,,,
+/ Belle Vue
+BLV,CLY,G20,GUI,,
+/ Bulwell
+BLW,G43,WRK,,,
+/ Bloxwich
+BLX,G59,RGL,,,
+/ Bletchley (a routing point)
+BLY,,,,,
+/ Bamber Bridge
+BMB,BBN,PRE,,,
+/ Bromley Cross
+BMC,BBN,BON,,,
+/ Brimsdown
+BMD,CHN,TOM,,,
+/ Broome
+BME,CRV,G38,,,
+/ Broomfleet
+BMF,GBD,HUL,,,
+/ Barming
+BMG,AFK,G83,,,
+/ Bournemouth
+BMH,BCU,G33,,,
+/ Bramhall
+BML,CHU,SOT,,,
+/ Bromley North
+BMN,GRP,,,,
+/ Birmingham Moor Street
+BMO,,,,,G02
+/ Brampton (Cumbria)
+BMP,CAR,NCL,,,
+/ Bromborough Rake
+BMR,G18,HOO,,,
+/ Bromley South
+BMS,,,,,G06
+/ Bedminster
+BMT,G05,TAU,,,
+/ Bromsgrove (a routing point)
+BMV,,,,,
+/ Bramley (Hants)
+BMY,BSK,G24,,,
+/ Burnage
+BNA,G20,G69,,,
+/ Burnley Central
+BNC,ACR,G20,G39,,
+/ Brandon
+BND,ELY,NRW,PBO,,
+/ Bourne End
+BNE,MAI,,,,
+/ Briton Ferry
+BNF,BGN,G38,,,
+/ Bangor (Gwynedd)
+BNG,LLJ,,,,
+/ Barnehurst
+BNH,BKH,DFD,SGR,,
+/ Barnes Bridge
+BNI,BNS,HOU,,,
+/ Barnhill
+BNL,BLG,SPR,,,
+/ Burnham Bucks
+BNM,MAI,SLO,,,
+/ Barnstaple
+BNP,G12,,,,
+/ Brockley Whins
+BNR,G42,NCL,,,
+/ Barnes (a routing point)
+BNS,,,,,
+/ Brinnington
+BNT,CLY,G20,GUI,,
+/ Banavie
+BNV,FTW,,,,
+/ Bootle New Strand
+BNW,G18,G34,,,
+/ Barnsley (a routing point)
+BNY,,,,,
+/ Bradford On Avon
+BOA,BTH,G46,,,
+/ Bootle (Cumbria)
+BOC,CAR,G64,,,
+/ Bodmin Parkway
+BOD,LSK,PAR,,,
+/ Botley
+BOE,ESL,G23,,,
+/ Bognor Regis
+BOG,G61,HAV,,,
+/ Bosham
+BOH,G61,HAV,,,
+/ Bromborough
+BOM,G18,HOO,,,
+/ Bolton (a routing point)
+BON,,,,,
+/ Bowes Park
+BOP,AAP,SVG,,,
+/ Bodorgan
+BOR,LLJ,,,,
+/ Bootle Oriel Road
+BOT,G18,G34,,,
+/ Bow Street
+BOW,G41,,,,
+/ Beaulieu Park
+BPA,SNF,WTM,,,
+/ Blackpool Pleasure Beach
+BPB,KKM,,,,
+/ Brookmans Park
+BPK,AAP,SVG,,,
+/ Blackpool North
+BPN,KKM,,,,
+/ Blackpool South
+BPS,KKM,,,,
+/ Bishopton (Strathclyde)
+BPT,PTG,PYG,,,
+/ Bristol Parkway
+BPW,,,,,G05
+/ Brora
+BRA,DIN,,,,
+/ Breich
+BRC,G11,G67,,,
+/ Brentwood
+BRE,G37,SNF,,,
+/ Brierfield
+BRF,ACR,G20,G39,,
+/ Borough Green And Wrotham
+BRG,AFK,G83,,,
+/ Borth
+BRH,G41,,,,
+/ Bristol Temple Meads
+BRI,,,,,G05
+/ Berwick (Sussex)
+BRK,G84,LWS,,,
+/ Barrhill
+BRL,G81,,,,
+/ Barmouth
+BRM,G41,,,,
+/ Bearsden
+BRN,WES,,,,
+/ Bridge Of Orchy
+BRO,CNR,FTW,,,
+/ Brampton (Suffolk)
+BRP,IPS,NRW,,,
+/ Barrhead
+BRR,KMK,PWW,,,
+/ Berrylands
+BRS,NEM,SUR,,,
+/ Barlaston
+BRT,RGL,SOT,STA,,
+/ Bruton
+BRU,CLC,G46,,,
+/ Bournville
+BRV,BTG,G02,,,
+/ Brunswick
+BRW,G18,G70,,,
+/ Brixton
+BRX,G01,HNH,,,
+/ Barry
+BRY,BGN,CDF,,,
+/ Bleasby
+BSB,G43,G47,,,
+/ Bescot Stadium
+BSC,,,,,G59
+/ Bearsted
+BSD,AFK,G83,,,
+/ Bury St Edmunds
+BSE,CBG,ELY,SMK,,
+/ Bushey
+BSH,WFJ,WIJ,,,
+/ Balmossie
+BSI,ABD,DEE,,,
+/ Bedford St Johns
+BSJ,BDM,BLY,,,
+/ Basingstoke (a routing point)
+BSK,,,,,
+/ Beasdale
+BSL,FTW,,,,
+/ Branksome
+BSM,BCU,G33,,,
+/ Boston
+BSN,SLR,,,,
+/ Basildon
+BSO,PSE,UPM,,,
+/ Brondesbury Park
+BSP,GPO,WIJ,,,
+/ Broadstairs
+BSR,FAV,G68,,,
+/ Barassie
+BSS,G81,KWN,,,
+/ Brunstane
+BSU,G11,NCL,,,
+/ Buckshaw Parkway
+BSV,BON,PRE,,,
+/ Birmingham Snow Hill
+BSW,,,,,G02
+/ Brondesbury
+BSY,GPO,WIJ,,,
+/ Barnetby (a routing point)
+BTB,,,,,
+/ Bolton On Dearne
+BTD,DON,G22,G30,SWN,
+/ Bitterne
+BTE,G23,G26,,,
+/ Bottesford
+BTF,G43,GRA,,,
+/ Barnt Green (a routing point)
+BTG,,,,,
+/ Bath Spa (a routing point)
+BTH,,,,,
+/ Batley
+BTL,G16,G40,,,
+/ Brighton
+BTN,,,,,G04
+/ Betchworth
+BTO,G10,G60,,,
+/ Braintree Freeport
+BTP,WTM,,,,
+/ Braintree
+BTR,WTM,,,,
+/ Burntisland
+BTS,G50,G51,,,
+/ Battersby
+BTT,G42,,,,
+/ Bentley (Hants)
+BTY,AHV,GLD,WKM,,
+/ Burnley Barracks
+BUB,ACR,G20,G39,,
+/ Buckenham (Norfolk)
+BUC,IPS,NRW,,,
+/ Burneside (Cumbria)
+BUD,OXN,,,,
+/ Bures
+BUE,MKT,,,,
+/ Burgess Hill
+BUG,G04,WVF,,,
+/ Brough
+BUH,GBD,HUL,,,
+/ Burnside (Strathclyde)
+BUI,G13,MFL,NTN,,
+/ Burton Joyce
+BUJ,G43,G47,,,
+/ Bucknell
+BUK,CRV,G38,,,
+/ Butlers Lane
+BUL,G02,LTV,,,
+/ Bursledon
+BUO,G23,G26,,,
+/ Busby
+BUS,PWW,,,,
+/ Burton On Trent
+BUT,G09,G43,LTV,TAM,
+/ Burnham On Crouch
+BUU,WIC,,,,
+/ Burley-in-wharfedale
+BUW,G03,G16,G53,,
+/ Buxton
+BUX,HAZ,,,,
+/ Burley Park
+BUY,G16,YRK,,,
+/ Belvedere
+BVD,CTN,SGR,,,
+/ Bow Brickhill
+BWB,BDM,BLY,,,
+/ Birchwood
+BWD,G20,G31,,,
+/ Bowling
+BWG,DMR,G80,,,
+/ Berwick-upon-tweed
+BWK,G11,NCL,,,
+/ Bloxwich North
+BWN,G59,RGL,,,
+/ Bricket Wood
+BWO,WFJ,,,,
+/ Barrow Upon Soar
+BWS,LBO,LEI,MMO,,
+/ Bridgwater
+BWT,G05,TAU,,,
+/ Broxbourne
+BXB,CHN,G66,,,
+/ Buxted
+BXD,G08,,,,
+/ Bexleyheath
+BXH,BKH,DFD,SGR,,
+/ Box Hill & Westhumble
+BXW,G10,LHD,,,
+/ Bexley
+BXY,DFD,HGR,SGR,,
+/ Berney Arms
+BYA,IPS,NRW,,,
+/ Blythe Bridge
+BYB,G09,SOT,,,
+/ Betws Y Coed
+BYC,LLJ,,,,
+/ Barry Docks
+BYD,BGN,CDF,,,
+/ Bynea
+BYE,CRV,G38,,,
+/ Broughty Ferry
+BYF,ABD,DEE,,,
+/ Barry Island
+BYI,BGN,CDF,,,
+/ Bentley South Yorks
+BYK,DON,G22,G30,SWN,
+/ Barry Links
+BYL,ABD,DEE,,,
+/ Burnley Manchester Road
+BYM,ACR,G20,G39,,
+/ Bryn
+BYN,G34,HUY,,,
+/ Braystones (Cumbria)
+BYS,CAR,G64,,,
+/ Coventry Arena
+CAA,COV,NUN,,,
+/ Caldercruix
+CAC,BLG,G11,,,
+/ Cadoxton
+CAD,BGN,CDF,,,
+/ Carrbridge
+CAG,INV,PTH,,,
+/ Cark And Cartmel
+CAK,CAR,G64,,,
+/ Camberley
+CAM,ACT,AHV,,,
+/ Carnoustie
+CAN,ABD,DEE,,,
+/ Cannock
+CAO,G59,RGL,,,
+/ Carlisle (a routing point)
+CAR,,,,,
+/ Castleton (Manchester)
+CAS,ACR,G20,G39,,
+/ Caterham
+CAT,G08,G60,,,
+/ Causeland
+CAU,LSK,,,,
+/ Carntyne
+CAY,BLG,G11,,,
+/ Carbis Bay
+CBB,G79,,,,
+/ Coatbridge Central
+CBC,G13,G44,G67,SPR,
+/ Conon Bridge
+CBD,DIN,INV,,,
+/ Canterbury East
+CBE,AFK,DVP,FAV,G68,
+/ Cambridge (a routing point)
+CBG,,,,,
+/ Cambridge Heath
+CBH,G01,HAC,,,
+/ Cranbrook
+CBK,G12,SAL,,,
+/ Cambuslang
+CBL,G13,NTN,,,
+/ Camborne
+CBN,G79,TRU,,,
+/ Castle Bar Park
+CBP,G77,,,,
+/ Cooksbridge
+CBR,LWS,WVF,,,
+/ Coatbridge Sunnyside
+CBS,BLG,G11,,,
+/ Canterbury West
+CBW,AFK,G68,,,
+/ Cameron Bridge
+CBX,G51,,,,
+/ Charlbury
+CBY,G35,OXF,,,
+/ Criccieth
+CCC,G41,,,,
+/ Chichester
+CCH,G61,HAV,,,
+/ Cathcart
+CCT,G13,MFL,,,
+/ Cardiff Bay
+CDB,CDF,,,,
+/ Cardenden
+CDD,G50,G51,,,
+/ Cardiff Central (a routing point)
+CDF,,,,,
+/ Crediton
+CDI,G12,,,,
+/ Coulsdon Town
+CDN,G08,G60,,,
+/ Cardonald
+CDO,G13,PYG,,,
+/ Cardiff Queen Street
+CDQ,CDF,PPD,,,
+/ Cardross
+CDR,CNR,G80,,,
+/ Coulsdon South
+CDS,G08,G60,,,
+/ Caldicot
+CDT,G05,GCR,NWP,,
+/ Cam And Dursley
+CDU,CNM,G05,GCR,,
+/ Cartsdyke
+CDY,PTG,,,,
+/ Cleland
+CEA,G11,G67,,,
+/ Cheddington
+CED,BLY,WFJ,,,
+/ Chapel-en-le-frith
+CEF,HAZ,,,,
+/ Coleshill Parkwy
+CEH,G02,NUN,TAM,,
+/ Chelford (Cheshire)
+CEL,CRE,G69,,,
+/ Cressing (Essex)
+CES,WTM,,,,
+/ Colchester Town
+CET,COL,,,,
+/ Cononley
+CEY,G03,G16,G53,,
+/ Catford Bridge
+CFB,BKJ,LEW,NWX,,
+/ Castleford
+CFD,,,,,G22
+/ Croftfoot
+CFF,G13,MFL,NTN,,
+/ Chafford Hundred
+CFH,GRY,UPM,,,
+/ Crossflatts
+CFL,G03,G16,G53,,
+/ Clifton Down
+CFN,G05,,,,
+/ Chalfont And Latimer Und
+CFO,AYS,G01,,,
+/ Chandlers Ford
+CFR,ESL,G26,SAL,,
+/ Crofton Park
+CFT,NHD,SRT,,,
+/ Craigendoran
+CGD,CNR,G80,,,
+/ Cottingham
+CGM,G48,HUL,,,
+/ Cogan
+CGN,BGN,CDF,,,
+/ Caergwrle
+CGW,G49,SHT,,,
+/ Charing Cross Glasgow
+CHC,G13,PTK,,,
+/ Chesterfield (a routing point)
+CHD,,,,,
+/ Cheam
+CHE,EPS,SUO,,,
+/ Church Fenton
+CHF,G16,G22,SBY,YRK,
+/ Charing (Kent)
+CHG,AFK,G83,,,
+/ Christs Hospital
+CHH,G61,HRH,,,
+/ Chingford
+CHI,WHC,,,,
+/ Chiswick
+CHK,BNS,HOU,,,
+/ Chilworth
+CHL,G10,GLD,,,
+/ Chelmsford (Essex)
+CHM,SNF,WTM,,,
+/ Cheshunt (a routing point)
+CHN,,,,,
+/ Cholsey
+CHO,DID,G24,,,
+/ Chipstead
+CHP,G08,G60,,,
+/ Christchurch
+CHR,BCU,G33,,,
+/ Chathill
+CHT,G11,NCL,,,
+/ Cheadle Hulme (a routing point)
+CHU,,,,,
+/ Chalkwell
+CHW,PSE,,,,
+/ London Charing Cross
+CHX,,,,,G01
+/ Chertsey
+CHY,ACT,G82,SNS,,
+/ Chilham
+CIL,AFK,DVP,FAV,G68,
+/ Cilmeri
+CIM,CRV,G38,,,
+/ Caledonian Road And Barnsbury
+CIR,GPO,HHY,,,
+/ Chislehurst
+CIT,G06,G85,GRP,,
+/ Corkerhill
+CKH,G13,,,,
+/ Corkickle
+CKL,CAR,G64,,,
+/ Crewkerne
+CKN,G12,SAL,,,
+/ Clarkston
+CKS,PWW,,,,
+/ Crookston
+CKT,G13,,,,
+/ Crosskeys
+CKY,CDF,,,,
+/ Clandon
+CLA,EFF,GLD,,,
+/ Castle Cary (a routing point)
+CLC,,,,,
+/ Chelsfield
+CLD,G85,SEV,,,
+/ Cleethorpes
+CLE,HAB,,,,
+/ Claygate
+CLG,EFF,SUR,,,
+/ Clitheroe
+CLH,BBN,G53,,,
+/ Clifton (Manchester)
+CLI,BON,SLD,,,
+/ Clapham Junction (a routing point)
+CLJ,,,,,
+/ Clock House
+CLK,BKJ,LEW,NWX,,
+/ Collington
+CLL,G15,G84,,,
+/ Collingham
+CLM,G47,LCN,,,
+/ Chapeltown (Yorks)
+CLN,BNY,MHS,,,
+/ Clapham High Street
+CLP,CLJ,DMK,G01,,
+/ Clarbeston Road
+CLR,WTL,,,,
+/ Chester-le-street
+CLS,DAR,NCL,,,
+/ Clacton-on-sea
+CLT,COL,,,,
+/ Carluke
+CLU,CRS,G67,,,
+/ Claverdon
+CLV,G72,G73,TYS,,
+/ Chorleywood Und
+CLW,AYS,G01,,,
+/ Chinley (a routing point)
+CLY,,,,,
+/ Cambridge North
+CMB,CBG,ELY,,,
+/ Camden Road
+CMD,GPO,HHY,,,
+/ Combe (Oxon)
+CME,G35,OXF,,,
+/ Cromford
+CMF,G09,,,,
+/ Cwmbach
+CMH,PPD,,,,
+/ Carmyle
+CML,G13,G44,G67,,
+/ Carmarthen
+CMN,G38,WTL,,,
+/ Camelon
+CMO,,,,,G44
+/ Cromer
+CMR,NRW,,,,
+/ Cambridge South
+CMS,CBG,G66,HIT,,
+/ Crossmyloof
+CMY,G13,PWW,,,
+/ Colne
+CNE,ACR,G20,G39,,
+/ Carnforth
+CNF,,,,,G64
+/ Congleton
+CNG,CHU,SOT,,,
+/ Canley
+CNL,COV,G02,,,
+/ Cheltenham Spa (a routing point)
+CNM,,,,,
+/ Canonbury
+CNN,G74,HHY,SQE,,
+/ Chetnole
+CNO,CLC,G33,,,
+/ Conway Park
+CNP,G18,SHT,,,
+/ Crianlarich (a routing point)
+CNR,,,,,
+/ Conisbrough
+CNS,DON,SWN,,,
+/ Conwy
+CNW,LLJ,,,,
+/ Cantley
+CNY,IPS,NRW,,,
+/ Coatdyke
+COA,BLG,G11,,,
+/ Cooden Beach
+COB,G15,G84,,,
+/ Coombe (Cornwall)
+COE,LSK,,,,
+/ Crowborough
+COH,G08,,,,
+/ Crosshill
+COI,G13,MFL,,,
+/ Colchester. (a routing point)
+COL,,,,,
+/ Commondale
+COM,G42,,,,
+/ Connel Ferry
+CON,CNR,,,,
+/ Cookham
+COO,MAI,,,,
+/ Copplestone
+COP,G12,,,,
+/ Corby
+COR,KET,OKM,,,
+/ Cosford
+COS,SHR,WVH,,,
+/ Cottingley
+COT,G16,G40,,,
+/ Coventry (a routing point)
+COV,,,,,
+/ Cowdenbeath
+COW,G50,G51,,,
+/ Coryton
+COY,CDF,,,,
+/ Corpach
+CPA,FTW,,,,
+/ Caerphilly
+CPH,CDF,,,,
+/ Carpenders Park
+CPK,WFJ,WIJ,,,
+/ Chippenham (a routing point)
+CPM,,,,,
+/ Chapelton Devon
+CPN,G12,,,,
+/ Clapton
+CPT,HAC,TOM,WHC,,
+/ Capenhurst
+CPU,CTR,HOO,,,
+/ Chepstow
+CPW,G05,GCR,NWP,,
+/ Clapham (Yorks)
+CPY,G53,G64,,,
+/ Cradley Heath
+CRA,G35,G63,,,
+/ Corbridge
+CRB,CAR,NCL,,,
+/ Chester Road
+CRD,G02,LTV,,,
+/ Crewe (a routing point)
+CRE,,,,,
+/ Carfin
+CRF,G11,G67,,,
+/ Cross Gates
+CRG,,,,,G16
+/ Crouch Hill
+CRH,BKG,GPO,,,
+/ Cricklewood
+CRI,BDM,WHP,,,
+/ Chirk
+CRK,G49,SHR,,,
+/ Chorley
+CRL,BON,PRE,,,
+/ Cramlington
+CRM,G11,NCL,,,
+/ Crowthorne
+CRN,GLD,WKM,,,
+/ Croy
+CRO,G13,G44,STG,,
+/ Corrour
+CRR,CNR,FTW,,,
+/ Carstairs (a routing point)
+CRS,,,,,
+/ Chartham
+CRT,AFK,DVP,FAV,G68,
+/ Craven Arms (a routing point)
+CRV,,,,,
+/ Crawley
+CRW,HRH,TBD,,,
+/ Crayford
+CRY,DFD,G01,HGR,SGR,
+/ Cosham
+CSA,,,,,G23
+/ Carshalton Beeches
+CSB,G08,SUO,,,
+/ Cobham And Stoke D'abernon
+CSD,EFF,SUR,,,
+/ Cressington
+CSG,G18,G70,,,
+/ Carshalton
+CSH,MIJ,SUO,,,
+/ Calstock
+CSK,G21,,,,
+/ Codsall
+CSL,SHR,WVH,,,
+/ Castleton Moor
+CSM,G42,,,,
+/ Chessington North
+CSN,MOT,,,,
+/ Croston
+CSO,G18,G34,PRE,,
+/ Chassen Road
+CSR,G20,G31,,,
+/ Chessington South
+CSS,MOT,,,,
+/ London Cannon Street
+CST,,,,,G01
+/ Chestfield And Swalecliffe
+CSW,FAV,G68,,,
+/ Coseley
+CSY,G63,WVH,,,
+/ Chatelherault
+CTE,G67,NTN,,,
+/ Catford
+CTF,NHD,SRT,,,
+/ Chadwell Heath
+CTH,G37,G74,,,
+/ City Thameslink
+CTK,,,,,G01
+/ Cattal
+CTL,G16,YRK,,,
+/ Chatham
+CTM,,,,,G07
+/ Charlton (a routing point)
+CTN,,,,,
+/ Carlton
+CTO,G43,G47,,,
+/ Chester (a routing point)
+CTR,,,,,
+/ Church Stretton
+CTT,CRV,SHR,,,
+/ Church And Oswaldtwistle
+CTW,ACR,BBN,,,
+/ Culrain
+CUA,DIN,,,,
+/ Cumbernauld
+CUB,G13,G44,G67,SPR,
+/ Cuddington
+CUD,CTR,SPT,,,
+/ Cuffley
+CUF,AAP,SVG,,,
+/ Curriehill
+CUH,G11,G67,,,
+/ Culham
+CUM,DID,OXF,,,
+/ Cupar
+CUP,DEE,LDY,,,
+/ Clunderwen
+CUW,WTL,,,,
+/ Cuxton
+CUX,AFK,SOO,TON,,
+/ Colwyn Bay
+CWB,LLJ,SHT,,,
+/ Chappel And Wakes Colne
+CWC,MKT,,,,
+/ Creswell
+CWD,G43,WRK,,,
+/ Crowle
+CWE,BTB,DON,GOO,,
+/ Crews Hill
+CWH,AAP,SVG,,,
+/ Colwall
+CWL,G35,HFD,,,
+/ Cwmbran
+CWM,HFD,NWP,,,
+/ Cowden (Kent)
+CWN,G08,,,,
+/ Caersws
+CWS,G41,SHR,,,
+/ Crowhurst
+CWU,G15,TON,,,
+/ Cefn Y Bedd
+CYB,G49,SHT,,,
+/ Clydebank
+CYK,DMR,HYN,,,
+/ Cynghordy
+CYN,CRV,G38,,,
+/ Crystal Palace (a routing point)
+CYP,,,,,
+/ Cathays
+CYS,CDF,PPD,,,
+/ Cherry Tree
+CYT,BBN,PRE,,,
+/ Dalgety Bay
+DAG,G50,G51,,,
+/ Dalmarnock
+DAK,G13,NTN,,,
+/ Dalmally
+DAL,CNR,,,,
+/ Dalmeny
+DAM,,,,,G11
+/ Darnall
+DAN,SHF,WRK,,,
+/ Darlington (a routing point)
+DAR,,,,,
+/ Datchet
+DAT,SLO,SNS,,,
+/ Dumbarton Central
+DBC,,,,,G80
+/ Denby Dale
+DBD,BNY,G40,,,
+/ Dumbarton East
+DBE,DMR,G80,,,
+/ Mottisfont & Dunbridge
+DBG,ESL,G26,SAL,,
+/ Dunblane
+DBL,PTH,STG,,,
+/ Derby Road (Ipswich)
+DBR,IPS,NRW,,,
+/ Derby
+DBY,,,,,G09
+/ Duncraig
+DCG,DIN,,,,
+/ Dorchester South
+DCH,,,,,G33
+/ Danes Court
+DCT,CDF,PPD,,,
+/ Dorchester West
+DCW,,,,,G33
+/ Dorridge
+DDG,G72,G73,TYS,,
+/ Dagenham Dock
+DDK,BKG,GRY,,,
+/ Dudley Port
+DDP,G63,WVH,,,
+/ Deal
+DEA,DVP,G68,,,
+/ Dundee (a routing point)
+DEE,,,,,
+/ Dean (Wilts)
+DEN,ESL,G26,SAL,,
+/ Deptford
+DEP,CTN,G01,,,
+/ Dewsbury
+DEW,G16,G40,,,
+/ Dartford (a routing point)
+DFD,,,,,
+/ Dunfermline City
+DFE,G50,G51,,,
+/ Duffield
+DFI,,,,,G09
+/ Dunfermline Queen Margaret
+DFL,G50,G51,,,
+/ Drumfrochar
+DFR,PTG,,,,
+/ Denham Golf Club
+DGC,PRR,SRU,,,
+/ Dingle Road
+DGL,BGN,CDF,,,
+/ Deansgate
+DGT,,,,,G20
+/ Deganwy
+DGY,LLJ,,,,
+/ Durham
+DHM,DAR,NCL,,,
+/ Deighton
+DHN,,,,,G40
+/ Didcot Parkway (a routing point)
+DID,,,,,
+/ Digby & Sowton
+DIG,G12,,,,
+/ Dingwall (a routing point)
+DIN,,,,,
+/ Diss
+DIS,NRW,SMK,,,
+/ Dunkeld
+DKD,INV,PTH,,,
+/ Dorking
+DKG,,,,,G10
+/ Dorking West
+DKT,,,,,G10
+/ Dolgarrog
+DLG,LLJ,,,,
+/ Doleham
+DLH,AFK,G15,,,
+/ Dalston Junction
+DLJ,HHY,SQE,,,
+/ Dalston Kingsland
+DLK,G74,HHY,SQE,,
+/ Delamere
+DLM,CTR,SPT,,,
+/ Dalreoch
+DLR,,,,,G80
+/ Dalston (Cumbria)
+DLS,CAR,G64,,,
+/ Dalton (Cumbria)
+DLT,CAR,G64,,,
+/ Dalwhinnie
+DLW,INV,PTH,,,
+/ Dalry
+DLY,KWN,PYG,,,
+/ Drumchapel
+DMC,DMR,WES,,,
+/ Dumfries
+DMF,CAR,KMK,,,
+/ Dinas (Rhondda)
+DMG,PPD,,,,
+/ Dilton Marsh
+DMH,G46,SAL,,,
+/ Denmark Hill (a routing point)
+DMK,,,,,
+/ Dumpton Park
+DMP,FAV,G68,,,
+/ Dalmuir (a routing point)
+DMR,,,,,
+/ Dormans
+DMS,G08,,,,
+/ Drumry
+DMY,DMR,WES,,,
+/ Dinsdale
+DND,DAR,G42,,,
+/ Dunton Green
+DNG,G85,SEV,,,
+/ Dunlop
+DNL,KMK,PWW,,,
+/ Denham
+DNM,PRR,SRU,,,
+/ Dunrobin Castle
+DNO,DIN,,,,
+/ Dinas Powys
+DNS,BGN,CDF,,,
+/ Dent
+DNT,CAR,G53,,,
+/ Danby
+DNY,G42,,,,
+/ Dockyard (Devonport)
+DOC,,,,,G21
+/ Dodworth
+DOD,BNY,G40,,,
+/ Dolau
+DOL,CRV,G38,,,
+/ Doncaster. (a routing point)
+DON,,,,,
+/ Dore & Totley
+DOR,CLY,SHF,,,
+/ Dunston
+DOT,CAR,NCL,,,
+/ Downham Market
+DOW,ELY,,,,
+/ Dorking (Deepdene)
+DPD,,,,,G10
+/ Devonport (Devon)
+DPT,,,,,G21
+/ Driffield
+DRF,G48,HUL,,,
+/ Drayton Green
+DRG,G77,,,,
+/ Drigg
+DRI,CAR,G64,,,
+/ Drem
+DRM,G11,NCL,,,
+/ Duirinish
+DRN,DIN,,,,
+/ Dronfield
+DRO,CHD,SHF,,,
+/ Darton
+DRT,BNY,G30,,,
+/ Drumgelloch
+DRU,BLG,G11,,,
+/ Disley
+DSL,HAZ,,,,
+/ Darsham
+DSM,IPS,NRW,,,
+/ Duke Street
+DST,BLG,SPR,,,
+/ Daisy Hill
+DSY,BON,G34,SLD,,
+/ Dinting
+DTG,GUI,,,,
+/ Denton
+DTN,GUI,SPT,,,
+/ Droitwich Spa
+DTW,,,,,G35
+/ Duddeston
+DUD,,,,,G02
+/ Dullingham
+DUL,CBG,ELY,SMK,,
+/ Dumbreck
+DUM,G13,,,,
+/ Dunbar
+DUN,G11,NCL,,,
+/ Durrington
+DUR,G04,G61,,,
+/ Dovercourt
+DVC,IPS,MNG,,,
+/ Dove Holes
+DVH,HAZ,,,,
+/ Davenport
+DVN,HAZ,SPT,,,
+/ Dover Priory (a routing point)
+DVP,,,,,
+/ Dovey Junction
+DVY,,,,,G41
+/ Dolwyddelan
+DWD,LLJ,,,,
+/ Dawlish
+DWL,G12,NTA,,,
+/ Darwen
+DWN,BBN,BON,,,
+/ Dawlish Warren
+DWW,G12,NTA,,,
+/ Dyce
+DYC,ABD,INV,,,
+/ Dyffryn Ardudwy
+DYF,G41,,,,
+/ Drayton Park
+DYP,FPK,HHY,,,
+/ Danzey
+DZY,G72,TYS,,,
+/ Earlsfield
+EAD,CLJ,WIM,,,
+/ Eaglescliffe
+EAG,,,,,G42
+/ Ealing Broadway
+EAL,,,,,G77
+/ Earley
+EAR,G24,WKM,,,
+/ Euxton Balshaw Lane
+EBA,BON,G34,PRE,,
+/ Ebbw Vale Town
+EBB,CDF,,,,
+/ Ebbsfleet International (a routing point)
+EBD,,,,,
+/ Eastbrook
+EBK,BGN,CDF,,,
+/ East Boldon
+EBL,G42,NCL,,,
+/ Eastbourne
+EBN,,,,,G84
+/ Edenbridge
+EBR,G60,TON,,,
+/ Edenbridge Town
+EBT,G08,,,,
+/ Ebbw Vale Pkway
+EBV,CDF,,,,
+/ Eccles (Manchester)
+ECC,G20,G34,G78,,
+/ Eccleston Park
+ECL,G34,HUY,,,
+/ Energlyn & Ch Pk
+ECP,CDF,,,,
+/ East Croydon
+ECR,,,,,G08
+/ Eccles Road
+ECS,ELY,NRW,PBO,,
+/ Edinburgh
+EDB,,,,,G11
+/ Edge Hill
+EDG,,,,,G18
+/ Edale
+EDL,CLY,SHF,,,
+/ Eden Park
+EDN,BKJ,LEW,NWX,,
+/ Edinburgh Park
+EDP,,,,,G11
+/ Edmonton Green
+EDR,CHN,SVS,,,
+/ East Dulwich
+EDW,PMR,TUH,,,
+/ East Didsbury
+EDY,G20,G69,,,
+/ Effingham Junction (a routing point)
+EFF,,,,,
+/ East Farleigh
+EFL,AFK,SOO,TON,,
+/ East Garforth
+EGF,,,,,G16
+/ Eggesford
+EGG,G12,,,,
+/ Egham
+EGH,ACT,G82,SNS,,
+/ Eastrington
+EGN,GBD,SBY,,,
+/ East Grinstead
+EGR,G08,,,,
+/ Egton
+EGT,G42,,,,
+/ Edinburgh Gateway
+EGY,,,,,G11
+/ Eskbank
+EKB,G11,,,,
+/ East Kilbride
+EKL,PWW,,,,
+/ Earlswood (Surrey)
+ELD,,,,,G60
+/ Elmers End
+ELE,BKJ,LEW,NWX,,
+/ Elgin
+ELG,ABD,INV,,,
+/ Elton And Orston
+ELO,G43,GRA,,,
+/ Ellesmere Port
+ELP,CTR,G31,HOO,RUN,
+/ Elsecar
+ELR,BNY,MHS,,,
+/ Elstree And Borehamwood
+ELS,BDM,WHP,,,
+/ East Linton
+ELT,G11,NCL,,,
+/ Eltham
+ELW,BKH,DFD,SGR,,
+/ Ely (a routing point)
+ELY,,,,,
+/ East Midlands Parkway
+EMD,CHD,G09,G43,LBO,
+/ East Malling
+EML,AFK,G83,,,
+/ Emerson Park
+EMP,G37,UPM,,,
+/ Emsworth
+EMS,G61,HAV,,,
+/ Enfield Chase
+ENC,AAP,SVG,,,
+/ Enfield Town
+ENF,CHN,SVS,,,
+/ Enfield Lock
+ENL,CHN,TOM,,,
+/ Entwistle
+ENT,BBN,BON,,,
+/ Epsom Downs
+EPD,SUO,,,,
+/ Elephant And Castle
+EPH,DMK,G01,HNH,,
+/ Epsom (a routing point)
+EPS,,,,,
+/ Eastham Rake
+ERA,G18,HOO,,,
+/ Erdington
+ERD,G02,LTV,,,
+/ Erith
+ERH,CTN,SGR,,,
+/ Eridge
+ERI,G08,,,,
+/ Earlestown
+ERL,,,,,G78
+/ Elmstead Woods
+ESD,G06,G85,GRP,,
+/ Esher
+ESH,G82,SUR,,,
+/ Eastleigh (a routing point)
+ESL,,,,,
+/ Elsenham Essex
+ESM,CBG,G66,,,
+/ Easterhouse
+EST,BLG,G11,,,
+/ Elmswell
+ESW,CBG,ELY,SMK,,
+/ Etchingham
+ETC,G15,TON,,,
+/ East Tilbury
+ETL,GRY,PSE,,,
+/ London Euston
+EUS,,,,,G01
+/ Evesham
+EVE,BMV,G35,OXF,,
+/ Earlswood (West Midlands)
+EWD,G72,TYS,,,
+/ Ewell East
+EWE,EPS,SUO,,,
+/ East Worthing
+EWR,G04,G61,,,
+/ Ewell West
+EWW,EPS,MOT,,,
+/ Exeter Central
+EXC,,,,,G12
+/ Exeter St Davids
+EXD,,,,,G12
+/ Exhibition Centre Glasgow
+EXG,G13,PTK,,,
+/ Exmouth
+EXM,G12,,,,
+/ Exton
+EXN,G12,,,,
+/ Essex Road
+EXR,G01,HHY,,,
+/ Exeter St Thomas
+EXT,,,,,G12
+/ Eynsford
+EYN,G83,SAY,,,
+/ Falmouth Docks
+FAL,TRU,,,,
+/ Faversham (a routing point)
+FAV,,,,,
+/ Fazakerley
+FAZ,G18,G34,PRE,,
+/ Formby
+FBY,G18,G34,,,
+/ Falconwood
+FCN,BKH,DFD,SGR,,
+/ Featherstone
+FEA,G22,G30,,,
+/ Feltham (a routing point)
+FEL,,,,,
+/ Fenny Stratford
+FEN,BDM,BLY,,,
+/ Fernhill
+FER,PPD,,,,
+/ Ffairfach
+FFA,CRV,G38,,,
+/ Freshford
+FFD,BTH,G46,,,
+/ Fishguard Harbour
+FGH,WTL,,,,
+/ Faygate
+FGT,HRH,TBD,,,
+/ Fishguard & Gwck
+FGW,WTL,,,,
+/ Filey
+FIL,G48,HUL,,,
+/ Finstock
+FIN,G35,OXF,,,
+/ Filton Abbeywood
+FIT,,,,,G05
+/ Folkestone Central
+FKC,AFK,DVP,,,
+/ Falkirk Grahamston
+FKG,,,,,G44
+/ Falkirk High
+FKK,,,,,G44
+/ Folkestone West
+FKW,AFK,DVP,,,
+/ Fauldhouse
+FLD,G11,G67,,,
+/ Fleet
+FLE,BSK,WOK,,,
+/ Flowery Field
+FLF,GUI,,,,
+/ Flixton
+FLI,G20,G31,,,
+/ Flimby
+FLM,CAR,G64,,,
+/ Flint
+FLN,LLJ,SHT,,,
+/ Flitwick
+FLT,BDM,WHP,,,
+/ Fulwell
+FLW,KNG,TWI,,,
+/ Felixstowe
+FLX,IPS,NRW,,,
+/ Frimley
+FML,ACT,AHV,,,
+/ Falmer
+FMR,G04,LWS,,,
+/ Falmouth Town
+FMT,TRU,,,,
+/ Farnborough Main
+FNB,BSK,WOK,,,
+/ Farncombe
+FNC,GLD,HAV,,,
+/ Farnham
+FNH,AHV,GLD,WKM,,
+/ Farnborough North
+FNN,GLD,WKM,,,
+/ Farningham Road
+FNR,G07,SAY,,,
+/ Feniton
+FNT,G12,SAL,,,
+/ Furness Vale
+FNV,HAZ,,,,
+/ Farnworth
+FNW,BON,SLD,,,
+/ Finchley Road And Frognal
+FNY,GPO,WIJ,,,
+/ Falls Of Cruachan
+FOC,CNR,,,,
+/ Ford
+FOD,,,,,G61
+/ Forest Gate
+FOG,G37,G74,,,
+/ Forest Hill
+FOH,CYP,G01,G08,NXG,
+/ Four Oaks
+FOK,G02,LTV,,,
+/ Forres
+FOR,ABD,INV,,,
+/ Foxfield
+FOX,CAR,G64,,,
+/ Finsbury Park (a routing point)
+FPK,,,,,
+/ Fairbourne
+FRB,G41,,,,
+/ Frodsham
+FRD,CTR,G31,HOO,RUN,
+/ Freshfield
+FRE,G18,G34,,,
+/ Fairfield
+FRF,G20,GUI,,,
+/ Frinton-on-sea
+FRI,COL,,,,
+/ Fairlie
+FRL,KWN,,,,
+/ Fareham
+FRM,,,,,G23
+/ Fearn
+FRN,DIN,,,,
+/ Frome
+FRO,CLC,G46,,,
+/ Forsinard
+FRS,DIN,,,,
+/ Frant
+FRT,G15,TON,,,
+/ Fairwater
+FRW,CDF,PPD,,,
+/ Ferriby
+FRY,GBD,HUL,,,
+/ Fishbourne (Sussex)
+FSB,G61,HAV,,,
+/ Fishersgate
+FSG,G04,G61,,,
+/ Fiskerton
+FSK,G43,G47,,,
+/ London Fenchurch Street
+FST,,,,,G01
+/ Fort Matilda
+FTM,PTG,,,,
+/ Fratton
+FTN,,,,,G23
+/ Fort William (a routing point)
+FTW,,,,,
+/ Five Ways
+FWY,BTG,G02,,,
+/ Foxton
+FXN,CBG,HIT,,,
+/ Ferryside
+FYS,G38,WTL,,,
+/ Frizinghall
+FZH,G03,G16,G53,,
+/ Furze Platt
+FZP,MAI,,,,
+/ Fitzwilliam
+FZW,DON,G22,G30,SWN,
+/ Galashiels
+GAL,G11,,,,
+/ Garrowhill
+GAR,BLG,G11,,,
+/ Gilberdyke (a routing point)
+GBD,,,,,
+/ Gorebridge
+GBG,G11,,,,
+/ Greenbank
+GBK,CTR,SPT,,,
+/ Gainsborough Lea Road
+GBL,DON,LCN,RET,,
+/ Goring By Sea
+GBS,G04,G61,,,
+/ Garelochhead
+GCH,CNR,G80,,,
+/ Gloucester (a routing point)
+GCR,,,,,
+/ Great Coates
+GCT,HAB,,,,
+/ Glan Conwy
+GCW,LLJ,,,,
+/ Gordon Hill
+GDH,AAP,SVG,,,
+/ Godley
+GDL,GUI,,,,
+/ Godstone
+GDN,G60,TON,,,
+/ Gidea Park
+GDP,,,,,G37
+/ Gretna Green
+GEA,CAR,KMK,,,
+/ Gerrards Cross
+GER,PRR,SRU,,,
+/ Greenford.
+GFD,G77,,,,
+/ Gilfach Fargoed
+GFF,CDF,,,,
+/ Giffnock
+GFN,PWW,,,,
+/ Georgemas Junction
+GGJ,DIN,,,,
+/ Gargrave
+GGV,G03,G16,G53,,
+/ Giggleswick
+GIG,G53,G64,,,
+/ Gillingham (Dorset)
+GIL,G12,SAL,,,
+/ Gipsy Hill
+GIP,CYP,G29,TUH,,
+/ Girvan
+GIR,G81,,,,
+/ Greenock Central
+GKC,PTG,,,,
+/ Greenock West
+GKW,PTG,,,,
+/ Glasgow Central
+GLC,,,,,G13
+/ Guildford (a routing point)
+GLD,,,,,
+/ Gleneagles
+GLE,PTH,STG,,,
+/ Glenfinnan
+GLF,FTW,,,,
+/ Glengarnock
+GLG,KWN,PYG,,,
+/ Glasshoughton
+GLH,,,,,G22
+/ Gillingham (Kent)
+GLM,,,,,G07
+/ Glossop
+GLO,GUI,,,,
+/ Glasgow Queen Street
+GLQ,,,,,G13
+/ Glaisdale
+GLS,G42,,,,
+/ Glenrothes With Thornton
+GLT,,,,,G51
+/ Glynde
+GLY,G84,LWS,,,
+/ Glazebrook
+GLZ,G20,G31,,,
+/ Grimsby Town
+GMB,HAB,,,,
+/ Grimsby Docks
+GMD,HAB,,,,
+/ Garth (Bridgend)
+GMG,BGN,,,,
+/ Great Missenden
+GMN,AYS,G01,,,
+/ Grosmont
+GMT,G42,,,,
+/ Great Malvern
+GMV,G35,HFD,,,
+/ Goodmayes
+GMY,G37,G74,,,
+/ Gainsborough Central
+GNB,BTB,DON,LCN,RET,
+/ Greenfield
+GNF,G40,SYB,,,
+/ Greenhithe
+GNH,DFD,GRV,,,
+/ Green Lane
+GNL,G18,HOO,,,
+/ Green Road
+GNR,CAR,G64,,,
+/ Gunton
+GNT,NRW,,,,
+/ Greenwich
+GNW,CTN,G01,,,
+/ Gobowen
+GOB,G49,SHR,,,
+/ Godalming
+GOD,GLD,HAV,,,
+/ Goldthorpe
+GOE,DON,G22,G30,SWN,
+/ Golf Street
+GOF,ABD,DEE,,,
+/ Golspie
+GOL,DIN,,,,
+/ Gomshall
+GOM,G10,GLD,,,
+/ Goole (a routing point)
+GOO,,,,,
+/ Goring And Streatley
+GOR,DID,G24,,,
+/ Grange-over-sands
+GOS,CAR,G64,,,
+/ Goxhill
+GOX,HAB,,,,
+/ Grange Park
+GPK,AAP,SVG,,,
+/ Gospel Oak (a routing point)
+GPO,,,,,
+/ Grantham (a routing point)
+GRA,,,,,
+/ Great Bentley
+GRB,COL,,,,
+/ Great Chesterford
+GRC,CBG,G66,,,
+/ Garforth
+GRF,,,,,G16
+/ Gartcosh
+GRH,G44,G67,SPR,,
+/ Gourock
+GRK,PTG,,,,
+/ Greenfaulds
+GRL,G44,G67,SPR,,
+/ Grindleford
+GRN,CLY,SHF,,,
+/ Grove Park (a routing point)
+GRP,,,,,
+/ Garscadden
+GRS,DMR,HYN,,,
+/ Grateley
+GRT,BSK,SAL,,,
+/ Gravesend (a routing point)
+GRV,,,,,
+/ Grays (a routing point)
+GRY,,,,,
+/ Gilshochill
+GSC,G13,HYN,WES,,
+/ Garsdale
+GSD,CAR,G53,,,
+/ Gunnislake
+GSL,G21,,,,
+/ Garston (Herts)
+GSN,WFJ,,,,
+/ Gathurst
+GST,G18,G34,,,
+/ Garswood
+GSW,G34,HUY,,,
+/ Guiseley
+GSY,G03,G16,G53,,
+/ Great Ayton
+GTA,G42,,,,
+/ Garth (Powys)
+GTH,CRV,G38,,,
+/ Grangetown (Cardiff)
+GTN,BGN,CDF,,,
+/ Gorton
+GTO,G20,GUI,,,
+/ Goostrey
+GTR,CRE,G69,,,
+/ Gatwick Airport (a routing point)
+GTW,,,,,
+/ Gatley
+GTY,G20,G69,,,
+/ Guide Bridge (a routing point)
+GUI,,,,,
+/ Gunnersbury
+GUN,RMD,WIJ,,,
+/ Garve
+GVE,DIN,,,,
+/ Gravelly Hill
+GVH,G02,LTV,,,
+/ Gwersyllt
+GWE,G49,SHT,,,
+/ Gowerton
+GWN,,,,,G38
+/ Great Yarmouth
+GYM,IPS,NRW,,,
+/ Gypsy Lane
+GYP,G42,,,,
+/ Habrough (a routing point)
+HAB,,,,,
+/ Hackney Downs (a routing point)
+HAC,,,,,
+/ Haddiscoe
+HAD,IPS,NRW,,,
+/ Heathrow Term 4
+HAF,G75,,,,
+/ Hagley
+HAG,G35,G63,,,
+/ Halling
+HAI,AFK,SOO,TON,,
+/ Hale
+HAL,CTR,SPT,,,
+/ Hamworthy
+HAM,BCU,G33,,,
+/ Hanwell
+HAN,G75,G77,,,
+/ Hatfield Peverel
+HAP,SNF,WTM,,,
+/ Halesworth
+HAS,IPS,NRW,,,
+/ Hatfield (Herts)
+HAT,AAP,SVG,,,
+/ Havant (a routing point)
+HAV,,,,,
+/ Hayes And Harlington
+HAY,,,,,G75
+/ Hazel Grove (a routing point)
+HAZ,,,,,
+/ Hubberts Bridge
+HBB,SLR,,,,
+/ Hebden Bridge
+HBD,ACR,G20,G39,,
+/ Headbolt Lane
+HBL,G18,G34,PRE,,
+/ Hollingbourne
+HBN,AFK,G83,,,
+/ Hornbeam Park
+HBP,G16,YRK,,,
+/ Hartlebury
+HBY,G35,G63,,,
+/ Hackbridge
+HCB,MIJ,SUO,,,
+/ Holmes Chapel
+HCH,CRE,G69,,,
+/ Headcorn
+HCN,AFK,TON,,,
+/ Huncoat
+HCT,ACR,G20,G39,,
+/ Haydon Bridge
+HDB,CAR,NCL,,,
+/ Hedge End
+HDE,ESL,G23,,,
+/ Hadfield
+HDF,GUI,,,,
+/ Heald Green
+HDG,G20,G69,,,
+/ Hampstead Heath
+HDH,GPO,WIJ,,,
+/ Headstone Lane
+HDL,WFJ,WIJ,,,
+/ Haddenham And Thame Parkway
+HDM,G58,PRR,,,
+/ Harlesden
+HDN,WFJ,WIJ,,,
+/ Hadley Wood
+HDW,AAP,SVG,,,
+/ Headingley
+HDY,G16,YRK,,,
+/ Heckington
+HEC,SLR,,,,
+/ Halewood
+HED,G31,G70,,,
+/ Heighington
+HEI,DAR,,,,
+/ Hensall
+HEL,G22,GOO,,,
+/ Hendon
+HEN,BDM,WHP,,,
+/ Hersham
+HER,G82,SUR,,,
+/ Hessle
+HES,GBD,HUL,,,
+/ Hever
+HEV,G08,,,,
+/ Heworth
+HEW,G42,NCL,,,
+/ Hexham
+HEX,CAR,NCL,,,
+/ Hereford (a routing point)
+HFD,,,,,
+/ Hertford East
+HFE,CHN,G66,,,
+/ Hertford North
+HFN,AAP,SVG,,,
+/ Hatfield And Stainforth
+HFS,BTB,DON,GOO,,
+/ Halifax
+HFX,,,,,G39
+/ Hungerford
+HGD,G24,G46,,,
+/ Hag Fold
+HGF,BON,G34,SLD,,
+/ Haggerston
+HGG,HHY,SQE,,,
+/ Higham (Kent)
+HGM,GRV,SOO,,,
+/ Hough Green
+HGN,G31,G70,,,
+/ Hither Green (a routing point)
+HGR,,,,,
+/ Hastings
+HGS,,,,,G15
+/ Harrogate
+HGT,G16,YRK,,,
+/ Harringay
+HGY,AAP,FPK,,,
+/ Heysham Port
+HHB,G64,,,,
+/ Holyhead
+HHD,LLJ,,,,
+/ Haywards Heath (a routing point)
+HHE,,,,,
+/ Heath High Level
+HHL,CDF,,,,
+/ Highbury And Islington (a routing point)
+HHY,,,,,
+/ Hampton In Arden
+HIA,COV,G02,,,
+/ High Brooms
+HIB,G15,TON,,,
+/ Hall I Th Wood
+HID,BBN,BON,,,
+/ Highbridge
+HIG,G05,TAU,,,
+/ Hillside
+HIL,G18,G34,,,
+/ Hindley
+HIN,BON,G34,SLD,,
+/ Highams Park
+HIP,WHC,,,,
+/ Horton In Ribblesdale
+HIR,CAR,G53,,,
+/ Hitchin (a routing point)
+HIT,,,,,
+/ Hackney Central
+HKC,G74,HHY,SQE,,
+/ Hawkhead
+HKH,G13,,,,
+/ Hykeham
+HKM,G47,LCN,,,
+/ Hucknall
+HKN,G43,WRK,,,
+/ Hackney Wick
+HKW,G74,HHY,SQE,,
+/ Hildenborough
+HLB,SEV,TON,,,
+/ Helensburgh Central
+HLC,CNR,G80,,,
+/ Hellifield
+HLD,,,,,G53
+/ Hillington East
+HLE,G13,PYG,,,
+/ Hillfoot
+HLF,WES,,,,
+/ Hall Green
+HLG,G72,TYS,,,
+/ Healing
+HLI,HAB,,,,
+/ Heath Low Level
+HLL,CDF,,,,
+/ Holmwood (Surrey)
+HLM,G10,HRH,,,
+/ Harlington (Beds)
+HLN,BDM,WHP,,,
+/ Hall Road
+HLR,G18,G34,,,
+/ Hilsea
+HLS,,,,,G23
+/ Helensburgh Upper
+HLU,CNR,G80,,,
+/ Hillington West
+HLW,G13,PYG,,,
+/ Holytown
+HLY,,,,,G67
+/ Hampton Court
+HMC,SUR,,,,
+/ Hampden Park (Sussex)
+HMD,,,,,G84
+/ Hamble
+HME,G23,G26,,,
+/ Hemel Hempstead
+HML,BLY,WFJ,,,
+/ Hammerton
+HMM,G16,YRK,,,
+/ Homerton
+HMN,G74,HHY,SQE,,
+/ Hampton (London)
+HMP,KNG,TWI,,,
+/ Helmsdale
+HMS,DIN,,,,
+/ Ham Street
+HMT,AFK,G15,,,
+/ Hampton Wick
+HMW,KNG,TWI,,,
+/ Hairmyres
+HMY,PWW,,,,
+/ Hinton Admiral
+HNA,BCU,G33,,,
+/ Herne Bay
+HNB,FAV,G68,,,
+/ Hamilton Central
+HNC,G67,NTN,,,
+/ Hanborough
+HND,G35,OXF,,,
+/ Hednesford
+HNF,G59,RGL,,,
+/ Hengoed
+HNG,CDF,,,,
+/ Herne Hill (a routing point)
+HNH,,,,,
+/ Hinckley (Leics)
+HNK,LEI,NUN,,,
+/ Henley In Arden
+HNL,G72,TYS,,,
+/ Huntly
+HNT,ABD,INV,,,
+/ Hamilton West
+HNW,G67,NTN,,,
+/ Hunts Cross
+HNX,,,,,G70
+/ Hockley
+HOC,WIC,,,,
+/ Harrow-hill Und
+HOH,AYS,G01,,,
+/ Hook
+HOK,BSK,WOK,,,
+/ Holton Heath
+HOL,BCU,G33,,,
+/ Honiton
+HON,G12,SAL,,,
+/ Hooton (a routing point)
+HOO,,,,,
+/ Hope Derbyshire
+HOP,CLY,SHF,,,
+/ Horley
+HOR,G60,GTW,,,
+/ Henley On Thames
+HOT,TWY,,,,
+/ Hounslow (a routing point)
+HOU,,,,,
+/ Hove
+HOV,,,,,G04
+/ Howden
+HOW,GBD,SBY,,,
+/ Hoxton
+HOX,HHY,SQE,,,
+/ Honley
+HOY,BNY,G40,,,
+/ Howwood Strathclyde
+HOZ,KWN,PYG,,,
+/ Honor Oak Park
+HPA,CYP,G01,G08,NXG,
+/ Harpenden
+HPD,BDM,WHP,,,
+/ Hope (Flints)
+HPE,G49,SHT,,,
+/ Hartlepool
+HPL,G42,NCL,,,
+/ Hapton
+HPN,ACR,G20,G39,,
+/ Harwich International
+HPQ,IPS,MNG,,,
+/ Hopton Heath
+HPT,CRV,G38,,,
+/ Harling Road
+HRD,ELY,NRW,PBO,,
+/ Horden
+HRE,G42,NCL,,,
+/ Horsham (a routing point)
+HRH,,,,,
+/ Harlech
+HRL,G41,,,,
+/ Harrietsham
+HRM,AFK,G83,,,
+/ Hornsey
+HRN,AAP,FPK,,,
+/ Harold Wood
+HRO,G37,SNF,,,
+/ Harrington
+HRR,CAR,G64,,,
+/ Horsforth
+HRS,G16,YRK,,,
+/ Harrow And Wealdstone
+HRW,WFJ,WIJ,,,
+/ Harringay Green Lane
+HRY,BKG,GPO,,,
+/ Helsby
+HSB,CTR,G31,HOO,RUN,
+/ Hoscar
+HSC,G18,G34,,,
+/ Hamstead (Birmingham)
+HSD,G02,G59,,,
+/ Hathersage
+HSG,CLY,SHF,,,
+/ Hassocks
+HSK,G04,WVF,,,
+/ Haslemere
+HSL,GLD,HAV,,,
+/ High Street Glasgow
+HST,BLG,G13,,,
+/ Heswall
+HSW,G18,SHT,,,
+/ Horsley
+HSY,EFF,GLD,,,
+/ Heaton Chapel
+HTC,G20,SPT,,,
+/ Hatch End
+HTE,WFJ,WIJ,,,
+/ Hartford
+HTF,CRE,G31,RUN,,
+/ Handforth
+HTH,,,,,G69
+/ Hatton
+HTN,,,,,G73
+/ Hightown
+HTO,G18,G34,,,
+/ Hartwood
+HTW,G11,G67,,,
+/ Hattersley
+HTY,GUI,,,,
+/ Hunmanby
+HUB,G48,HUL,,,
+/ Huddersfield
+HUD,,,,,G40
+/ Hull (a routing point)
+HUL,,,,,
+/ Huntingdon
+HUN,HIT,PBO,,,
+/ Humphrey Park
+HUP,G20,G31,,,
+/ Hurst Green
+HUR,G08,,,,
+/ Hutton Cranswick
+HUT,G48,HUL,,,
+/ Huyton (a routing point)
+HUY,,,,,
+/ Haverfordwest
+HVF,WTL,,,,
+/ Havenhouse
+HVN,SLR,,,,
+/ Hawarden Bridge
+HWB,G18,SHT,,,
+/ Harwich Town
+HWC,IPS,MNG,,,
+/ Hawarden
+HWD,G49,SHT,,,
+/ Haltwhistle
+HWH,CAR,NCL,,,
+/ Horwich Parkway
+HWI,BON,PRE,,,
+/ Harlow Mill
+HWM,CHN,G66,,,
+/ Harlow Town
+HWN,CHN,G66,,,
+/ Heathrow Term 5
+HWV,G75,,,,
+/ How Wood
+HWW,WFJ,,,,
+/ High Wycombe
+HWY,PRR,SRU,,,
+/ Hoveton And Wroxham
+HXM,NRW,,,,
+/ Heathrow Term123
+HXX,G75,,,,
+/ Honeybourne
+HYB,BMV,G35,OXF,,
+/ Hyde Central
+HYC,CLY,G20,GUI,,
+/ Heyford
+HYD,G58,OXF,,,
+/ Hythe Essex
+HYH,COL,,,,
+/ Hoylake
+HYK,G18,SHT,,,
+/ Hayle
+HYL,G79,TRU,,,
+/ Haymarket
+HYM,,,,,G11
+/ Hyndland (a routing point)
+HYN,,,,,
+/ Haydons Road
+HYR,G29,WIM,,,
+/ Hayes (Kent)
+HYS,BKJ,LEW,NWX,,
+/ Hyde North
+HYT,CLY,G20,GUI,,
+/ Hinchley Wood
+HYW,EFF,SUR,,,
+/ Ilford
+IFD,G37,G74,,,
+/ Ifield
+IFI,HRH,TBD,,,
+/ Invergordon
+IGD,DIN,,,,
+/ Ilkley
+ILK,G03,G16,G53,,
+/ Ilkeston
+ILN,CHD,G43,,,
+/ Imperial Wharf
+IMW,CLJ,G75,WFJ,WIJ,
+/ Ince (Manchester)
+INC,BON,G34,SLD,,
+/ Ince And Elton
+INE,CTR,G31,HOO,RUN,
+/ Invergowrie
+ING,DEE,PTH,,,
+/ Invershin
+INH,DIN,,,,
+/ Inverkeithing
+INK,,,,,G50
+/ Inverkip
+INP,PTG,,,,
+/ Inverurie
+INR,ABD,INV,,,
+/ Insch
+INS,ABD,INV,,,
+/ Ingatestone
+INT,SNF,WTM,,,
+/ Inverness (a routing point)
+INV,,,,,
+/ Ipswich (a routing point)
+IPS,,,,,
+/ Irlam
+IRL,G20,G31,,,
+/ Irvine
+IRV,G81,KWN,,,
+/ Isleworth
+ISL,BNS,HOU,,,
+/ Islip
+ISP,OXF,PRR,,,
+/ Inverness Airport
+IVA,ABD,INV,,,
+/ Iver
+IVR,G75,SLO,,,
+/ Ivybridge
+IVY,G21,NTA,,,
+/ James Cook Hospital
+JCH,G42,,,,
+/ Jewellery Quarter
+JEQ,G02,G63,,,
+/ Johnstone (Strathclyde)
+JHN,KWN,PYG,,,
+/ Johnston (Pembs)
+JOH,WTL,,,,
+/ Jordanhill
+JOR,DMR,HYN,,,
+/ Kinbrace
+KBC,DIN,,,,
+/ Kirkby In Furness
+KBF,CAR,G64,,,
+/ Kents Bank
+KBK,CAR,G64,,,
+/ Kilburn High Road
+KBN,G01,WIJ,,,
+/ Knebworth
+KBW,AAP,SVG,,,
+/ Kirby Cross
+KBX,COL,,,,
+/ Knockholt
+KCK,G85,SEV,,,
+/ Kidbrooke
+KDB,BKH,DFD,SGR,,
+/ Kidsgrove
+KDG,CHU,CRE,SOT,,
+/ Kirkcaldy
+KDY,,,,,G51
+/ Keith
+KEH,ABD,INV,,,
+/ Keighley
+KEI,G03,G16,G53,,
+/ Kelvedon
+KEL,MKT,WTM,,,
+/ Kemble
+KEM,CNM,GCR,SWI,,
+/ Kendal
+KEN,OXN,,,,
+/ Kettering (a routing point)
+KET,,,,,
+/ Keyham
+KEY,,,,,G21
+/ Kingsknowe
+KGE,G11,G67,,,
+/ Kinghorn
+KGH,G50,G51,,,
+/ Kings Langley
+KGL,BLY,WFJ,,,
+/ Kingham
+KGM,G35,OXF,,,
+/ Kings Nympton
+KGN,G12,,,,
+/ Kings Park
+KGP,G13,MFL,NTN,,
+/ Kings Sutton
+KGS,,,,,G58
+/ Kilgetty
+KGT,WTL,,,,
+/ London Kings Cross
+KGX,,,,,G01
+/ Kidderminster
+KID,G35,G63,,,
+/ Kildonan
+KIL,DIN,,,,
+/ Kingussie
+KIN,INV,PTH,,,
+/ Kirkby (Merseyside)
+KIR,G18,G34,PRE,,
+/ Kintbury
+KIT,G24,G46,,,
+/ Kiveton Bridge
+KIV,SHF,WRK,,,
+/ Kirkby In Ashfield
+KKB,G43,WRK,,,
+/ Kirkdale
+KKD,G18,G34,PRE,,
+/ Kirkhill
+KKH,G13,MFL,NTN,,
+/ Kirkham And Wesham (a routing point)
+KKM,,,,,
+/ Kirknewton
+KKN,G11,G67,,,
+/ Kirk Sandall
+KKS,BTB,DON,GOO,,
+/ Kildale
+KLD,G42,,,,
+/ Kirkstall Forge
+KLF,G03,G16,G53,,
+/ Kilmaurs
+KLM,KMK,PWW,,,
+/ Kings Lynn
+KLN,ELY,,,,
+/ Kenley
+KLY,G08,G60,,,
+/ Kempston Hardwick
+KMH,BDM,BLY,,,
+/ Kilmarnock (a routing point)
+KMK,,,,,
+/ Kemsley
+KML,FAV,G07,,,
+/ Kempton Park Racecourse
+KMP,KNG,TWI,,,
+/ Kemsing
+KMS,,,,,G83
+/ Knaresborough
+KNA,G16,YRK,,,
+/ Kingswood
+KND,G08,G60,,,
+/ Kennett
+KNE,CBG,ELY,SMK,,
+/ Knutsford
+KNF,CTR,SPT,,,
+/ Kingston (a routing point)
+KNG,,,,,
+/ Knighton
+KNI,CRV,G38,,,
+/ Kensal Green
+KNL,G01,WIJ,,,
+/ Kings Norton
+KNN,BTG,G02,,,
+/ Knottingley
+KNO,G22,GOO,,,
+/ Kensal Rise
+KNR,GPO,WIJ,,,
+/ Kennishead
+KNS,KMK,PWW,,,
+/ Kenton
+KNT,WFJ,WIJ,,,
+/ Knucklas
+KNU,CRV,G38,,,
+/ Kenilworth
+KNW,COV,LMS,,,
+/ Kensington (Olympia)
+KPA,CLJ,G75,WFJ,WIJ,
+/ Kilpatrick
+KPT,DMR,G80,,,
+/ Kirkconnel
+KRK,CAR,KMK,,,
+/ Kearsley (Manchester)
+KSL,BON,SLD,,,
+/ Kearsney (Kent)
+KSN,AFK,DVP,FAV,G68,
+/ Kirkby Stephen
+KSW,CAR,G53,,,
+/ Kent House
+KTH,BKJ,HNH,,,
+/ Kirton Lindsey
+KTL,BTB,DON,LCN,RET,
+/ Kentish Town
+KTN,G01,WHP,,,
+/ Kintore
+KTR,ABD,INV,,,
+/ Kentish Town West
+KTW,GPO,HHY,,,
+/ Kelvindale
+KVD,G13,HYN,WES,,
+/ Kiveton Park
+KVP,SHF,WRK,,,
+/ Kew Bridge
+KWB,BNS,HOU,,,
+/ Kirkwood
+KWD,G13,G44,G67,,
+/ Kew Gardens
+KWG,RMD,WIJ,,,
+/ Kidwelly
+KWL,G38,WTL,,,
+/ Kilwinning (a routing point)
+KWN,,,,,
+/ Kyle Of Lochalsh
+KYL,DIN,,,,
+/ Keynsham
+KYN,BTH,G05,,,
+/ Lancing
+LAC,G04,G61,,,
+/ Ladywell
+LAD,BKJ,LEW,NWX,,
+/ Langwith Whaley Thorns
+LAG,G43,WRK,,,
+/ Laindon
+LAI,PSE,UPM,,,
+/ Lakenheath
+LAK,ELY,NRW,PBO,,
+/ Lamphey
+LAM,WTL,,,,
+/ Lancaster
+LAN,,,,,G64
+/ Lapford
+LAP,G12,,,,
+/ Largs
+LAR,KWN,,,,
+/ Llansamlet
+LAS,BGN,G38,,,
+/ Laurencekirk
+LAU,ABD,DEE,,,
+/ Landywood
+LAW,G59,RGL,,,
+/ Layton (Lancs)
+LAY,KKM,,,,
+/ London Bridge
+LBG,,,,,G01
+/ Long Buckby
+LBK,NMP,RUG,,,
+/ Loughborough (Leics) (a routing point)
+LBO,,,,,
+/ Llanbedr
+LBR,G41,,,,
+/ Larbert
+LBT,G13,G44,STG,,
+/ Leighton Buzzard
+LBZ,BLY,WFJ,,,
+/ Lochluichart
+LCC,DIN,,,,
+/ Lochgelly
+LCG,G50,G51,,,
+/ Lockwood
+LCK,BNY,G40,,,
+/ Lochailort
+LCL,FTW,,,,
+/ Lincoln (a routing point)
+LCN,,,,,
+/ Locheilside
+LCS,FTW,,,,
+/ Llandanwg
+LDN,G41,,,,
+/ Leeds.
+LDS,,,,,G16
+/ Ladybank (a routing point)
+LDY,,,,,
+/ Leagrave
+LEA,BDM,WHP,,,
+/ Lea Bridge
+LEB,G74,TOM,,,
+/ Ledbury
+LED,G35,HFD,,,
+/ Lee (London)
+LEE,DFD,HGR,SGR,,
+/ Lea Green
+LEG,G78,HUY,,,
+/ Lea Hall
+LEH,COV,G02,,,
+/ Leicester (a routing point)
+LEI,,,,,
+/ Lelant
+LEL,G79,,,,
+/ Leyton Midland Road
+LEM,BKG,GPO,,,
+/ Lenham
+LEN,AFK,G83,,,
+/ Leominster
+LEO,CRV,HFD,,,
+/ Leytonstone High Road
+LER,BKG,GPO,,,
+/ Leigh On Sea
+LES,PSE,,,,
+/ Letchworth Garden City
+LET,CBG,HIT,,,
+/ Leuchars
+LEU,DEE,LDY,,,
+/ Leven
+LEV,G51,,,,
+/ Lewisham (a routing point)
+LEW,,,,,
+/ Leyland
+LEY,BON,G34,PRE,,
+/ Lingfield
+LFD,G08,,,,
+/ Langbank
+LGB,PTG,PYG,,,
+/ Lingwood
+LGD,IPS,NRW,,,
+/ Long Eaton
+LGE,,,,,G09
+/ Longfield
+LGF,G07,SAY,,,
+/ Langley Green
+LGG,G35,G63,,,
+/ Loughborough Junction
+LGJ,G01,HNH,PMR,,
+/ Longbeck
+LGK,G42,,,,
+/ Langley Mill
+LGM,CHD,G09,G43,LBO,
+/ Longton
+LGN,G09,SOT,,,
+/ Llangynllo
+LGO,CRV,G38,,,
+/ Langside
+LGS,G13,MFL,NTN,,
+/ Langwathby
+LGW,CAR,G53,,,
+/ Loch Awe
+LHA,CNR,,,,
+/ Leatherhead (a routing point)
+LHD,,,,,
+/ Loch Eil Outward Bound
+LHE,FTW,,,,
+/ Lealholm
+LHM,G42,,,,
+/ Langho
+LHO,BBN,G53,,,
+/ Limehouse Lts
+LHS,BKG,G01,,,
+/ Lochwinnoch
+LHW,KWN,PYG,,,
+/ Lichfield City
+LIC,G02,LTV,,,
+/ Lidlington
+LID,BDM,BLY,,,
+/ Leigh (Kent)
+LIH,G60,TON,,,
+/ Linlithgow
+LIN,G11,G44,,,
+/ Liphook
+LIP,GLD,HAV,,,
+/ Liss
+LIS,GLD,HAV,,,
+/ Littlehampton
+LIT,,,,,G61
+/ Liverpool Lime Street
+LIV,,,,,G18
+/ Lake
+LKE,G23,,,,
+/ Llanaber
+LLA,G41,,,,
+/ Llandecwyn
+LLC,G41,,,,
+/ Llandudno
+LLD,LLJ,,,,
+/ Llanelli
+LLE,,,,,G38
+/ Llanfairfechan
+LLF,LLJ,,,,
+/ Llangadog
+LLG,CRV,G38,,,
+/ Llangennech
+LLH,CRV,G38,,,
+/ Llandybie
+LLI,CRV,G38,,,
+/ Llandudno Junction (a routing point)
+LLJ,,,,,
+/ Llandeilo
+LLL,CRV,G38,,,
+/ Llangammarch
+LLM,CRV,G38,,,
+/ Llandaf
+LLN,CDF,PPD,,,
+/ Llandrindod
+LLO,CRV,G38,,,
+/ Llanharan
+LLR,BGN,CDF,,,
+/ Llanishen
+LLS,CDF,,,,
+/ Llanbister Road
+LLT,CRV,G38,,,
+/ Llandovery
+LLV,CRV,G38,,,
+/ Llwyngwril
+LLW,G41,,,,
+/ Llwynypia
+LLY,PPD,,,,
+/ Low Moor
+LMR,G03,G39,,,
+/ Leamington Spa (a routing point)
+LMS,,,,,
+/ Llanbradach
+LNB,CDF,,,,
+/ Longniddry
+LND,G11,NCL,,,
+/ Longcross
+LNG,ACT,SNS,SUR,WOK,
+/ Lanark
+LNK,CRS,G67,,,
+/ Llanwrda
+LNR,CRV,G38,,,
+/ Llanwrtyd
+LNW,CRV,G38,,,
+/ Langley (Berks)
+LNY,G75,SLO,,,
+/ Lenzie
+LNZ,G13,G44,STG,,
+/ Longbridge
+LOB,BTG,G02,,,
+/ Lockerbie
+LOC,CAR,CRS,,,
+/ London Fields
+LOF,G01,HAC,,,
+/ Lostock Hall
+LOH,BBN,PRE,,,
+/ Looe
+LOO,LSK,,,,
+/ Lostwithiel
+LOS,LSK,PAR,,,
+/ Lostock
+LOT,BON,PRE,,,
+/ Lowdham
+LOW,G43,G47,,,
+/ Llanfairpwll
+LPG,LLJ,,,,
+/ Long Preston
+LPR,,,,,G53
+/ Longport
+LPT,CHU,CRE,SOT,,
+/ Lapworth
+LPW,G72,G73,TYS,,
+/ Liverpool S Pway
+LPY,,,,,G70
+/ London Road Brighton
+LRB,G04,LWS,,,
+/ London Road Guildford
+LRD,EFF,GLD,,,
+/ Lairg
+LRG,DIN,,,,
+/ Larkhall
+LRH,G67,NTN,,,
+/ Liskeard (a routing point)
+LSK,,,,,
+/ Livingston North
+LSN,BLG,G11,,,
+/ London Liverpool Street
+LST,,,,,G01
+/ Leasowe
+LSW,G18,SHT,,,
+/ Lower Sydenham
+LSY,BKJ,LEW,NWX,,
+/ Lostock Gralam
+LTG,CTR,SPT,,,
+/ Llanhilleth
+LTH,CDF,,,,
+/ Little Kimble
+LTK,AYS,PRR,,,
+/ Littleborough
+LTL,ACR,G20,G39,,
+/ Lytham
+LTM,KKM,,,,
+/ Luton Airport Parkway
+LTN,BDM,WHP,,,
+/ Littleport
+LTP,ELY,,,,
+/ Lelant Saltings
+LTS,G79,,,,
+/ Little Sutton
+LTT,CTR,G31,HOO,RUN,
+/ Lichfield Trent Valley (a routing point)
+LTV,,,,,
+/ Ludlow
+LUD,CRV,HFD,,,
+/ Luton
+LUT,BDM,WHP,,,
+/ Luxulyan
+LUX,PAR,,,,
+/ Liverpool Central
+LVC,,,,,G18
+/ Livingston South
+LVG,G11,G67,,,
+/ James St Liverpool
+LVJ,,,,,G18
+/ Levenshulme
+LVM,G20,SPT,,,
+/ Littlehaven
+LVN,HRH,TBD,,,
+/ Liverpool Lnd Sg
+LVS,,,,,G18
+/ Lisvane And Thornhill
+LVT,CDF,,,,
+/ Lawrence Hill
+LWH,,,,,G05
+/ Llantwit Major
+LWM,BGN,CDF,,,
+/ Llanrwst
+LWR,LLJ,,,,
+/ Lewes (a routing point)
+LWS,,,,,
+/ Lowestoft
+LWT,IPS,NRW,,,
+/ Lympstone Commando
+LYC,G12,,,,
+/ Lydney
+LYD,G05,GCR,NWP,,
+/ Lye West Midlands
+LYE,G35,G63,,,
+/ Lympstone Village
+LYM,G12,,,,
+/ Lymington Pier
+LYP,BCU,,,,
+/ Lymington Town
+LYT,BCU,,,,
+/ Lazonby
+LZB,CAR,G53,,,
+/ Macclesfield
+MAC,CHU,SOT,,,
+/ Maghull
+MAG,G18,G34,PRE,,
+/ Maidenhead (a routing point)
+MAI,,,,,
+/ Malden Manor
+MAL,MOT,,,,
+/ Manchester Piccadilly
+MAN,,,,,G20
+/ Martins Heron
+MAO,ACT,WKM,,,
+/ Margate
+MAR,FAV,G68,,,
+/ Manors
+MAS,G11,NCL,,,
+/ Matlock
+MAT,G09,,,,
+/ Mauldeth Road
+MAU,G20,G69,,,
+/ Maxwell Park
+MAX,G13,MFL,NTN,,
+/ Maybole
+MAY,G81,,,,
+/ Millbrook Hants
+MBK,BCU,G26,,,
+/ Middlesbrough
+MBR,,,,,G42
+/ Marsh Barton
+MBT,G12,,,,
+/ Moulsecoomb
+MCB,G04,LWS,,,
+/ Metrocentre Gateshead
+MCE,CAR,NCL,,,
+/ March
+MCH,ELY,NRW,PBO,,
+/ Morecambe
+MCM,G64,,,,
+/ Machynlleth
+MCN,,,,,G41
+/ Manchester Oxford Road
+MCO,,,,,G20
+/ Manchester Victoria
+MCV,,,,,G20
+/ Maidstone Barracks
+MDB,AFK,SOO,TON,,
+/ Maidstone East
+MDE,AFK,G83,,,
+/ Midgham
+MDG,G24,G46,,,
+/ Middlewood
+MDL,HAZ,,,,
+/ Maiden Newton
+MDN,CLC,G33,,,
+/ Morden South
+MDS,SUO,WIM,,,
+/ Maidstone West
+MDW,AFK,SOO,TON,,
+/ Meols Cop
+MEC,G18,G34,,,
+/ Meldreth
+MEL,CBG,HIT,,,
+/ Menheniot
+MEN,G21,LSK,,,
+/ Meols
+MEO,G18,SHT,,,
+/ Meopham
+MEP,G07,SAY,,,
+/ Merthyr Tydfil
+MER,PPD,,,,
+/ Melton Suffolk
+MES,IPS,NRW,,,
+/ Merthyr Vale
+MEV,PPD,,,,
+/ Maesteg Ewenny Road
+MEW,BGN,,,,
+/ Mexborough
+MEX,DON,SWN,,,
+/ Merryton
+MEY,G67,NTN,,,
+/ Morfa Mawddach
+MFA,G41,,,,
+/ Minffordd
+MFF,G41,,,,
+/ Milford Haven
+MFH,WTL,,,,
+/ Mount Florida (a routing point)
+MFL,,,,,
+/ Mansfield
+MFT,G43,WRK,,,
+/ Metheringham
+MGM,LCN,SLR,,,
+/ Marston Green
+MGN,COV,G02,,,
+/ Merstham
+MHM,G08,G60,,,
+/ Market Harborough
+MHR,KET,LEI,,,
+/ Meadowhall (a routing point)
+MHS,,,,,
+/ Manchester Airport
+MIA,G20,G69,,,
+/ Micheldever
+MIC,BSK,ESL,,,
+/ Mills Hill (Manchester)
+MIH,ACR,G20,G39,,
+/ Mitcham Junction (a routing point)
+MIJ,,,,,
+/ Micklefield
+MIK,,,,,G16
+/ Mill Hill Broadway
+MIL,BDM,WHP,,,
+/ Moreton In Marsh
+MIM,BMV,G35,OXF,,
+/ Milliken Park
+MIN,KWN,PYG,,,
+/ Mirfield
+MIR,,,,,G40
+/ Mistley
+MIS,IPS,MNG,,,
+/ Milton Keynes Central (a routing point)
+MKC,,,,,
+/ Melksham
+MKM,CPM,G46,,,
+/ Market Rasen
+MKR,BTB,LCN,,,
+/ Marks Tey (a routing point)
+MKT,,,,,
+/ Millbrook (Beds)
+MLB,BDM,BLY,,,
+/ Mouldsworth
+MLD,CTR,SPT,,,
+/ Milford Surrey
+MLF,GLD,HAV,,,
+/ Mallaig
+MLG,FTW,,,,
+/ Mill Hill (Lancs)
+MLH,BBN,PRE,,,
+/ Millom
+MLM,CAR,G64,,,
+/ Milngavie
+MLN,WES,,,,
+/ Malton
+MLT,G48,YRK,,,
+/ Marlow
+MLW,MAI,,,,
+/ Morley
+MLY,G16,G40,,,
+/ Melton Mowbray (a routing point)
+MMO,,,,,
+/ Markinch
+MNC,,,,,G51
+/ Manea
+MNE,ELY,NRW,PBO,,
+/ Manningtree (a routing point)
+MNG,,,,,
+/ Menston
+MNN,G03,G16,G53,,
+/ Manor Park
+MNP,G37,G74,,,
+/ Manor Road
+MNR,G18,SHT,,,
+/ Maghull North
+MNS,G18,G34,PRE,,
+/ Mobberley
+MOB,CTR,SPT,,,
+/ Moorgate.
+MOG,,,,,G01
+/ Monifieth
+MON,ABD,DEE,,,
+/ Muir Of Ord
+MOO,DIN,INV,,,
+/ Mortimer
+MOR,BSK,G24,,,
+/ Moss Side
+MOS,KKM,,,,
+/ Motspur Park (a routing point)
+MOT,,,,,
+/ Mosspark
+MPK,G13,,,,
+/ Marple
+MPL,CLY,G20,GUI,,
+/ Morpeth
+MPT,G11,NCL,,,
+/ Manorbier
+MRB,WTL,,,,
+/ Morchard Road
+MRD,G12,,,,
+/ Moorfields
+MRF,,,,,G18
+/ Marden Kent
+MRN,AFK,TON,,,
+/ Moorthorpe
+MRP,DON,G22,G30,SWN,
+/ Morar
+MRR,FTW,,,,
+/ Monks Risborough
+MRS,AYS,PRR,,,
+/ Moreton Mersey
+MRT,G18,SHT,,,
+/ Meridian Water
+MRW,CHN,TOM,,,
+/ Maryport
+MRY,CAR,G64,,,
+/ Moorside
+MSD,BON,G34,SLD,,
+/ Mossley Hill
+MSH,G18,G70,,,
+/ Marske
+MSK,G42,,,,
+/ Mossley (Manchester)
+MSL,G40,SYB,,,
+/ Marsden (Yorks)
+MSN,G40,SYB,,,
+/ Moston
+MSO,ACR,G20,G39,,
+/ Minster
+MSR,,,,,G68
+/ Moses Gate
+MSS,BON,SLD,,,
+/ Maesteg
+MST,BGN,,,,
+/ Mansfield Woodhouse
+MSW,G43,WRK,,,
+/ Mountain Ash
+MTA,PPD,,,,
+/ Matlock Bath
+MTB,G09,,,,
+/ Mitcham Eastflds
+MTC,CLJ,G29,MIJ,,
+/ Mottingham
+MTG,DFD,HGR,SGR,,
+/ Motherwell
+MTH,,,,,G67
+/ Mortlake
+MTL,BNS,RMD,,,
+/ Martin Mill
+MTM,DVP,G68,,,
+/ Moreton Dorset
+MTN,BCU,G33,,,
+/ Marton
+MTO,G42,,,,
+/ Montpelier
+MTP,G05,,,,
+/ Montrose
+MTS,ABD,DEE,,,
+/ Mount Vernon
+MTV,G13,G44,G67,,
+/ Musselburgh
+MUB,G11,NCL,,,
+/ Muirend
+MUI,G13,MFL,,,
+/ Malvern Link
+MVL,G35,HFD,,,
+/ London Marylebone
+MYB,,,,,G01
+/ Maryhill
+MYH,G13,HYN,WES,,
+/ Maryland
+MYL,G37,G74,,,
+/ Mytholmroyd
+MYT,ACR,G20,G39,,
+/ Maze Hill
+MZH,CTN,G01,,,
+/ Nantwich
+NAN,CRE,SHR,,,
+/ Narberth
+NAR,WTL,,,,
+/ Newton Aycliffe
+NAY,DAR,,,,
+/ New Barnet
+NBA,AAP,SVG,,,
+/ New Beckenham
+NBC,BKJ,LEW,NWX,,
+/ Newbridge
+NBE,CDF,,,,
+/ New Brighton
+NBN,G18,SHT,,,
+/ Narborough
+NBR,LEI,NUN,,,
+/ Norbiton
+NBT,KNG,NEM,,,
+/ North Berwick
+NBW,G11,NCL,,,
+/ Newbury
+NBY,G24,G46,,,
+/ New Clee
+NCE,HAB,,,,
+/ New Cumnock
+NCK,CAR,KMK,,,
+/ Newcastle (a routing point)
+NCL,,,,,
+/ North Camp
+NCM,AHV,GLD,WKM,,
+/ Newcourt
+NCO,G12,,,,
+/ Newark Castle
+NCT,,,,,G47
+/ North Dulwich
+NDL,PMR,TUH,,,
+/ Newtongrange
+NEG,G11,,,,
+/ New Eltham
+NEH,DFD,HGR,SGR,,
+/ Neilston
+NEI,G13,MFL,,,
+/ Nelson
+NEL,ACR,G20,G39,,
+/ New Malden (a routing point)
+NEM,,,,,
+/ Neston
+NES,G18,SHT,,,
+/ Netherfield
+NET,G43,GRA,,,
+/ Newcraighall
+NEW,G11,NCL,,,
+/ North Fambridge
+NFA,WIC,,,,
+/ Northfield
+NFD,BTG,G02,,,
+/ Northfleet
+NFL,DFD,GRV,,,
+/ Nafferton
+NFN,G48,HUL,,,
+/ Newington
+NGT,FAV,G07,,,
+/ Nunhead (a routing point)
+NHD,,,,,
+/ New Hythe
+NHE,AFK,SOO,TON,,
+/ New Holland
+NHL,HAB,,,,
+/ Nitshill
+NIT,KMK,PWW,,,
+/ New Lane
+NLN,G18,G34,,,
+/ North Llanrwst
+NLR,LLJ,,,,
+/ Nailsea And Backwell
+NLS,G05,TAU,,,
+/ Northolt Park
+NLT,G01,SRU,,,
+/ Newton-le-willows
+NLW,,,,,G78
+/ New Mills Central
+NMC,CLY,G20,GUI,,
+/ Newmarket
+NMK,CBG,ELY,SMK,,
+/ New Mills Newtown
+NMN,HAZ,,,,
+/ Northampton (a routing point)
+NMP,,,,,
+/ Needham Market
+NMT,IPS,SMK,,,
+/ Newark North Gate
+NNG,,,,,G47
+/ Ninian Park
+NNP,CDF,,,,
+/ Nunthorpe
+NNT,G42,,,,
+/ Newton On Ayr
+NOA,G81,,,,
+/ Northumberland Park (Tyne & Wear)
+NOP,NCL,,,,
+/ Normanton
+NOR,G16,G22,G30,,
+/ Nottingham
+NOT,,,,,G43
+/ New Pudsey
+NPD,G03,G16,,,
+/ North Queensferry
+NQU,,,,,G50
+/ Newquay
+NQY,PAR,,,,
+/ Norbury
+NRB,,,,,G29
+/ Newbury Racecourse
+NRC,G24,G46,,,
+/ North Road
+NRD,DAR,,,,
+/ Nairn
+NRN,ABD,INV,,,
+/ Nethertown
+NRT,CAR,G64,,,
+/ Norwich (a routing point)
+NRW,,,,,
+/ Normans Bay
+NSB,G15,G84,,,
+/ Newstead
+NSD,G43,WRK,,,
+/ New Southgate
+NSG,AAP,SVG,,,
+/ North Sheen
+NSH,BNS,RMD,,,
+/ Newton Abbot (a routing point)
+NTA,,,,,
+/ Newton St Cyres
+NTC,G12,,,,
+/ Neath
+NTH,BGN,G38,,,
+/ Netley
+NTL,G23,G26,,,
+/ Newton Lanark (a routing point)
+NTN,,,,,
+/ Northallerton (a routing point)
+NTR,,,,,
+/ Nutfield
+NUF,G60,TON,,,
+/ Northumberland Park
+NUM,CHN,TOM,,,
+/ Nuneaton (a routing point)
+NUN,,,,,
+/ Nutbourne
+NUT,G61,HAV,,,
+/ Newhaven Harbour
+NVH,LWS,,,,
+/ Newhaven Town
+NVN,LWS,,,,
+/ Navigation Road
+NVR,CTR,SPT,,,
+/ North Walsham
+NWA,NRW,,,,
+/ North Wembley
+NWB,WFJ,WIJ,,,
+/ Norwood Junction
+NWD,CYP,G01,G08,NXG,
+/ Newport Essex
+NWE,CBG,G66,,,
+/ Newsham
+NWH,NCL,,,,
+/ Northwich
+NWI,CTR,SPT,,,
+/ New Milton
+NWM,BCU,G33,,,
+/ Newton For Hyde
+NWN,GUI,,,,
+/ Newport S.wales (a routing point)
+NWP,,,,,
+/ Newtonmore
+NWR,INV,PTH,,,
+/ Newtown (Powys)
+NWT,G41,SHR,,,
+/ New Cross (a routing point)
+NWX,,,,,
+/ New Cross Gate (a routing point)
+NXG,,,,,
+/ Oban
+OBN,CNR,,,,
+/ Ockendon
+OCK,GRY,UPM,,,
+/ Old Hill
+OHL,G35,G63,,,
+/ Okehampton
+OKE,G12,,,,
+/ Oakleigh Park
+OKL,AAP,SVG,,,
+/ Oakham (a routing point)
+OKM,,,,,
+/ Oakengates
+OKN,SHR,WVH,,,
+/ Old Street.
+OLD,,,,,G01
+/ Oldfield Park
+OLF,BTH,G05,,,
+/ Olton
+OLT,G72,G73,TYS,,
+/ Ockley
+OLY,G10,HRH,,,
+/ Ormskirk
+OMS,G18,G34,PRE,,
+/ Orrell Park
+OPK,G18,G34,PRE,,
+/ Ore
+ORE,AFK,G15,,,
+/ Old Roan
+ORN,G18,G34,PRE,,
+/ Orpington
+ORP,,,,,G85
+/ Orrell
+ORR,G18,G34,PRE,,
+/ Otford
+OTF,,,,,G83
+/ Oulton Broad North
+OUN,IPS,NRW,,,
+/ Oulton Broad South
+OUS,IPS,NRW,,,
+/ Outwood
+OUT,G16,G30,,,
+/ Overpool
+OVE,CTR,G31,HOO,RUN,
+/ Overton
+OVR,BSK,SAL,,,
+/ Oxford (a routing point)
+OXF,,,,,
+/ Oxenholme Lake District (a routing point)
+OXN,,,,,
+/ Oxford Parkway
+OXP,OXF,PRR,,,
+/ Oxshott
+OXS,EFF,SUR,,,
+/ Oxted
+OXT,G08,,,,
+/ London Paddington
+PAD,,,,,G01
+/ Palmers Green
+PAL,AAP,SVG,,,
+/ Pangbourne
+PAN,DID,G24,,,
+/ Par (a routing point)
+PAR,,,,,
+/ Patricroft
+PAT,BON,G20,G34,G78,
+/ Parbold
+PBL,G18,G34,,,
+/ Peterborough. (a routing point)
+PBO,,,,,
+/ Potters Bar
+PBR,AAP,SVG,,,
+/ Pembrey And Burry Port
+PBY,G38,WTL,,,
+/ Pencoed
+PCD,BGN,CDF,,,
+/ Paisley Canal
+PCN,G13,,,,
+/ Padgate
+PDG,G20,G31,,,
+/ Paddock Wood
+PDW,AFK,SOO,TON,,
+/ Peartree
+PEA,G09,SOT,,,
+/ Pevensey Bay
+PEB,G15,G84,,,
+/ Pegswood
+PEG,G11,NCL,,,
+/ Pemberton
+PEM,G18,G34,PRE,,
+/ Penarth
+PEN,BGN,CDF,,,
+/ Penrhiwceiber
+PER,PPD,,,,
+/ Pensarn
+PES,G41,,,,
+/ Petts Wood
+PET,,,,,G85
+/ Pevensey And Westham
+PEV,G15,G84,,,
+/ Pewsey
+PEW,G24,G46,,,
+/ Purfleet
+PFL,BKG,GRY,,,
+/ Pontefract Monkhill
+PFM,,,,,G22
+/ Pontefract Baghill
+PFR,,,,,G22
+/ Poulton Le Fylde
+PFY,KKM,,,,
+/ Pengam
+PGM,CDF,,,,
+/ Paignton
+PGN,NTA,,,,
+/ Penhelig
+PHG,G41,,,,
+/ Penshurst
+PHR,G60,TON,,,
+/ Pilning
+PIL,G05,GCR,NWP,,
+/ Pinhoe
+PIN,G12,SAL,,,
+/ Pitlochry
+PIT,INV,PTH,,,
+/ Penkridge
+PKG,STA,WVH,,,
+/ Parkstone Dorset
+PKS,BCU,G33,,,
+/ Park Street
+PKT,WFJ,,,,
+/ Pluckley
+PLC,AFK,TON,,,
+/ Portslade
+PLD,G04,G61,,,
+/ Pollokshields East
+PLE,G13,MFL,,,
+/ Polegate
+PLG,G84,LWS,,,
+/ Plockton
+PLK,DIN,,,,
+/ Plumley
+PLM,CTR,G20,SPT,,
+/ Portlethen
+PLN,ABD,DEE,,,
+/ Pleasington
+PLS,BBN,PRE,,,
+/ Pontlottyn
+PLT,CDF,,,,
+/ Plumstead
+PLU,CTN,SGR,,,
+/ Pollokshields West
+PLW,G13,MFL,NTN,,
+/ Plymouth
+PLY,,,,,G21
+/ Portsmouth Arms
+PMA,G12,,,,
+/ Pembroke
+PMB,WTL,,,,
+/ Pembroke Dock
+PMD,WTL,,,,
+/ Portsmouth Harbour
+PMH,,,,,G23
+/ Plumpton
+PMP,LWS,WVF,,,
+/ Peckham Rye (a routing point)
+PMR,,,,,
+/ Portsmouth And Southsea
+PMS,,,,,G23
+/ Polmont
+PMT,G11,G44,,,
+/ Penmaenmawr
+PMW,LLJ,,,,
+/ Penally
+PNA,WTL,,,,
+/ Penychain
+PNC,G41,,,,
+/ Penge East
+PNE,BKJ,HNH,,,
+/ Penyffordd
+PNF,G49,SHT,,,
+/ Pannal
+PNL,G16,YRK,,,
+/ Penmere
+PNM,TRU,,,,
+/ Penrith
+PNR,CAR,OXN,,,
+/ Penistone
+PNS,BNY,G40,,,
+/ Penge West
+PNW,CYP,G01,G08,NXG,
+/ Pen Y Bont
+PNY,CRV,G38,,,
+/ Penzance
+PNZ,,,,,G79
+/ Portishead
+POH,G05,,,,
+/ Pokesdown
+POK,BCU,G33,,,
+/ Polsloe Bridge
+POL,G12,,,,
+/ Ponders End
+PON,CHN,TOM,,,
+/ Poole
+POO,BCU,G33,,,
+/ Poppleton
+POP,G16,YRK,,,
+/ Porth
+POR,PPD,,,,
+/ Pontefract Tanshelf
+POT,,,,,G22
+/ Pontypridd (a routing point)
+PPD,,,,,
+/ Possilpark
+PPK,G13,HYN,WES,,
+/ Pontypool And New Inn
+PPL,HFD,NWP,,,
+/ Prestwick Intl Airport
+PRA,,,,,G81
+/ Prestbury
+PRB,CHU,SOT,,,
+/ Preston (Lancs) (a routing point)
+PRE,,,,,
+/ Penrhyndeudraeth
+PRH,G41,,,,
+/ Portway Park And Ride
+PRI,G05,,,,
+/ Prittlewell
+PRL,WIC,,,,
+/ Parton
+PRN,CAR,G64,,,
+/ Preston Park
+PRP,G04,WVF,,,
+/ Princes Risborough (a routing point)
+PRR,,,,,
+/ Prees
+PRS,CRE,SHR,,,
+/ Prestatyn
+PRT,LLJ,SHT,,,
+/ Prudhoe
+PRU,CAR,NCL,,,
+/ Perranwell
+PRW,TRU,,,,
+/ Perry Barr
+PRY,G02,G59,,,
+/ Prescot
+PSC,G34,HUY,,,
+/ Pitsea (a routing point)
+PSE,,,,,
+/ Pershore
+PSH,BMV,G35,OXF,,
+/ Port Sunlight
+PSL,G18,HOO,,,
+/ Parson Street
+PSN,G05,TAU,,,
+/ Prestonpans
+PST,G11,NCL,,,
+/ Polesworth
+PSW,NUN,TAM,,,
+/ Port Talbot Parkway
+PTA,BGN,G38,,,
+/ Pentre Bach
+PTB,PPD,,,,
+/ Portchester
+PTC,,,,,G23
+/ Pontarddulais
+PTD,CRV,G38,,,
+/ Pantyffynnon
+PTF,CRV,G38,,,
+/ Port Glasgow (a routing point)
+PTG,,,,,
+/ Perth (a routing point)
+PTH,,,,,
+/ Partick (a routing point)
+PTK,,,,,
+/ Priesthill And Darnley
+PTL,KMK,PWW,,,
+/ Porthmadog
+PTM,G41,,,,
+/ Petersfield
+PTR,GLD,HAV,,,
+/ Patterton
+PTT,G13,MFL,,,
+/ Prestwick (Strathclyde)
+PTW,,,,,G81
+/ Pulborough
+PUL,G61,HRH,,,
+/ Purley Oaks
+PUO,G08,G60,,,
+/ Purley
+PUR,G08,G60,,,
+/ Putney
+PUT,BNS,CLJ,,,
+/ Pollokshaws East
+PWE,G13,MFL,NTN,,
+/ Pwllheli
+PWL,G41,,,,
+/ Pollokshaws West (a routing point)
+PWW,,,,,
+/ Patchway
+PWY,G05,GCR,NWP,,
+/ Pontyclun
+PYC,BGN,CDF,,,
+/ Pye Corner
+PYE,CDF,,,,
+/ Paisley Gilmour Street (a routing point)
+PYG,,,,,
+/ Paisley St James
+PYJ,PTG,PYG,,,
+/ Pyle
+PYL,BGN,G38,,,
+/ Penryn Cornwall
+PYN,TRU,,,,
+/ Pont Y Pant
+PYP,LLJ,,,,
+/ Poynton
+PYT,CHU,SOT,,,
+/ Queenborough
+QBR,FAV,G07,,,
+/ Queens Park (Glasgow)
+QPK,G13,MFL,,,
+/ Queens Park (London)
+QPW,G01,WIJ,,,
+/ Queenstown Road (Battersea)
+QRB,CLJ,G01,,,
+/ Queens Road (Peckham)
+QRP,G01,PMR,,,
+/ Quintrell Downs
+QUI,PAR,,,,
+/ Quakers Yard
+QYD,PPD,,,,
+/ Radley
+RAD,DID,OXF,,,
+/ Rainham Kent
+RAI,FAV,G07,,,
+/ Ramsgate
+RAM,,,,,G68
+/ Rannoch
+RAN,CNR,FTW,,,
+/ Rauceby
+RAU,GRA,SLR,,,
+/ Ravenglass
+RAV,CAR,G64,,,
+/ Raynes Park (a routing point)
+RAY,,,,,
+/ Robertsbridge
+RBR,G15,TON,,,
+/ Risca Pontymistr
+RCA,CDF,,,,
+/ Redcar Central
+RCC,G42,,,,
+/ Rochdale
+RCD,ACR,G20,G39,,
+/ Redcar East
+RCE,G42,,,,
+/ Redland
+RDA,G05,,,,
+/ Redbridge (Hants)
+RDB,BCU,G26,,,
+/ Redditch
+RDC,BTG,,,,
+/ Riddlesdown
+RDD,G08,,,,
+/ Radcliffe On Trent
+RDF,G43,GRA,,,
+/ Reading
+RDG,,,,,G24
+/ Redhill
+RDH,,,,,G60
+/ Riding Mill
+RDM,CAR,NCL,,,
+/ Reddish North
+RDN,CLY,G20,GUI,,
+/ Radyr
+RDR,CDF,PPD,,,
+/ Reddish South
+RDS,GUI,SPT,,,
+/ Radlett
+RDT,BDM,WHP,,,
+/ Reading West
+RDW,,,,,G24
+/ Rectory Road
+REC,HAC,SVS,,,
+/ Redruth
+RED,G79,TRU,,,
+/ Reedham Norfolk
+REE,IPS,NRW,,,
+/ Reigate
+REI,G10,G60,,,
+/ Retford (a routing point)
+RET,,,,,
+/ Rochford
+RFD,WIC,,,,
+/ Rock Ferry
+RFY,G18,HOO,,,
+/ Rugeley Trent Valley (a routing point)
+RGL,,,,,
+/ Reading Green Park
+RGP,BSK,G24,,,
+/ Rugeley Town
+RGT,G59,RGL,,,
+/ Ramsgreave And Wilpshire
+RGW,BBN,G53,,,
+/ Ribblehead
+RHD,CAR,G53,,,
+/ Rhiwbina
+RHI,CDF,,,,
+/ Rhyl
+RHL,LLJ,SHT,,,
+/ Reedham London
+RHM,G08,G60,,,
+/ Rhosneigr
+RHO,LLJ,,,,
+/ Rhymney
+RHY,CDF,,,,
+/ Rhoose (Cdf Air)
+RIA,BGN,CDF,,,
+/ Rickmanswrth Und
+RIC,AYS,G01,,,
+/ Ridgmont
+RID,BDM,BLY,,,
+/ Rice Lane
+RIL,G18,G34,PRE,,
+/ Rishton
+RIS,ACR,BBN,,,
+/ Ruskington
+RKT,LCN,SLR,,,
+/ Rayleigh
+RLG,WIC,,,,
+/ Rowlands Castle
+RLN,GLD,HAV,,,
+/ Roman Bridge
+RMB,LLJ,,,,
+/ Rotherham Central
+RMC,MHS,SWN,,,
+/ Richmond London (a routing point)
+RMD,,,,,
+/ Romford
+RMF,,,,,G37
+/ Romiley
+RML,CLY,G20,GUI,,
+/ Rainford
+RNF,G18,G34,PRE,,
+/ Rainhill
+RNH,G78,HUY,,,
+/ Rainham Essex
+RNM,BKG,GRY,,,
+/ Roughton Road
+RNR,NRW,,,,
+/ Roby
+ROB,G18,HUY,,,
+/ Roche
+ROC,PAR,,,,
+/ Rotherhithe
+ROE,HHY,SQE,,,
+/ Rogart
+ROG,DIN,,,,
+/ Rolleston
+ROL,G43,G47,,,
+/ Romsey
+ROM,ESL,G26,SAL,,
+/ Roose
+ROO,CAR,G64,,,
+/ Rogerstone
+ROR,CDF,,,,
+/ Rosyth
+ROS,G50,G51,,,
+/ Rowley Regis
+ROW,G35,G63,,,
+/ Ryder Brow
+RRB,CLY,G20,GUI,,
+/ Robroyston
+RRN,G44,SPR,,,
+/ Rose Grove
+RSG,ACR,G20,G39,,
+/ Rose Hill
+RSH,CLY,G20,GUI,,
+/ Reston
+RSN,G11,NCL,,,
+/ Renton
+RTN,G80,,,,
+/ Rochester
+RTR,,,,,G07
+/ Ruabon
+RUA,G49,SHR,,,
+/ Runcorn East
+RUE,CTR,G31,,,
+/ Rufford
+RUF,G18,G34,PRE,,
+/ Rugby (a routing point)
+RUG,,,,,
+/ Runcorn (a routing point)
+RUN,,,,,
+/ Ruswarp
+RUS,G42,,,,
+/ Rutherglen
+RUT,G13,NTN,,,
+/ Ravensbourne
+RVB,NHD,SRT,,,
+/ Ravensthorpe
+RVN,G16,G40,,,
+/ Rawcliffe
+RWC,G22,GOO,,,
+/ Roy Bridge
+RYB,CNR,FTW,,,
+/ Ryde Esplanade
+RYD,G23,,,,
+/ Rye  Sussex
+RYE,AFK,G15,,,
+/ Rye House
+RYH,CHN,G66,,,
+/ Roydon Essex
+RYN,CHN,G66,,,
+/ Ryde Pier Head
+RYP,G23,,,,
+/ Ryde St Johns Rd
+RYR,G23,,,,
+/ Royston (Herts)
+RYS,CBG,HIT,,,
+/ St Albans Abbey
+SAA,WFJ,,,,
+/ Smallbrook Jn
+SAB,G23,,,,
+/ St Albans City
+SAC,BDM,WHP,,,
+/ Sandwell And Dudley
+SAD,G63,WVH,,,
+/ Saltaire
+SAE,G03,G16,G53,,
+/ Salfords Surrey
+SAF,G60,GTW,,,
+/ Salhouse
+SAH,NRW,,,,
+/ St Johns
+SAJ,HGR,LEW,NWX,,
+/ Salisbury (a routing point)
+SAL,,,,,
+/ Saltmarshe
+SAM,GBD,GOO,,,
+/ Sandown
+SAN,G23,,,,
+/ St Andrews Road
+SAR,G05,,,,
+/ St Annes On Sea
+SAS,KKM,,,,
+/ South Acton
+SAT,RMD,WIJ,,,
+/ St Austell
+SAU,PAR,TRU,,,
+/ Stratford Upon Avon
+SAV,,,,,G72
+/ Sawbridgeworth
+SAW,CHN,G66,,,
+/ Saxmundham
+SAX,IPS,NRW,,,
+/ Swanley (a routing point)
+SAY,,,,,
+/ Starbeck
+SBE,G16,YRK,,,
+/ St Budeaux Ferry Road
+SBF,G21,LSK,,,
+/ Stourbridge Junction
+SBJ,G35,G63,,,
+/ South Bank
+SBK,G42,,,,
+/ South Bermondsey
+SBM,G01,PMR,,,
+/ Stonebridge Park
+SBP,WFJ,WIJ,,,
+/ Spean Bridge
+SBR,CNR,FTW,,,
+/ St Bees
+SBS,CAR,G64,,,
+/ Stourbridge Town
+SBT,G35,G63,,,
+/ Southbury
+SBU,CHN,SVS,,,
+/ St Budeaux Victoria Road
+SBV,G21,,,,
+/ Selby (a routing point)
+SBY,,,,,
+/ Scarborough
+SCA,,,,,G48
+/ Stechford
+SCF,COV,G02,,,
+/ Stone Crossing
+SCG,DFD,GRV,,,
+/ Scotstounhill
+SCH,DMR,HYN,,,
+/ St Columb Road
+SCR,PAR,,,,
+/ Starcross
+SCS,G12,NTA,,,
+/ Scotscalder
+SCT,DIN,,,,
+/ Scunthorpe
+SCU,BTB,DON,,,
+/ South Croydon
+SCY,,,,,G08
+/ Snodland
+SDA,AFK,SOO,TON,,
+/ Sandbach
+SDB,CRE,G69,,,
+/ Shoreditch High Street
+SDC,HHY,SQE,,,
+/ Shadwell
+SDE,HHY,SQE,,,
+/ Saundersfoot
+SDF,WTL,,,,
+/ Sandling
+SDG,AFK,DVP,,,
+/ Sudbury Hill
+SDH,G01,SRU,,,
+/ Sandhills
+SDL,,,,,G18
+/ Shieldmuir
+SDM,CRS,G67,,,
+/ St Denys
+SDN,,,,,G26
+/ Sandplace
+SDP,LSK,,,,
+/ Saunderton
+SDR,PRR,SRU,,,
+/ Sandwich
+SDW,DVP,G68,,,
+/ Sandy
+SDY,HIT,PBO,,,
+/ Seaham
+SEA,G42,NCL,,,
+/ Seaburn
+SEB,G42,NCL,,,
+/ Seaton Carew
+SEC,G42,NCL,,,
+/ Shelford Cambs
+SED,CBG,G66,,,
+/ Southease
+SEE,LWS,,,,
+/ Seaford Sussex
+SEF,LWS,,,,
+/ Selling
+SEG,AFK,DVP,FAV,G68,
+/ Shoreham Kent
+SEH,G83,SAY,,,
+/ Seaton Delaval
+SEJ,NCL,,,,
+/ Sellafield
+SEL,CAR,G64,,,
+/ Seamer
+SEM,,,,,G48
+/ Shenstone
+SEN,G02,LTV,,,
+/ St Erth
+SER,,,,,G79
+/ South Elmsall
+SES,DON,G22,G30,SWN,
+/ Settle
+SET,CAR,G53,,,
+/ Sevenoaks (a routing point)
+SEV,,,,,
+/ Stratford International
+SFA,,,,,G74
+/ Salford Central
+SFD,,,,,G20
+/ Shawfair
+SFI,G11,,,,
+/ Seaforth And Litherland
+SFL,G18,G34,,,
+/ Shifnal
+SFN,SHR,WVH,,,
+/ Stanford Le Hope
+SFO,GRY,PSE,,,
+/ Shalford Surrey
+SFR,G10,GLD,,,
+/ Smethwick Galton Bridge
+SGB,,,,,G63
+/ South Gyle
+SGL,,,,,G11
+/ St Germans
+SGM,G21,LSK,,,
+/ South Greenford
+SGN,G77,,,,
+/ Slade Green (a routing point)
+SGR,,,,,
+/ Shirebrook
+SHB,G43,WRK,,,
+/ Streethouse
+SHC,G22,G30,,,
+/ Shildon
+SHD,DAR,,,,
+/ Sherborne
+SHE,G12,SAL,,,
+/ Sheffield (a routing point)
+SHF,,,,,
+/ Shirehampton
+SHH,G05,,,,
+/ Shiplake
+SHI,TWY,,,,
+/ St Helens Junction
+SHJ,G78,HUY,,,
+/ Shawlands
+SHL,G13,MFL,NTN,,
+/ Sheringham
+SHM,NRW,,,,
+/ Shanklin
+SHN,G23,,,,
+/ Sholing
+SHO,G23,G26,,,
+/ Shepperton
+SHP,KNG,TWI,,,
+/ Shrewsbury (a routing point)
+SHR,,,,,
+/ Shotts
+SHS,G11,G67,,,
+/ Shotton (a routing point)
+SHT,,,,,
+/ Stonehouse
+SHU,CNM,GCR,SWI,,
+/ Southsea Hoverpt
+SHV,G23,,,,
+/ Shawford
+SHW,BSK,ESL,,,
+/ Shipley (Yorks)
+SHY,G03,G16,G53,,
+/ Southend International Airport
+SIA,WIC,,,,
+/ Silecroft
+SIC,CAR,G64,,,
+/ Sidcup
+SID,DFD,HGR,SGR,,
+/ Sherburn In Elmet
+SIE,G16,G22,SBY,YRK,
+/ St Helier (Surrey)
+SIH,SUO,WIM,,,
+/ Sileby
+SIL,LBO,LEI,MMO,,
+/ Singer
+SIN,DMR,WES,,,
+/ Shipton
+SIP,G35,OXF,,,
+/ Sittingbourne
+SIT,FAV,G07,,,
+/ St Ives Cornwall
+SIV,G79,,,,
+/ St James Park Exeter
+SJP,,,,,G12
+/ St James St Walthamstow
+SJS,HAC,TOM,WHC,,
+/ Skewen
+SKE,BGN,G38,,,
+/ Skegness
+SKG,SLR,,,,
+/ Skipton
+SKI,G03,G16,G53,,
+/ Stoke Mandeville
+SKM,AYS,G01,,,
+/ St Keyne
+SKN,LSK,,,,
+/ Stocksfield
+SKS,CAR,NCL,,,
+/ Stoke Newington
+SKW,HAC,SVS,,,
+/ Slateford
+SLA,G11,G67,,,
+/ Saltburn
+SLB,G42,,,,
+/ Salford Crescent (a routing point)
+SLD,,,,,
+/ Sleights
+SLH,G42,,,,
+/ Silkstone Common
+SLK,BNY,G40,,,
+/ Stallingborough
+SLL,HAB,,,,
+/ Slough (a routing point)
+SLO,,,,,
+/ St Leonards Warrior Square
+SLQ,,,,,G15
+/ Sleaford (a routing point)
+SLR,,,,,
+/ Shettleston
+SLS,BLG,G11,,,
+/ Saltcoats
+SLT,KWN,,,,
+/ Silver Street
+SLV,CHN,SVS,,,
+/ Salwick
+SLW,KKM,PRE,,,
+/ Selly Oak
+SLY,BTG,G02,,,
+/ Small Heath
+SMA,G02,TYS,,,
+/ Smithy Bridge
+SMB,ACR,G20,G39,,
+/ Stamford (Lincs)
+SMD,OKM,PBO,,,
+/ St Margarets (London)
+SMG,RMD,TWI,,,
+/ Stamford Hill
+SMH,HAC,SVS,,,
+/ Stowmarket (a routing point)
+SMK,,,,,
+/ Sea Mills
+SML,G05,,,,
+/ Southminster
+SMN,WIC,,,,
+/ South Merton
+SMO,SUO,WIM,,,
+/ Smethwick Rolfe Street
+SMR,,,,,G63
+/ St Margarets (Herts)
+SMT,CHN,G66,,,
+/ St Mary Cray
+SMY,G06,GRP,SAY,,
+/ Sandal And Agbrigg
+SNA,DON,G22,G30,SWN,
+/ Sandhurst (Berks)
+SND,GLD,WKM,,,
+/ Stone (Staffs)
+SNE,RGL,SOT,STA,,
+/ Shenfield (a routing point)
+SNF,,,,,
+/ Sunningdale
+SNG,ACT,SNS,SUR,WOK,
+/ St Helens Central
+SNH,G34,HUY,,,
+/ Snaith
+SNI,G22,GOO,,,
+/ Sankey
+SNK,G31,G70,,,
+/ Stoneleigh
+SNL,EPS,MOT,,,
+/ Swinton (Manchester)
+SNN,BON,G34,SLD,,
+/ St Neots
+SNO,HIT,PBO,,,
+/ Sanderstead
+SNR,G08,,,,
+/ Staines (a routing point)
+SNS,,,,,
+/ Stanlow And Thornton
+SNT,CTR,G31,HOO,RUN,
+/ Swanwick
+SNW,G23,G26,,,
+/ Sunnymeads
+SNY,SLO,SNS,,,
+/ Southampton Airport
+SOA,,,,,G26
+/ Southbourne
+SOB,G61,HAV,,,
+/ Southend Central
+SOC,PSE,,,,
+/ Southend East
+SOE,PSE,,,,
+/ South Woodham Ferrers
+SOF,WIC,,,,
+/ Stonegate
+SOG,G15,TON,,,
+/ South Hampstead
+SOH,G01,WIJ,,,
+/ Stow
+SOI,G11,,,,
+/ Soham
+SOJ,ELY,SMK,,,
+/ South Kenton
+SOK,WFJ,WIJ,,,
+/ Solihull
+SOL,G72,G73,TYS,,
+/ South Milford
+SOM,G16,SBY,,,
+/ Steeton And Silsden
+SON,G03,G16,G53,,
+/ Strood Kent (a routing point)
+SOO,,,,,
+/ Southport
+SOP,G18,G34,,,
+/ Sole Street
+SOR,G07,SAY,,,
+/ Stoke On Trent (a routing point)
+SOT,,,,,
+/ Southampton Central
+SOU,,,,,G26
+/ Southend Victoria
+SOV,WIC,,,,
+/ Sowerby Bridge
+SOW,,,,,G39
+/ Spalding
+SPA,PBO,SLR,,,
+/ Shepherds Bush
+SPB,CLJ,G75,WFJ,WIJ,
+/ Springfield
+SPF,DEE,LDY,,,
+/ Shepherds Well
+SPH,AFK,DVP,FAV,G68,
+/ Spital
+SPI,G18,HOO,,,
+/ Sutton Parkway
+SPK,G43,WRK,,,
+/ Spooner Row
+SPN,ELY,NRW,PBO,,
+/ Spondon
+SPO,,,,,G09
+/ Shippea Hill
+SPP,ELY,NRW,PBO,,
+/ Springburn (a routing point)
+SPR,,,,,
+/ Stepps
+SPS,G44,G67,SPR,,
+/ Stockport (a routing point)
+SPT,,,,,
+/ Staplehurst
+SPU,AFK,TON,,,
+/ Shepley
+SPY,BNY,G40,,,
+/ Surrey Quays (a routing point)
+SQE,,,,,
+/ Sanquhar
+SQH,CAR,KMK,,,
+/ Squires Gate
+SQU,KKM,,,,
+/ Stratford London
+SRA,,,,,G74
+/ Streatham Common
+SRC,,,,,G29
+/ Stapleton Road
+SRD,,,,,G05
+/ Seer Green
+SRG,PRR,SRU,,,
+/ Streatham Hill
+SRH,,,,,G29
+/ Spring Road
+SRI,G72,TYS,,,
+/ Shirley (West Midlands)
+SRL,G72,TYS,,,
+/ Strines
+SRN,CLY,G20,GUI,,
+/ Shireoaks
+SRO,SHF,WRK,,,
+/ Sarn
+SRR,BGN,,,,
+/ Selhurst
+SRS,,,,,G29
+/ Shortlands (a routing point)
+SRT,,,,,
+/ South Ruislip (a routing point)
+SRU,,,,,
+/ Shoeburyness
+SRY,PSE,,,,
+/ Seascale
+SSC,CAR,G64,,,
+/ Stansted Airport
+SSD,,,,,G66
+/ Shoreham By Sea
+SSE,G04,G61,,,
+/ Stocksmoor
+SSM,BNY,G40,,,
+/ Sheerness On Sea
+SSS,FAV,G07,,,
+/ Stansted Mountfitchet
+SST,,,,,G66
+/ Stafford (a routing point)
+STA,,,,,
+/ Strathcarron
+STC,DIN,,,,
+/ Stroud (Glos)
+STD,CNM,GCR,SWI,,
+/ Streatham
+STE,,,,,G29
+/ Stromeferry
+STF,DIN,,,,
+/ Stirling. (a routing point)
+STG,,,,,
+/ Shepreth
+STH,CBG,HIT,,,
+/ Severn Tunnel Junction
+STJ,G05,GCR,NWP,,
+/ Stockton
+STK,G42,NCL,,,
+/ Southall
+STL,,,,,G75
+/ St Michaels
+STM,G18,G70,,,
+/ Stonehaven
+STN,ABD,DEE,,,
+/ South Tottenham
+STO,BKG,GPO,,,
+/ London St Pancras
+STP,,,,,G01
+/ Stranraer
+STR,G81,,,,
+/ Saltash
+STS,G21,LSK,,,
+/ Stewarton
+STT,KMK,PWW,,,
+/ Sturry
+STU,AFK,DVP,FAV,G68,
+/ Stevenston
+STV,KWN,,,,
+/ Strawberry Hill
+STW,KNG,TWI,,,
+/ Stratford-upon-avon Parkway
+STY,,,,,G72
+/ Sutton Common
+SUC,SUO,WIM,,,
+/ Sudbury And Harrow Road
+SUD,G01,SRU,,,
+/ Sugar Loaf Halt
+SUG,CRV,G38,,,
+/ Summerston
+SUM,G13,HYN,WES,,
+/ Sunderland
+SUN,G42,NCL,,,
+/ Sutton London (a routing point)
+SUO,,,,,
+/ Sundridge Park
+SUP,GRP,,,,
+/ Surbiton (a routing point)
+SUR,,,,,
+/ Sutton Coldfield
+SUT,G02,LTV,,,
+/ Sunbury
+SUU,KNG,TWI,,,
+/ Sudbury Suffolk
+SUY,MKT,,,,
+/ Severn Beach
+SVB,G05,,,,
+/ Stevenage (a routing point)
+SVG,,,,,
+/ Seven Kings
+SVK,G37,G74,,,
+/ Staveley
+SVL,OXN,,,,
+/ Silverdale
+SVR,CAR,G64,,,
+/ Seven Sisters (a routing point)
+SVS,,,,,
+/ Swansea
+SWA,,,,,G38
+/ Swinderby
+SWD,G47,LCN,,,
+/ Swineshead
+SWE,SLR,,,,
+/ Swaythling
+SWG,,,,,G26
+/ Swindon (Wilts) (a routing point)
+SWI,,,,,
+/ Southwick
+SWK,G04,G61,,,
+/ Swale
+SWL,FAV,G07,,,
+/ Swanscombe
+SWM,DFD,GRV,,,
+/ Swinton (South Yorks) (a routing point)
+SWN,,,,,
+/ Snowdown
+SWO,AFK,DVP,FAV,G68,
+/ Stewartby
+SWR,BDM,BLY,,,
+/ South Wigston
+SWS,LEI,NUN,,,
+/ Slaithwaite
+SWT,G40,SYB,,,
+/ Sway
+SWY,BCU,G33,,,
+/ Saxilby
+SXY,BTB,DON,LCN,RET,
+/ Styal
+SYA,,,,,G69
+/ Stalybridge (a routing point)
+SYB,,,,,
+/ Sydenham London
+SYD,CYP,G01,G08,NXG,
+/ Sydenham Hill
+SYH,BKJ,HNH,,,
+/ Syon Lane
+SYL,BNS,HOU,,,
+/ Syston
+SYS,LBO,LEI,,,
+/ Somerleyton
+SYT,IPS,NRW,,,
+/ Tame Bridge Parkway
+TAB,G02,G59,,,
+/ Tackley
+TAC,G58,OXF,,,
+/ Tadworth
+TAD,G08,G60,,,
+/ Taffs Well
+TAF,CDF,PPD,,,
+/ Tain
+TAI,DIN,,,,
+/ Talsarnau
+TAL,G41,,,,
+/ Tamworth (a routing point)
+TAM,,,,,
+/ Taplow
+TAP,MAI,SLO,,,
+/ Tattenham Corner
+TAT,G08,G60,,,
+/ Taunton (a routing point)
+TAU,,,,,
+/ Taynuilt
+TAY,CNR,,,,
+/ Three Bridges (a routing point)
+TBD,,,,,
+/ Tilbury River
+TBR,GRY,PSE,,,
+/ Tunbridge Wells
+TBW,G15,TON,,,
+/ Thornaby
+TBY,,,,,G42
+/ Tondu
+TDU,BGN,,,,
+/ Teesside Airport
+TEA,DAR,G42,,,
+/ Teddington
+TED,KNG,TWI,,,
+/ Tenby
+TEN,WTL,,,,
+/ Theobalds Grove
+TEO,CHN,SVS,,,
+/ Teynham
+TEY,FAV,G07,,,
+/ Telford
+TFC,SHR,WVH,,,
+/ Teignmouth
+TGM,G12,NTA,,,
+/ Ty Glas
+TGS,CDF,,,,
+/ Thatcham
+THA,G24,G46,,,
+/ Thornliebank
+THB,PWW,,,,
+/ Thurnscoe
+THC,DON,G22,G30,SWN,
+/ Thames Ditton
+THD,SUR,,,,
+/ Theale
+THE,G24,G46,,,
+/ Thatto Heath
+THH,G34,HUY,,,
+/ Thirsk
+THI,NTR,YRK,,,
+/ Tile Hill
+THL,COV,G02,,,
+/ Thornford
+THO,CLC,G33,,,
+/ Thanet Parkway
+THP,,,,,G68
+/ Thurso
+THS,DIN,,,,
+/ Thorntonhall
+THT,PWW,,,,
+/ Thurgarton
+THU,G43,G47,,,
+/ The Hawthorns
+THW,G02,G63,,,
+/ Tilbury Town
+TIL,GRY,PSE,,,
+/ Tipton
+TIP,G63,WVH,,,
+/ Tir Phil
+TIR,CDF,,,,
+/ Tisbury
+TIS,G12,SAL,,,
+/ Talybont
+TLB,G41,,,,
+/ Tal Y Cafn
+TLC,LLJ,,,,
+/ Tilehurst
+TLH,DID,G24,,,
+/ The Lakes
+TLK,G72,TYS,,,
+/ Thorpe Le Soken
+TLS,COL,,,,
+/ Templecombe
+TMC,G12,SAL,,,
+/ Thornton Abbey
+TNA,HAB,,,,
+/ Tonfanau
+TNF,G41,,,,
+/ Thorne North
+TNN,BTB,DON,GOO,,
+/ Tonypandy
+TNP,PPD,,,,
+/ Thorne South
+TNS,BTB,DON,GOO,,
+/ Todmorden
+TOD,ACR,G20,G39,,
+/ Three Oaks
+TOK,AFK,G15,,,
+/ Tolworth
+TOL,MOT,,,,
+/ Tottenham Hale (a routing point)
+TOM,,,,,
+/ Tonbridge (a routing point)
+TON,,,,,
+/ Tooting
+TOO,G29,WIM,,,
+/ Topsham
+TOP,G12,,,,
+/ Totnes
+TOT,G21,NTA,,,
+/ Thorpe Bay
+TPB,PSE,,,,
+/ Thorpe Culvert
+TPC,SLR,,,,
+/ Ton Pentre
+TPN,PPD,,,,
+/ Torquay
+TQY,NTA,,,,
+/ Trafford Park
+TRA,G20,G31,,,
+/ Treherbert
+TRB,PPD,,,,
+/ Troed Y Rhiw
+TRD,PPD,,,,
+/ Trefforest Estate
+TRE,CDF,PPD,,,
+/ Trefforest
+TRF,CDF,PPD,,,
+/ Trehafod
+TRH,PPD,,,,
+/ Tring
+TRI,BLY,WFJ,,,
+/ Trimley
+TRM,IPS,NRW,,,
+/ Troon
+TRN,,,,,G81
+/ Trowbridge
+TRO,,,,,G46
+/ Torre
+TRR,NTA,,,,
+/ Thurston
+TRS,CBG,ELY,SMK,,
+/ Truro (a routing point)
+TRU,,,,,
+/ Treorchy
+TRY,PPD,,,,
+/ Thetford
+TTF,ELY,NRW,PBO,,
+/ Thornton Heath
+TTH,,,,,G29
+/ Totton
+TTN,BCU,G26,,,
+/ Tulse Hill (a routing point)
+TUH,,,,,
+/ Tulloch
+TUL,CNR,FTW,,,
+/ Turkey Street
+TUR,CHN,SVS,,,
+/ Tutbury And Hatton
+TUT,G09,SOT,,,
+/ Tiverton Parkway
+TVP,G12,TAU,,,
+/ Tweedbank
+TWB,G11,,,,
+/ Twickenham (a routing point)
+TWI,,,,,
+/ Town Green
+TWN,G18,G34,PRE,,
+/ Twyford (a routing point)
+TWY,,,,,
+/ Ty Croes
+TYC,LLJ,,,,
+/ Tygwyn
+TYG,G41,,,,
+/ Tyndrum Lower
+TYL,CNR,,,,
+/ Tyseley (a routing point)
+TYS,,,,,
+/ Tywyn
+TYW,G41,,,,
+/ Uckfield
+UCK,G08,,,,
+/ Uddingston
+UDD,G67,NTN,,,
+/ Uphall
+UHA,BLG,G11,,,
+/ Upper Holloway
+UHL,BKG,GPO,,,
+/ Ulceby
+ULC,HAB,,,,
+/ Ulleskelf
+ULL,G16,G22,SBY,YRK,
+/ Ulverston
+ULV,CAR,G64,,,
+/ Umberleigh
+UMB,G12,,,,
+/ University Birmingham
+UNI,BTG,G02,,,
+/ Upper Halliford
+UPH,KNG,TWI,,,
+/ Upholland
+UPL,G18,G34,PRE,,
+/ Upminster (a routing point)
+UPM,,,,,
+/ Upton Merseyside
+UPT,G18,SHT,,,
+/ Upwey
+UPW,,,,,G33
+/ Urmston
+URM,G20,G31,,,
+/ Uttoxeter
+UTT,G09,SOT,,,
+/ Upper Tyndrum
+UTY,CNR,FTW,,,
+/ Upper Warlingham
+UWL,G08,,,,
+/ Valley
+VAL,LLJ,,,,
+/ London Victoria
+VIC,,,,,G01
+/ Virginia Water
+VIR,ACT,G82,SNS,,
+/ Vauxhall
+VXH,,,,,G01
+/ Warrington Central
+WAC,,,,,G31
+/ Wadhurst
+WAD,G15,TON,,,
+/ London Waterloo East
+WAE,,,,,G01
+/ Wallyford
+WAF,G11,NCL,,,
+/ Walton On Thames
+WAL,G82,SUR,,,
+/ Walmer
+WAM,DVP,G68,,,
+/ Wanborough
+WAN,AHV,GLD,WKM,,
+/ Walton Merseysde
+WAO,G18,G34,PRE,,
+/ Ware (Herts)
+WAR,CHN,G66,,,
+/ Watton At Stone
+WAS,AAP,SVG,,,
+/ London Waterloo
+WAT,,,,,G01
+/ Wavertree Techpk
+WAV,G18,HUY,,,
+/ Warrington West
+WAW,G31,G70,,,
+/ Waterbeach
+WBC,CBG,ELY,,,
+/ Whitley Bridge
+WBD,G22,GOO,,,
+/ Warblington
+WBL,G61,HAV,,,
+/ Wimbledon Chase
+WBO,SUO,WIM,,,
+/ West Brompton
+WBP,CLJ,G75,WFJ,WIJ,
+/ Warrington Bank Quay
+WBQ,,,,,G31
+/ Whaley Bridge
+WBR,HAZ,,,,
+/ West Byfleet
+WBY,G82,WOK,,,
+/ Westcombe Park
+WCB,CTN,G01,,,
+/ Westcliff
+WCF,PSE,,,,
+/ Whitchurch (Hants)
+WCH,BSK,SAL,,,
+/ Wick
+WCK,DIN,,,,
+/ West Calder
+WCL,G11,G67,,,
+/ Wickham Market
+WCM,IPS,NRW,,,
+/ Worcester Park
+WCP,EPS,MOT,,,
+/ Whitecraigs
+WCR,G13,MFL,,,
+/ Wembley Stadium
+WCX,G01,SRU,,,
+/ West Croydon
+WCY,,,,,G08
+/ Woodbridge
+WDB,IPS,NRW,,,
+/ Widdrington
+WDD,G11,NCL,,,
+/ Wood End
+WDE,G72,TYS,,,
+/ Woodhouse
+WDH,SHF,WRK,,,
+/ Woodhall
+WDL,PTG,PYG,,,
+/ Windermere
+WDM,OXN,,,,
+/ Walsden
+WDN,ACR,G20,G39,,
+/ Waddon
+WDO,G08,SUO,,,
+/ Woodlesford
+WDS,G16,G22,G30,,
+/ West Drayton
+WDT,G75,SLO,,,
+/ West Dulwich
+WDU,BKJ,HNH,,,
+/ West Ealing
+WEA,,,,,G77
+/ Wedgwood
+WED,RGL,SOT,STA,,
+/ Weeley
+WEE,COL,,,,
+/ West Ham.
+WEH,BKG,G01,,,
+/ Wellingborough
+WEL,BDM,KET,,,
+/ Wem
+WEM,CRE,SHR,,,
+/ Westerton (a routing point)
+WES,,,,,
+/ Weeton
+WET,G16,YRK,,,
+/ Weymouth
+WEY,,,,,G33
+/ Whifflet
+WFF,G13,G44,G67,SPR,
+/ Watford High Street
+WFH,WFJ,WIJ,,,
+/ Westerfield
+WFI,IPS,NRW,,,
+/ Watford Junction (a routing point)
+WFJ,,,,,
+/ Wainfleet
+WFL,SLR,,,,
+/ Watford North
+WFN,WFJ,,,,
+/ Westgate On Sea
+WGA,FAV,G68,,,
+/ Welwyn Garden City
+WGC,AAP,SVG,,,
+/ Wigan North Western
+WGN,,,,,G34
+/ Woodgrange Park
+WGR,BKG,GPO,,,
+/ Wigton
+WGT,CAR,G64,,,
+/ Wargrave
+WGV,TWY,,,,
+/ Wigan Wallgate
+WGW,,,,,G34
+/ Westenhanger
+WHA,AFK,DVP,,,
+/ Walthamstow Central (a routing point)
+WHC,,,,,
+/ West Hampstead
+WHD,GPO,WIJ,,,
+/ Whalley Lancs
+WHE,BBN,G53,,,
+/ Westhoughton
+WHG,BON,G34,SLD,,
+/ Whitstable
+WHI,FAV,G68,,,
+/ White Hart Lane
+WHL,CHN,SVS,,,
+/ Whimple
+WHM,G12,SAL,,,
+/ Whiston
+WHN,G78,HUY,,,
+/ West Hampstead Thameslink (a routing point)
+WHP,,,,,
+/ West Horndon
+WHR,PSE,UPM,,,
+/ Whyteleafe South
+WHS,G08,G60,,,
+/ Whitchurch (Cardiff)
+WHT,CDF,,,,
+/ Whyteleafe
+WHY,G08,G60,,,
+/ Wickford (a routing point)
+WIC,,,,,
+/ Widnes
+WID,G31,G70,,,
+/ Winchmore Hill
+WIH,AAP,SVG,,,
+/ Willesden Junction (a routing point)
+WIJ,,,,,
+/ Willington
+WIL,G09,G43,TAM,,
+/ Wimbledon (a routing point)
+WIM,,,,,
+/ Winchester
+WIN,BSK,ESL,,,
+/ Wivenhoe
+WIV,COL,,,,
+/ West Kilbride
+WKB,KWN,,,,
+/ Walkden
+WKD,BON,G34,SLD,,
+/ Wakefield Westgt
+WKF,,,,,G30
+/ Workington
+WKG,CAR,G64,,,
+/ West Kirby
+WKI,G18,SHT,,,
+/ Wakefield Kirkgate
+WKK,,,,,G30
+/ Wokingham (a routing point)
+WKM,,,,,
+/ Waltham Cross
+WLC,CHN,TOM,,,
+/ West St Leonards
+WLD,G15,TON,,,
+/ Whittlesea
+WLE,ELY,NRW,PBO,,
+/ Whittlesford Parkway
+WLF,CBG,G66,,,
+/ Wallasey Grove Road
+WLG,G18,SHT,,,
+/ Welling
+WLI,BKH,DFD,SGR,,
+/ Williamwood
+WLM,G13,MFL,,,
+/ Wellington Shropshire
+WLN,SHR,WVH,,,
+/ Waterloo Mersey
+WLO,G18,G34,,,
+/ Welshpool
+WLP,G41,SHR,,,
+/ Woolston
+WLS,G23,G26,,,
+/ Wallington
+WLT,G08,SUO,,,
+/ Wallasey Village
+WLV,G18,SHT,,,
+/ Welwyn North
+WLW,AAP,SVG,,,
+/ Woodley
+WLY,CLY,G20,GUI,,
+/ West Malling
+WMA,AFK,G83,,,
+/ Wembley Central
+WMB,WFJ,WIJ,,,
+/ Wilmcote
+WMC,,,,,G72
+/ Wymondham
+WMD,ELY,NRW,PBO,,
+/ Woodmansterne
+WME,G08,G60,,,
+/ Welham Green
+WMG,AAP,SVG,,,
+/ Wildmill
+WMI,BGN,,,,
+/ Wilmslow
+WML,,,,,G69
+/ Warminster
+WMN,G46,SAL,,,
+/ Widney Manor
+WMR,G72,G73,TYS,,
+/ Wemyss Bay
+WMS,PTG,,,,
+/ Walthamstow Queens Road
+WMW,BKG,GPO,,,
+/ Windsor And Eton Central
+WNC,SLO,SNS,,,
+/ Wendover
+WND,AYS,G01,,,
+/ Wilnecote (Staffs)
+WNE,G02,NUN,TAM,,
+/ Winchfield
+WNF,BSK,WOK,,,
+/ Waun-gron Park
+WNG,CDF,PPD,,,
+/ Warnham
+WNH,G10,HRH,,,
+/ Whinhill
+WNL,PTG,,,,
+/ Weston Milton
+WNM,G05,TAU,,,
+/ Wennington
+WNN,G53,G64,,,
+/ Wanstead Park
+WNP,BKG,GPO,,,
+/ Windsor And Eton Riverside
+WNR,SLO,SNS,,,
+/ Winnersh
+WNS,G24,WKM,,,
+/ Wandsworth Town
+WNT,BNS,CLJ,,,
+/ West Norwood
+WNW,CYP,G29,TUH,,
+/ White Notley
+WNY,WTM,,,,
+/ Woburn Sands
+WOB,BDM,BLY,,,
+/ Worcester Foregate Street
+WOF,,,,,G35
+/ Woldingham
+WOH,G08,,,,
+/ Woking (a routing point)
+WOK,,,,,
+/ Wolverton
+WOL,MKC,NMP,RUG,,
+/ Wombwell
+WOM,BNY,MHS,,,
+/ Walton-on-the-naze
+WON,COL,,,,
+/ Wool
+WOO,BCU,G33,,,
+/ Worcestershire Parkway
+WOP,BMV,CNM,G35,OXF,
+/ Worle
+WOR,G05,TAU,,,
+/ Worcester Shrub Hill
+WOS,,,,,G35
+/ Wapping
+WPE,HHY,SQE,,,
+/ Worplesdon
+WPL,GLD,WOK,,,
+/ Wrabness
+WRB,IPS,MNG,,,
+/ Wrenbury
+WRE,CRE,SHR,,,
+/ Worthing
+WRH,G04,G61,,,
+/ Worksop (a routing point)
+WRK,,,,,
+/ Wetheral
+WRL,CAR,NCL,,,
+/ Wareham Dorset
+WRM,BCU,G33,,,
+/ West Runton
+WRN,NRW,,,,
+/ Warwick Parkway
+WRP,,,,,G73
+/ Wressle
+WRS,GBD,SBY,,,
+/ Worstead
+WRT,NRW,,,,
+/ West Ruislip.
+WRU,PRR,SRU,,,
+/ Warwick
+WRW,,,,,G73
+/ Wrexham General
+WRX,,,,,G49
+/ Wraysbury
+WRY,SLO,SNS,,,
+/ West Allerton
+WSA,G18,G70,,,
+/ Westbury
+WSB,,,,,G46
+/ Winchelsea
+WSE,AFK,G15,,,
+/ Winsford
+WSF,CRE,G31,RUN,,
+/ Wishaw
+WSH,CRS,G67,,,
+/ Walsall
+WSL,,,,,G59
+/ Weston Super Mare
+WSM,G05,TAU,,,
+/ Woodsmoor
+WSR,HAZ,SPT,,,
+/ Wood Street
+WST,WHC,,,,
+/ West Sutton
+WSU,SUO,WIM,,,
+/ Wandsworth Common
+WSW,CLJ,G29,MIJ,,
+/ Westerhailes
+WTA,G11,G67,,,
+/ Whitby.
+WTB,G42,,,,
+/ Whitchurch (Shrops)
+WTC,CRE,SHR,,,
+/ Whitlocks End
+WTE,G72,TYS,,,
+/ Watlington
+WTG,ELY,,,,
+/ Whitehaven
+WTH,CAR,G64,,,
+/ Winnersh Triangle
+WTI,G24,WKM,,,
+/ Whitland (a routing point)
+WTL,,,,,
+/ Witham (a routing point)
+WTM,,,,,
+/ Whitton London
+WTN,FEL,TWI,,,
+/ Water Orton
+WTO,G02,NUN,TAM,,
+/ Wateringbury
+WTR,AFK,SOO,TON,,
+/ Whatstandwell
+WTS,G09,,,,
+/ Witton (West Midlands)
+WTT,G02,G59,,,
+/ Witley
+WTY,GLD,HAV,,,
+/ Wivelsfield (a routing point)
+WVF,,,,,
+/ Wolverhampton (a routing point)
+WVH,,,,,
+/ Woolwich Arsenal
+WWA,CTN,SGR,,,
+/ Woolwich Dockyard
+WWD,CTN,SGR,,,
+/ West Wickham
+WWI,BKJ,LEW,NWX,,
+/ Whitwell
+WWL,G43,WRK,,,
+/ West Worthing
+WWO,G04,G61,,,
+/ Wandsworth Road
+WWR,CLJ,DMK,G01,,
+/ Wootton Wawen
+WWW,G72,TYS,,,
+/ Wrexham Central
+WXC,,,,,G49
+/ Weybridge
+WYB,,,,,G82
+/ Wye
+WYE,AFK,DVP,FAV,G68,
+/ Wylde Green
+WYL,G02,LTV,,,
+/ Wylam
+WYM,CAR,NCL,,,
+/ Wythall
+WYT,G72,TYS,,,
+/ Ryde Hoverport
+XRD,G23,,,,
+/ Yate
+YAE,CNM,G05,GCR,,
+/ Yalding
+YAL,AFK,SOO,TON,,
+/ Yatton
+YAT,G05,TAU,,,
+/ Yeoford
+YEO,G12,,,,
+/ Yetminster
+YET,CLC,G33,,,
+/ Ynyswen
+YNW,PPD,,,,
+/ Yoker
+YOK,DMR,HYN,,,
+/ Yardley Wood
+YRD,G72,TYS,,,
+/ York (a routing point)
+YRK,,,,,
+/ Yarm
+YRM,G42,NTR,,,
+/ Yorton
+YRT,CRE,SHR,,,
+/ Ystrad Mynach
+YSM,CDF,,,,
+/ Ystrad Rhondda
+YSR,PPD,,,,
+/ Yeovil Junction
+YVJ,G12,SAL,,,
+/ Yeovil Pen Mill
+YVP,CLC,G33,,,
+/ Canada Water
+ZCW,HHY,SQE,,,
+/ Farringdon Und
+ZFD,G01,,,,
+/ Whitechapel
+ZLW,HHY,SQE,,,
+/!! End of file (2599 records) (06/01/2026)

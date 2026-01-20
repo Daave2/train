@@ -1,0 +1,718 @@
+/!! Start of file
+/!! Content type:  nodes
+/!! Sequence:      0939
+/!! Generated:     06/01/2026
+/!! Exporter:      RJIS RjEhrNRG v0.1
+/ Alexandra Palace
+AAP
+/ Aberdeen
+ABD
+/ Accrington
+ACR
+/ Ascot (Berks)
+ACT
+/ Ashford International.
+AFK
+/ Ash Vale
+AHV
+/ Aigburth
+AIG
+/ Altrincham
+ALT
+/ Appleby
+APP
+/ Aviemore
+AVM
+/ Aylesbury
+AYS
+/ Barnham
+BAA
+/ Balham
+BAL
+/ Battle
+BAT
+/ Blackburn
+BBN
+/ Brockenhurst
+BCU
+/ Bedford
+BDM
+/ Bridlington
+BDT
+/ Bridgend
+BGN
+/ Blackhorse Road
+BHO
+/ Barrow In Furness
+BIF
+/ Barking
+BKG
+/ Blackheath
+BKH
+/ Beckenham Junction
+BKJ
+/ Bellgrove
+BLG
+/ Bletchley
+BLY
+/ Bromsgrove
+BMV
+/ Barnes
+BNS
+/ Barnsley
+BNY
+/ Bolton
+BON
+/ Brixton
+BRX
+/ Barry
+BRY
+/ Basingstoke
+BSK
+/ Barnetby
+BTB
+/ Barnt Green
+BTG
+/ Bath Spa
+BTH
+/ Brough
+BUH
+/ Berwick-upon-tweed
+BWK
+/ Bridgwater
+BWT
+/ Burnley Manchester Road
+BYM
+/ Carlisle
+CAR
+/ Canterbury East
+CBE
+/ Cambridge
+CBG
+/ Canterbury West
+CBW
+/ Cardiff Central
+CDF
+/ Chalfont And Latimer Und
+CFO
+/ Chesterfield
+CHD
+/ Cheshunt
+CHN
+/ Cheadle Hulme
+CHU
+/ Castle Cary
+CLC
+/ Clitheroe
+CLH
+/ Clapham Junction
+CLJ
+/ Chinley
+CLY
+/ Camden Road
+CMD
+/ Cheltenham Spa
+CNM
+/ Crianlarich
+CNR
+/ Colchester.
+COL
+/ Coventry
+COV
+/ Chippenham
+CPM
+/ Clapton
+CPT
+/ Clapham (Yorks)
+CPY
+/ Crewe
+CRE
+/ Carstairs
+CRS
+/ Craven Arms
+CRV
+/ Charlton
+CTN
+/ Chester
+CTR
+/ Crystal Palace
+CYP
+/ Darlington
+DAR
+/ Dundee
+DEE
+/ Dartford
+DFD
+/ Durham
+DHM
+/ Didcot Parkway
+DID
+/ Dingwall
+DIN
+/ Diss
+DIS
+/ Dumfries
+DMF
+/ Denmark Hill
+DMK
+/ Dalmuir
+DMR
+/ Doncaster.
+DON
+/ Dover Priory
+DVP
+/ Ebbsfleet International
+EBD
+/ Edenbridge
+EBR
+/ Effingham Junction
+EFF
+/ Ely
+ELY
+/ Elephant And Castle
+EPH
+/ Epsom
+EPS
+/ Eastleigh
+ESL
+/ Evesham
+EVE
+/ Essex Road
+EXR
+/ Faversham
+FAV
+/ Feltham
+FEL
+/ Farnborough Main
+FNB
+/ Farnborough North
+FNN
+/ Finsbury Park
+FPK
+/ Fort William
+FTW
+/ LONDON GROUP
+G01
+/ BIRMINGHAM GROUP
+G02
+/ BRADFORD GROUP
+G03
+/ BRIGHTON GROUP
+G04
+/ BRISTOL GROUP
+G05
+/ BROMLEY SOUTH GROUP
+G06
+/ CHATHAM GROUP
+G07
+/ CROYDON GROUP
+G08
+/ DERBY GROUP
+G09
+/ DORKING GROUP
+G10
+/ EDINBURGH GROUP
+G11
+/ EXETER GROUP
+G12
+/ GLASGOW GROUP
+G13
+/ HASTINGS GROUP
+G15
+/ LEEDS GROUP
+G16
+/ LIVERPOOL GROUP
+G18
+/ MANCHESTER GROUP
+G20
+/ PLYMOUTH GROUP
+G21
+/ PONTEFRACT GROUP
+G22
+/ PORTSMOUTH GROUP
+G23
+/ READING GROUP
+G24
+/ SOUTHAMPTON GROUP
+G26
+/ STREATHAM GROUP
+G29
+/ WAKEFIELD GROUP
+G30
+/ WARRINGTON GROUP
+G31
+/ WEYMOUTH GROUP
+G33
+/ WIGAN GROUP
+G34
+/ WORCESTER GROUP
+G35
+/ ROMFORD GROUP
+G37
+/ SWANSEA GROUP
+G38
+/ HALIFAX GROUP
+G39
+/ HUDDERSFIELD GROUP
+G40
+/ MACHYNLLETH GROUP
+G41
+/ MIDDLESBROUGH GROUP
+G42
+/ NOTTINGHAM GROUP
+G43
+/ FALKIRK GROUP
+G44
+/ WESTBURY GROUP
+G46
+/ NEWARK GROUP
+G47
+/ SCARBOROUGH GROUP
+G48
+/ WREXHAM GROUP
+G49
+/ INVERKEITHING GROUP
+G50
+/ KIRKCALDY GROUP
+G51
+/ HELLIFIELD GROUP
+G53
+/ BANBURY GROUP
+G58
+/ WALSALL GROUP
+G59
+/ REDHILL GROUP
+G60
+/ FORD GROUP
+G61
+/ SMETHWICK GROUP
+G63
+/ LANCASTER GROUP
+G64
+/ STANSTED GROUP
+G66
+/ MOTHERWELL GROUP
+G67
+/ RAMSGATE GROUP
+G68
+/ WILMSLOW GROUP
+G69
+/ HUNTS CROSS GROUP
+G70
+/ STRATFORD U GROUP
+G72
+/ WARWICK GROUP
+G73
+/ STRATFORD LONDON GP
+G74
+/ HAYES & HARLNGTN GP
+G75
+/ EALING BROADWAY GROUP
+G77
+/ EARLESTOWN GROUP
+G78
+/ PENZANCE GROUP
+G79
+/ DUMBARTON GROUP
+G80
+/ TROON GROUP
+G81
+/ WEYBRIDGE GROUP
+G82
+/ OTFORD GROUP
+G83
+/ EASTBOURNE GROUP
+G84
+/ ORPINGTON GROUP
+G85
+/ Gilberdyke
+GBD
+/ Gloucester
+GCR
+/ Godstone
+GDN
+/ Greenford.
+GFD
+/ Guildford
+GLD
+/ Gomshall
+GOM
+/ Goole
+GOO
+/ Gospel Oak
+GPO
+/ Grantham
+GRA
+/ Grove Park
+GRP
+/ Gravesend
+GRV
+/ Grays
+GRY
+/ Gatwick Airport
+GTW
+/ Guide Bridge
+GUI
+/ Gunnersbury
+GUN
+/ Habrough
+HAB
+/ Hackney Downs
+HAC
+/ Havant
+HAV
+/ Hazel Grove
+HAZ
+/ Hebden Bridge
+HBD
+/ Hereford
+HFD
+/ Hertford North
+HFN
+/ Hither Green
+HGR
+/ Harrogate
+HGT
+/ Haywards Heath
+HHE
+/ Highbury And Islington
+HHY
+/ Hitchin
+HIT
+/ Hackney Wick
+HKW
+/ Herne Hill
+HNH
+/ Harrow-hill Und
+HOH
+/ Honiton
+HON
+/ Hooton
+HOO
+/ Hounslow
+HOU
+/ Hartlepool
+HPL
+/ Horsham
+HRH
+/ Harrietsham
+HRM
+/ Hassocks
+HSK
+/ Hull
+HUL
+/ Huyton
+HUY
+/ High Wycombe
+HWY
+/ Hyndland
+HYN
+/ Inverness
+INV
+/ Ipswich
+IPS
+/ Kemble
+KEM
+/ Kettering
+KET
+/ Kirkby (Merseyside)
+KIR
+/ Kirkham And Wesham
+KKM
+/ Kilmarnock
+KMK
+/ Kennett
+KNE
+/ Kingston
+KNG
+/ Kensington (Olympia)
+KPA
+/ Kearsney (Kent)
+KSN
+/ Kew Gardens
+KWG
+/ Kilwinning
+KWN
+/ Long Buckby
+LBK
+/ Loughborough (Leics)
+LBO
+/ Lincoln
+LCN
+/ Ladybank
+LDY
+/ Leicester
+LEI
+/ Lewisham
+LEW
+/ Leatherhead
+LHD
+/ Limehouse Lts
+LHS
+/ Llandudno Junction
+LLJ
+/ Llandrindod
+LLO
+/ Llandovery
+LLV
+/ Leamington Spa
+LMS
+/ Liskeard
+LSK
+/ Lichfield Trent Valley
+LTV
+/ Luton
+LUT
+/ Lewes
+LWS
+/ Maidenhead
+MAI
+/ Maidstone East
+MDE
+/ Mount Florida
+MFL
+/ Meadowhall
+MHS
+/ Mitcham Junction
+MIJ
+/ Milton Keynes Central
+MKC
+/ Melksham
+MKM
+/ Marks Tey
+MKT
+/ Melton Mowbray
+MMO
+/ Manningtree
+MNG
+/ Motspur Park
+MOT
+/ Newbury
+NBY
+/ Newcastle
+NCL
+/ New Malden
+NEM
+/ Nunhead
+NHD
+/ Northampton
+NMP
+/ Norwich
+NRW
+/ Newton Abbot
+NTA
+/ Newton Lanark
+NTN
+/ Northallerton
+NTR
+/ Nuneaton
+NUN
+/ Newport S.wales
+NWP
+/ New Cross
+NWX
+/ New Cross Gate
+NXG
+/ Oakham
+OKM
+/ Ormskirk
+OMS
+/ Oxford
+OXF
+/ Oxenholme Lake District
+OXN
+/ Oxford Parkway
+OXP
+/ Par
+PAR
+/ Peterborough.
+PBO
+/ Paddock Wood
+PDW
+/ Polegate
+PLG
+/ Peckham Rye
+PMR
+/ Penrith
+PNR
+/ Penistone
+PNS
+/ Pontypridd
+PPD
+/ Preston (Lancs)
+PRE
+/ Princes Risborough
+PRR
+/ Pitsea
+PSE
+/ Port Glasgow
+PTG
+/ Perth
+PTH
+/ Partick
+PTK
+/ Pollokshaws West
+PWW
+/ Paisley Gilmour Street
+PYG
+/ Raynes Park
+RAY
+/ Retford
+RET
+/ Rugeley Trent Valley
+RGL
+/ Richmond London
+RMD
+/ Romsey
+ROM
+/ Rugby
+RUG
+/ Runcorn
+RUN
+/ Salisbury
+SAL
+/ Swanley
+SAY
+/ Selby
+SBY
+/ Selling
+SEG
+/ Sellafield
+SEL
+/ Sevenoaks
+SEV
+/ Stanford Le Hope
+SFO
+/ Slade Green
+SGR
+/ Sheffield
+SHF
+/ Shrewsbury
+SHR
+/ Shotton
+SHT
+/ Skipton
+SKI
+/ Salford Crescent
+SLD
+/ Slough
+SLO
+/ Sleaford
+SLR
+/ Stowmarket
+SMK
+/ Shenfield
+SNF
+/ Staines
+SNS
+/ Strood Kent
+SOO
+/ Stoke On Trent
+SOT
+/ Spalding
+SPA
+/ Springburn
+SPR
+/ Stockport
+SPT
+/ Surrey Quays
+SQE
+/ Shortlands
+SRT
+/ South Ruislip
+SRU
+/ Stafford
+STA
+/ Stroud (Glos)
+STD
+/ Stirling.
+STG
+/ Sutton London
+SUO
+/ Surbiton
+SUR
+/ Stevenage
+SVG
+/ Seven Sisters
+SVS
+/ Swindon (Wilts)
+SWI
+/ Swinton (South Yorks)
+SWN
+/ Stalybridge
+SYB
+/ Tamworth
+TAM
+/ Taunton
+TAU
+/ Three Bridges
+TBD
+/ Teddington
+TED
+/ Telford
+TFC
+/ Thornford
+THO
+/ Todmorden
+TOD
+/ Tottenham Hale
+TOM
+/ Tonbridge
+TON
+/ Truro
+TRU
+/ Tulse Hill
+TUH
+/ Twickenham
+TWI
+/ Twyford
+TWY
+/ Tyseley
+TYS
+/ Upminster
+UPM
+/ Virginia Water
+VIR
+/ Westerton
+WES
+/ Watford Junction
+WFJ
+/ Walthamstow Central
+WHC
+/ West Hampstead Thameslink
+WHP
+/ Wickford
+WIC
+/ Willesden Junction
+WIJ
+/ Wimbledon
+WIM
+/ Winchester
+WIN
+/ Wokingham
+WKM
+/ Warminster
+WMN
+/ Wanstead Park
+WNP
+/ Woking
+WOK
+/ Worksop
+WRK
+/ Weston Super Mare
+WSM
+/ Whitland
+WTL
+/ Witham
+WTM
+/ Wivelsfield
+WVF
+/ Wolverhampton
+WVH
+/ York
+YRK
+/ Yeovil Junction
+YVJ
+/ Yeovil Pen Mill
+YVP
+/!! End of file (356 records) (06/01/2026)

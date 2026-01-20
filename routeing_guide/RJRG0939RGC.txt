@@ -1,0 +1,71 @@
+/!! Start of file
+/!! Content type:  London station list
+/!! Sequence:      0939
+/!! Generated:     06/01/2026
+/!! Exporter:      RJIS RjEhrNRG v0.1
+ABW,N,Y
+AMR,N,Y
+BAK,N,Y
+BAL,N,Y
+BFR,Y,Y
+BGV,N,Y
+BHO,N,Y
+BKG,N,Y
+BRX,N,Y
+CHX,Y,Y
+CST,Y,Y
+CTK,Y,N
+EAL,N,Y
+EPH,N,Y
+EUS,Y,Y
+FPK,N,Y
+FST,Y,Y
+GNW,N,Y
+HHY,N,Y
+KGX,Y,Y
+KPA,N,Y
+KTN,N,Y
+LBG,Y,Y
+LEW,N,Y
+LHS,N,Y
+LNE,N,Y
+LOE,N,Y
+LST,Y,Y
+MOG,Y,Y
+MYB,Y,Y
+OLD,Y,Y
+PAD,Y,Y
+QPW,N,Y
+QRB,N,Y
+RMD,N,Y
+SDE,N,Y
+SFA,N,Y
+SRA,N,Y
+STP,Y,Y
+SVS,N,Y
+TOM,N,Y
+UPM,N,Y
+VIC,Y,Y
+VXH,Y,Y
+WAE,Y,Y
+WAT,Y,Y
+WBP,N,Y
+WEH,N,Y
+WHC,N,Y
+WHP,N,Y
+WIM,N,Y
+WIT,Y,Y
+WWA,N,Y
+ZBA,N,Y
+ZBS,N,Y
+ZCW,N,Y
+ZEM,N,Y
+ZER,N,Y
+ZES,N,Y
+ZFD,N,Y
+ZHJ,N,Y
+ZLW,N,Y
+ZMG,N,Y
+ZNP,N,Y
+ZTH,N,Y
+/!! End of file (65 records) (06/01/2026)

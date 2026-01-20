@@ -543,7 +543,20 @@ const TrainApi = (function () {
      * Find optimal hub stations based on geography
      * Prefers hubs that lie along the travel corridor
      */
-    function findOptimalHubs(origin, destination) {
+    async function findOptimalHubs(origin, destination) {
+        // 1. Try RailGraph (Deterministic / Accurate)
+        if (window.RailGraph) {
+            if (!window.RailGraph.isLoaded()) await window.RailGraph.init();
+
+            const pathHubs = window.RailGraph.findInterchanges(origin.code, destination.code);
+            if (pathHubs && pathHubs.length > 0) {
+                console.log(`RailGraph found path for ${origin.code}->${destination.code} via:`, pathHubs);
+                return pathHubs;
+            }
+        }
+
+        console.log('RailGraph unavailable or no path found, using geometric fallback.');
+
         // Expanded list of UK interchange hubs covering more regions
         const allHubs = [
             // Major interchanges

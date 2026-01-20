@@ -1,0 +1,6 @@
+/!! Start of file
+/!! Content type:  zonal system locations
+/!! Sequence:      0939
+/!! Generated:     06/01/2026
+/!! Exporter:      RJIS RjEhrNRG v0.1
+/!! End of file (0 records) (06/01/2026)
