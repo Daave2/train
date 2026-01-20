@@ -778,8 +778,18 @@ const TrainApi = (function () {
                 // We will stick to that pattern for robustness.
 
                 const details = await fetchServiceDetails(service.serviceIdUrlSafe);
+                if (!details) {
+                    console.log(`Debug: Failed to fetch details for ${service.serviceIdUrlSafe}`);
+                    continue;
+                }
+
                 const accurateArrTime = findArrivalTimeAtHub(details, toCode);
-                if (!accurateArrTime) continue;
+                if (!accurateArrTime) {
+                    console.log(`Debug: Service ${service.serviceIdUrlSafe} (${service.std}) does not stop at ${toCode}`);
+                    // Debug: dump calling points to see what we missed
+                    // console.log('Calling points:', JSON.stringify(details.subsequentCallingPoints)); 
+                    continue;
+                }
 
                 results.push({
                     id: service.serviceIdUrlSafe,
