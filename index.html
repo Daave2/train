@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="UK Train Journey Planner - Find the best routes with map visualization and real-time disruption information">
+    <title>RailMap UK - Train Journey Planner</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- App Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
+                    <line x1="4" y1="22" x2="4" y2="15" />
+                </svg>
+                <span class="logo-text">RailMap<span class="logo-accent">UK</span></span>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5" />
+                    <path
+                        d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                </svg>
+                <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                </svg>
+            </button>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Search Panel -->
+            <aside class="search-panel">
+                <div class="search-card glass">
+                    <h2 class="search-title">Plan Your Journey</h2>
+
+                    <form id="journeyForm" class="journey-form">
+                        <!-- Origin -->
+                        <div class="input-group">
+                            <label for="origin" class="input-label">From</label>
+                            <div class="input-wrapper">
+                                <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="10" r="3" />
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+                                </svg>
+                                <input type="text" id="origin" class="station-input" placeholder="e.g. Blackpool South"
+                                    autocomplete="off" required>
+                                <div class="autocomplete-dropdown" id="originDropdown"></div>
+                            </div>
+                        </div>
+
+                        <!-- Swap Button -->
+                        <button type="button" class="swap-button" id="swapStations" aria-label="Swap stations">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M7 16V4M7 4L3 8M7 4l4 4M17 8v12M17 20l4-4M17 20l-4-4" />
+                            </svg>
+                        </button>
+
+                        <!-- Add Stop Toggle -->
+                        <button type="button" class="via-toggle" id="addStopBtn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 8v8M8 12h8" />
+                            </svg>
+                            <span>Add stop</span>
+                        </button>
+
+                        <!-- Via Station (Collapsible) -->
+                        <div class="via-group" id="viaGroup">
+                            <div class="input-group">
+                                <label for="via" class="input-label">Via</label>
+                                <div class="input-wrapper">
+                                    <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <circle cx="12" cy="12" r="3" />
+                                        <path
+                                            d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+                                    </svg>
+                                    <input type="text" id="via" class="station-input" placeholder="e.g. York"
+                                        autocomplete="off">
+                                    <div class="autocomplete-dropdown" id="viaDropdown"></div>
+                                </div>
+                            </div>
+                            <button type="button" class="via-remove" id="removeStopBtn" aria-label="Remove stop">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 6L6 18M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Destination -->
+                        <div class="input-group">
+                            <label for="destination" class="input-label">To</label>
+                            <div class="input-wrapper">
+                                <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                                <input type="text" id="destination" class="station-input" placeholder="e.g. Scarborough"
+                                    autocomplete="off" required>
+                                <div class="autocomplete-dropdown" id="destinationDropdown"></div>
+                            </div>
+                        </div>
+
+                        <!-- Date & Time -->
+                        <div class="datetime-row">
+                            <div class="input-group">
+                                <label for="date" class="input-label">Date</label>
+                                <input type="date" id="date" class="date-input" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="time" class="input-label">Time</label>
+                                <div class="time-wrapper">
+                                    <input type="time" id="time" class="time-input" required>
+                                    <button type="button" class="now-button" id="nowButton">Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Departure/Arrival Toggle -->
+                        <div class="toggle-group">
+                            <label class="toggle-option">
+                                <input type="radio" name="timeType" value="depart" checked>
+                                <span>Depart at</span>
+                            </label>
+                            <label class="toggle-option">
+                                <input type="radio" name="timeType" value="arrive">
+                                <span>Arrive by</span>
+                            </label>
+                        </div>
+
+                        <!-- Search Button -->
+                        <button type="submit" class="search-button" id="searchButton">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8" />
+                                <path d="M21 21l-4.35-4.35" />
+                            </svg>
+                            <span>Find Routes</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Journey Results -->
+                <div class="results-section" id="resultsSection">
+                    <div class="results-header">
+                        <h3 class="results-title">Journey Options</h3>
+                        <span class="results-count" id="resultsCount"></span>
+                    </div>
+                    <div class="results-list" id="resultsList">
+                        <!-- Journey cards will be inserted here -->
+                    </div>
+                </div>
+
+                <!-- Loading State -->
+                <div class="loading-overlay" id="loadingOverlay">
+                    <div class="loading-spinner">
+                        <div class="train-loader">
+                            <div class="track"></div>
+                            <div class="train">🚃</div>
+                        </div>
+                        <p class="loading-text">Finding routes...</p>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Map Container -->
+            <section class="map-container">
+                <div id="map" class="map"></div>
+
+                <!-- Map Legend -->
+                <div class="map-legend glass">
+                    <div class="legend-item">
+                        <span class="legend-line primary"></span>
+                        <span>Selected Route</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-line alternative"></span>
+                        <span>Alternative</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-marker origin"></span>
+                        <span>Origin</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-marker destination"></span>
+                        <span>Destination</span>
+                    </div>
+                </div>
+
+                <!-- Disruption Banner -->
+                <div class="disruption-banner" id="disruptionBanner">
+                    <svg class="disruption-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                        <line x1="12" y1="9" x2="12" y2="13" />
+                        <line x1="12" y1="17" x2="12.01" y2="17" />
+                    </svg>
+                    <div class="disruption-content">
+                        <strong class="disruption-title" id="disruptionTitle"></strong>
+                        <p class="disruption-text" id="disruptionText"></p>
+                    </div>
+                    <button class="disruption-close" id="disruptionClose" aria-label="Close">×</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <!-- App Scripts -->
+    <script src="js/data/stations.js"></script>
+    <script src="js/map/railGeometry.js"></script>
+    <script src="js/map/mapController.js"></script>
+    <script src="js/map/routeRenderer.js"></script>
+    <script src="js/components/stationSearch.js"></script>
+    <script src="js/components/routeCard.js"></script>
+    <script src="js/api/trainApi.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
