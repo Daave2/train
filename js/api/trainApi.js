@@ -953,12 +953,33 @@ const TrainApi = (function () {
         let directJourneys = [];
 
         try {
-            // Build URL: /departures/{origin}/to/{destination}/{numRows}
+            // Base URL with access token if available
             let url = `${config.huxley.baseUrl}/departures/${origin.code}/to/${destination.code}/10`;
+            const params = [];
 
-            // Add access token if configured
             if (config.huxley.accessToken) {
-                url += `?accessToken=${config.huxley.accessToken}`;
+                params.push(`accessToken=${config.huxley.accessToken}`);
+            }
+
+            // Add time offset if searching for future/past time
+            if (date && time) {
+                const now = new Date();
+                const searchDate = new Date(`${date}T${time}:00`);
+
+                // Calculate difference in minutes (can be negative for past times, though typically future)
+                // Huxley uses strict minutes or hours for offset
+                // Note: Huxley expects offset from "now"
+                let diffMinutes = Math.floor((searchDate - now) / (1000 * 60));
+
+                // Only filter if difference is significant (> 2 mins)
+                if (Math.abs(diffMinutes) > 2) {
+                    params.push(`timeOffset=${diffMinutes}`);
+                    console.log(`Applying time offset of ${diffMinutes} minutes`);
+                }
+            }
+
+            if (params.length > 0) {
+                url += `?${params.join('&')}`;
             }
 
             console.log('Fetching from Huxley2:', url);
