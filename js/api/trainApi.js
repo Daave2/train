@@ -642,6 +642,12 @@ const TrainApi = (function () {
 
         // Get geographically optimal hubs
         const optimalHubs = await findOptimalHubs(origin, destination);
+
+        if (!optimalHubs || !Array.isArray(optimalHubs)) {
+            console.warn('findOptimalHubs returned invalid data:', optimalHubs);
+            return [];
+        }
+
         const relevantHubs = optimalHubs.slice(0, 8); // Top 8 hubs
 
         if (relevantHubs.length === 0) {
