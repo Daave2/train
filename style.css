@@ -1207,3 +1207,254 @@ body {
     left: 0;
     font-size: 0.75rem;
 }
+
+/* ---------- Modal Overlay ---------- */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 2000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-md);
+    animation: fadeIn 0.2s ease;
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+.modal-container {
+    width: 100%;
+    max-width: 600px;
+    max-height: 90vh;
+    border-radius: var(--radius-xl);
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow-xl);
+    overflow: hidden;
+    animation: zoomIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-lg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.modal-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.modal-close {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 4px;
+    line-height: 1;
+}
+
+.modal-close:hover {
+    color: var(--text-primary);
+}
+
+.modal-content-body {
+    flex: 1;
+    padding: var(--space-lg);
+    overflow-y: auto;
+}
+
+/* ---------- Itinerary Styles ---------- */
+.itinerary-summary {
+    background: var(--bg-secondary);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    margin-bottom: var(--space-xl);
+}
+
+.summary-times {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xl);
+    margin-bottom: var(--space-md);
+}
+
+.summary-time {
+    text-align: center;
+}
+
+.summary-time .label {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+}
+
+.summary-time .value {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-primary);
+}
+
+.summary-arrow {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+}
+
+.summary-meta {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-md);
+}
+
+.meta-item {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    padding: 4px 12px;
+    background: var(--bg-card);
+    border-radius: var(--radius-full);
+    border: 1px solid var(--border-color);
+}
+
+/* ---------- Timeline ---------- */
+.timeline {
+    position: relative;
+    padding-left: 20px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 10px;
+    bottom: 10px;
+    width: 2px;
+    background: var(--border-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.timeline-point {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-lg);
+}
+
+.point-marker {
+    position: absolute;
+    left: -20px;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    background: var(--color-primary);
+    border: 2px solid var(--bg-card);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-point.destination .point-marker {
+    background: var(--color-accent);
+}
+
+.point-info {
+    display: flex;
+    gap: var(--space-lg);
+    flex: 1;
+}
+
+.point-time {
+    min-width: 60px;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.station-name {
+    display: block;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.platform {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.timeline-segment {
+    margin-left: 80px;
+    padding: var(--space-sm) 0 var(--space-md) var(--space-lg);
+    border-left: 2px dashed var(--border-color);
+    margin-top: -4px;
+    margin-bottom: -4px;
+}
+
+.segment-details {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.operator-badge {
+    padding: 2px 8px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 4px;
+}
+
+.timeline-connection {
+    margin: var(--space-md) 0 var(--space-md) 80px;
+    padding: var(--space-sm) var(--space-md);
+    background: rgba(245, 158, 11, 0.1);
+    border-left: 3px solid var(--color-warning);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.connection-label {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-warning);
+}
+
+.connection-time {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+

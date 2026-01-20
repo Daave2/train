@@ -292,6 +292,8 @@
             state.selectedJourneyIndex = index;
             updateMap(journeys, index);
             renderJourneyDetails(journey);
+            // Show full details in modal
+            JourneyDetail.show(journey);
         }, state.selectedJourneyIndex);
 
         renderJourneyDetails(journeys[state.selectedJourneyIndex]);
