@@ -138,11 +138,24 @@ const RailGeometry = (function () {
         const graph = buildRailwayGraph(segments);
 
         // Find the closest graph nodes to origin and destination
-        const startNode = findClosestNode(graph.nodes, originPoint);
-        const endNode = findClosestNode(graph.nodes, destPoint);
+        const corridorOptions = {
+            corridorStart: originPoint,
+            corridorEnd: destPoint,
+            margin: 0.15
+        };
+        const startNode = findClosestNode(graph.nodes, originPoint, corridorOptions);
+        const endNode = findClosestNode(graph.nodes, destPoint, corridorOptions);
 
         if (!startNode || !endNode) {
-            return [[origin.lat, origin.lng], [destination.lat, destination.lng]];
+            return followSegmentsGreedy(segments, originPoint, destPoint);
+        }
+
+        const startDistance = distance([startNode.lat, startNode.lng], originPoint);
+        const endDistance = distance([endNode.lat, endNode.lng], destPoint);
+        const MAX_NODE_DISTANCE = 0.03; // ~3km
+
+        if (startDistance > MAX_NODE_DISTANCE || endDistance > MAX_NODE_DISTANCE) {
+            return followSegmentsGreedy(segments, originPoint, destPoint);
         }
 
         // Use Dijkstra to find shortest path through the railway network
@@ -211,7 +224,7 @@ const RailGeometry = (function () {
      */
     function buildRailwayGraph(segments) {
         const nodes = new Map(); // key -> { key, lat, lng, edges: [] }
-        const SNAP_THRESHOLD = 0.001; // ~100m for connecting segments
+        const SNAP_THRESHOLD = 0.00025; // ~25m for connecting segments
 
         function getNodeKey(lat, lng) {
             // Round to create snapping
@@ -266,11 +279,17 @@ const RailGeometry = (function () {
     /**
      * Find the closest node to a given point
      */
-    function findClosestNode(nodes, point) {
+    function findClosestNode(nodes, point, options = {}) {
         let closest = null;
         let minDist = Infinity;
+        const { corridorStart, corridorEnd, margin } = options;
 
         nodes.forEach(node => {
+            if (corridorStart && corridorEnd && margin !== undefined) {
+                if (!isInCorridor([node.lat, node.lng], corridorStart, corridorEnd, margin)) {
+                    return;
+                }
+            }
             const d = distance([node.lat, node.lng], point);
             if (d < minDist) {
                 minDist = d;
@@ -418,7 +437,7 @@ const RailGeometry = (function () {
 
         const path = [origin];
         const usedSegments = new Set();
-        const CONNECTION_THRESHOLD = 0.005; // ~500m connection threshold
+        const CONNECTION_THRESHOLD = 0.0025; // ~250m connection threshold
         let currentPos = origin;
         let distToDest = distance(currentPos, destination);
 
