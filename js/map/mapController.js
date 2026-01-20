@@ -7,6 +7,7 @@ const MapController = (function () {
     let map = null;
     let routeLayers = [];
     let stationMarkers = [];
+    let trainMarkers = [];
 
     // Map configuration
     const config = {
@@ -57,6 +58,12 @@ const MapController = (function () {
             html: '<div class="marker-inner"></div>',
             iconSize: [16, 16],
             iconAnchor: [8, 8]
+        }),
+        train: L.divIcon({
+            className: 'train-marker',
+            html: '<div class="train-marker-inner">🚆</div>',
+            iconSize: [26, 26],
+            iconAnchor: [13, 13]
         })
     };
 
@@ -127,6 +134,24 @@ const MapController = (function () {
                 background: #3b82f6;
                 border-width: 2px;
             }
+            .train-marker {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .train-marker .train-marker-inner {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background: #0f172a;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 6px 12px rgba(15, 23, 42, 0.35);
+                border: 2px solid #f8fafc;
+                font-size: 14px;
+            }
         `;
         document.head.appendChild(style);
     }
@@ -145,6 +170,8 @@ const MapController = (function () {
     function clearMarkers() {
         stationMarkers.forEach(marker => map.removeLayer(marker));
         stationMarkers = [];
+        trainMarkers.forEach(marker => map.removeLayer(marker));
+        trainMarkers = [];
     }
 
     /**
@@ -174,6 +201,84 @@ const MapController = (function () {
 
         stationMarkers.push(marker);
         return marker;
+    }
+
+    /**
+     * Add a train marker
+     */
+    function addTrainMarker(position, journey, progress) {
+        if (!map || !position) return null;
+
+        const percent = Math.round(progress * 100);
+        const marker = L.marker([position[0], position[1]], { icon: icons.train })
+            .addTo(map)
+            .bindPopup(`
+                <div class="station-popup">
+                    <div class="station-popup-name">Train in progress</div>
+                    <div class="station-popup-code">~${percent}% of journey complete</div>
+                </div>
+            `);
+
+        trainMarkers.push(marker);
+        return marker;
+    }
+
+    function getJourneyProgress(journey) {
+        const dep = journey?.departureTime ? new Date(journey.departureTime) : null;
+        const arr = journey?.arrivalTime ? new Date(journey.arrivalTime) : null;
+        if (!dep || !arr || Number.isNaN(dep.getTime()) || Number.isNaN(arr.getTime())) return null;
+
+        const now = new Date();
+        if (now < dep || now > arr) return null;
+        const totalMs = arr - dep;
+        if (totalMs <= 0) return null;
+        return (now - dep) / totalMs;
+    }
+
+    function getCoordinateAtProgress(coordinates, progress) {
+        if (!coordinates || coordinates.length === 0) return null;
+        if (progress <= 0) return coordinates[0];
+        if (progress >= 1) return coordinates[coordinates.length - 1];
+
+        const segmentLengths = [];
+        let totalLength = 0;
+        for (let i = 0; i < coordinates.length - 1; i++) {
+            const length = calculateDistance(coordinates[i], coordinates[i + 1]);
+            segmentLengths.push(length);
+            totalLength += length;
+        }
+
+        const target = totalLength * progress;
+        let traveled = 0;
+        for (let i = 0; i < segmentLengths.length; i++) {
+            const segmentLength = segmentLengths[i];
+            if (traveled + segmentLength >= target) {
+                const segmentProgress = (target - traveled) / segmentLength;
+                const [startLat, startLng] = coordinates[i];
+                const [endLat, endLng] = coordinates[i + 1];
+                return [
+                    startLat + (endLat - startLat) * segmentProgress,
+                    startLng + (endLng - startLng) * segmentProgress
+                ];
+            }
+            traveled += segmentLength;
+        }
+
+        return coordinates[coordinates.length - 1];
+    }
+
+    function calculateDistance(pointA, pointB) {
+        const [lat1, lng1] = pointA;
+        const [lat2, lng2] = pointB;
+        const toRad = value => (value * Math.PI) / 180;
+        const earthRadiusKm = 6371;
+        const dLat = toRad(lat2 - lat1);
+        const dLng = toRad(lng2 - lng1);
+        const a = Math.sin(dLat / 2) ** 2 +
+            Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
+            Math.sin(dLng / 2) ** 2;
+        const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+        return earthRadiusKm * c;
     }
 
     /**
@@ -262,6 +367,12 @@ const MapController = (function () {
             stations.forEach(station => {
                 addStationMarker(station, station.type);
             });
+
+            const progress = getJourneyProgress(journey);
+            if (progress !== null) {
+                const position = getCoordinateAtProgress(coordinates, progress);
+                addTrainMarker(position, journey, progress);
+            }
         }
     }
 
@@ -293,7 +404,7 @@ const MapController = (function () {
     function fitBounds(padding = 50) {
         if (!map) return;
 
-        const allLayers = [...routeLayers, ...stationMarkers];
+        const allLayers = [...routeLayers, ...stationMarkers, ...trainMarkers];
         if (allLayers.length === 0) return;
 
         const group = L.featureGroup(allLayers);
