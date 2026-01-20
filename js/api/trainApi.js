@@ -641,7 +641,7 @@ const TrainApi = (function () {
         const journeys = [];
 
         // Get geographically optimal hubs
-        const optimalHubs = findOptimalHubs(origin, destination);
+        const optimalHubs = await findOptimalHubs(origin, destination);
         const relevantHubs = optimalHubs.slice(0, 8); // Top 8 hubs
 
         if (relevantHubs.length === 0) {
@@ -983,6 +983,10 @@ const TrainApi = (function () {
                 // Huxley uses strict minutes or hours for offset
                 // Note: Huxley expects offset from "now"
                 let diffMinutes = Math.floor((searchDate - now) / (1000 * 60));
+
+                // Cap offset to prevent 400 Bad Request (limit is usually +/- 120 mins)
+                if (diffMinutes > 119) diffMinutes = 119;
+                if (diffMinutes < -119) diffMinutes = -119;
 
                 // Only filter if difference is significant (> 2 mins)
                 if (Math.abs(diffMinutes) > 2) {
