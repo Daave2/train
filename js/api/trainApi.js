@@ -645,6 +645,7 @@ const TrainApi = (function () {
         // 1. Search Leg 1: Origin -> Hub1
         const hub1Code = hubs[0];
         const legs1 = await fetchLeg(origin.code, hub1Code, date, time);
+        console.log(`Multi-leg debug: Leg 1 (${origin.code}->${hub1Code}) found ${legs1.length} trains`);
         if (legs1.length === 0) return [];
 
         const validJourneys = [];
@@ -663,6 +664,7 @@ const TrainApi = (function () {
 
             // Note: If crossing midnight, this simple logic might fail, but assuming same day for now
             const legs2 = await fetchLeg(hub1Code, nextDestCode, leg1ArrDate, nextDepStr);
+            console.log(`Multi-leg debug: Leg 2 (${hub1Code}->${nextDestCode} @ ${nextDepStr}) found ${legs2.length} trains`);
 
             for (const leg2 of legs2) {
                 const leg2DepTime = parseTimeToMinutes(leg2.departureTime.split('T')[1]);
@@ -691,6 +693,7 @@ const TrainApi = (function () {
                     const leg2ArrDate = leg2.arrivalTime.split('T')[0];
 
                     const legs3 = await fetchLeg(hub2Code, destination.code, leg2ArrDate, nextDepStr3);
+                    console.log(`Multi-leg debug: Leg 3 (${hub2Code}->${destination.code} @ ${nextDepStr3}) found ${legs3.length} trains`);
 
                     for (const leg3 of legs3) {
                         const leg3DepTime = parseTimeToMinutes(leg3.departureTime.split('T')[1]);
