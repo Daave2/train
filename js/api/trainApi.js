@@ -639,83 +639,63 @@ const TrainApi = (function () {
     async function searchMultiLegSequence(origin, destination, hubs, date, time) {
         console.log(`Searching multi-leg sequence: ${origin.code} -> ${hubs.join(' -> ')} -> ${destination.code}`);
 
-        // This is a naive implementation that chains calls.
-        // For a 2-hub path (3 legs): A->H1, H1->H2, H2->B
-
-        // 1. Search Leg 1: Origin -> Hub1
-        const hub1Code = hubs[0];
-        const legs1 = await fetchLeg(origin.code, hub1Code, date, time);
-        console.log(`Multi-leg debug: Leg 1 (${origin.code}->${hub1Code}) found ${legs1.length} trains`);
-        if (legs1.length === 0) return [];
-
+        const routeStops = [origin.code, ...hubs, destination.code];
         const validJourneys = [];
 
-        // For each valid 1st leg, try to find connecting 2nd leg
-        for (const leg1 of legs1.slice(0, 3)) { // Limit to top 3 options to save requests
-            const leg1ArrTime = parseTimeToMinutes(leg1.arrivalTime.split('T')[1]);
-            const leg1ArrDate = leg1.arrivalTime.split('T')[0];
+        const legs1 = await fetchLeg(routeStops[0], routeStops[1], date, time);
+        console.log(`Multi-leg debug: Leg 1 (${routeStops[0]}->${routeStops[1]}) found ${legs1.length} trains`);
+        if (legs1.length === 0) return [];
 
-            // 2. Search Leg 2: Hub1 -> Hub2 (or Dest if only 1 hub)
-            const nextDestCode = hubs.length > 1 ? hubs[1] : destination.code;
-            const minDepTime = leg1ArrTime + 7; // Min connection 7 mins
-
-            // Format time for next search (HH:MM)
-            const nextDepStr = formatTimeFromMinutes(minDepTime);
-
-            // Note: If crossing midnight, this simple logic might fail, but assuming same day for now
-            const legs2 = await fetchLeg(hub1Code, nextDestCode, leg1ArrDate, nextDepStr);
-            console.log(`Multi-leg debug: Leg 2 (${hub1Code}->${nextDestCode} @ ${nextDepStr}) found ${legs2.length} trains`);
-
-            for (const leg2 of legs2) {
-                const leg2DepTime = parseTimeToMinutes(leg2.departureTime.split('T')[1]);
-                const leg2ArrTime = parseTimeToMinutes(leg2.arrivalTime.split('T')[1]);
-
-                // Validate connection time window (7 mins to 120 mins)
-                if (leg2DepTime < minDepTime || leg2DepTime > minDepTime + 120) continue;
-
-                // If only 1 hub, we are done
-                if (hubs.length === 1) {
-                    const totalDuration = leg2ArrTime - parseTimeToMinutes(leg1.departureTime.split('T')[1]);
-                    validJourneys.push({
-                        id: `seq-${leg1.id}-${leg2.id}`,
-                        departureTime: leg1.departureTime,
-                        arrivalTime: leg2.arrivalTime,
-                        duration: totalDuration > 0 ? totalDuration : totalDuration + 1440,
-                        changes: 1,
-                        legs: [leg1, leg2]
-                    });
-                }
-                // If 2 hubs, search Leg 3: Hub2 -> Dest
-                else if (hubs.length === 2) {
-                    const hub2Code = hubs[1];
-                    const minDepTime3 = leg2ArrTime + 7;
-                    const nextDepStr3 = formatTimeFromMinutes(minDepTime3);
-                    const leg2ArrDate = leg2.arrivalTime.split('T')[0];
-
-                    const legs3 = await fetchLeg(hub2Code, destination.code, leg2ArrDate, nextDepStr3);
-                    console.log(`Multi-leg debug: Leg 3 (${hub2Code}->${destination.code} @ ${nextDepStr3}) found ${legs3.length} trains`);
-
-                    for (const leg3 of legs3) {
-                        const leg3DepTime = parseTimeToMinutes(leg3.departureTime.split('T')[1]);
-                        const leg3ArrTime = parseTimeToMinutes(leg3.arrivalTime.split('T')[1]);
-
-                        if (leg3DepTime < minDepTime3 || leg3DepTime > minDepTime3 + 120) continue;
-
-                        const totalDuration = leg3ArrTime - parseTimeToMinutes(leg1.departureTime.split('T')[1]);
-                        validJourneys.push({
-                            id: `seq-${leg1.id}-${leg2.id}-${leg3.id}`,
-                            departureTime: leg1.departureTime,
-                            arrivalTime: leg3.arrivalTime,
-                            duration: totalDuration > 0 ? totalDuration : totalDuration + 1440,
-                            changes: 2,
-                            legs: [leg1, leg2, leg3]
-                        });
-                    }
-                }
-            }
+        for (const leg1 of legs1.slice(0, 3)) {
+            const journeys = await expandSequenceLegs([leg1], routeStops.slice(1));
+            validJourneys.push(...journeys);
         }
 
         return validJourneys;
+    }
+
+    async function expandSequenceLegs(currentLegs, remainingStops) {
+        if (remainingStops.length === 1) {
+            return [buildSequenceJourney(currentLegs)];
+        }
+
+        const lastLeg = currentLegs[currentLegs.length - 1];
+        const lastArrTime = parseTimeToMinutes(lastLeg.arrivalTime.split('T')[1]);
+        const lastArrDate = lastLeg.arrivalTime.split('T')[0];
+        const minDepTime = lastArrTime + 7;
+        const nextDepStr = formatTimeFromMinutes(minDepTime);
+
+        const nextOrigin = remainingStops[0];
+        const nextDest = remainingStops[1];
+
+        const nextLegs = await fetchLeg(nextOrigin, nextDest, lastArrDate, nextDepStr);
+        console.log(`Multi-leg debug: Leg ${currentLegs.length + 1} (${nextOrigin}->${nextDest} @ ${nextDepStr}) found ${nextLegs.length} trains`);
+
+        const journeys = [];
+        for (const nextLeg of nextLegs.slice(0, 3)) {
+            const nextDepTime = parseTimeToMinutes(nextLeg.departureTime.split('T')[1]);
+            if (nextDepTime < minDepTime || nextDepTime > minDepTime + 120) continue;
+
+            const nextJourneys = await expandSequenceLegs([...currentLegs, nextLeg], remainingStops.slice(1));
+            journeys.push(...nextJourneys);
+        }
+
+        return journeys;
+    }
+
+    function buildSequenceJourney(legs) {
+        const firstDep = parseTimeToMinutes(legs[0].departureTime.split('T')[1]);
+        const lastArr = parseTimeToMinutes(legs[legs.length - 1].arrivalTime.split('T')[1]);
+        const totalDuration = lastArr - firstDep;
+
+        return {
+            id: `seq-${legs.map(leg => leg.id).join('-')}`,
+            departureTime: legs[0].departureTime,
+            arrivalTime: legs[legs.length - 1].arrivalTime,
+            duration: totalDuration > 0 ? totalDuration : totalDuration + 1440,
+            changes: Math.max(0, legs.length - 1),
+            legs
+        };
     }
 
     /**
@@ -893,6 +873,41 @@ const TrainApi = (function () {
 
             const twoHopResults = await Promise.all(twoHopPromises);
             twoHopResults.forEach(result => journeys.push(...result));
+        }
+
+        if (journeys.length < 3) {
+            console.log('Searching for 3-hop connections...');
+
+            const hubTriples = [];
+            const hubPool = relevantHubs.slice(0, 5);
+
+            for (let i = 0; i < hubPool.length; i++) {
+                for (let j = 0; j < hubPool.length; j++) {
+                    for (let k = 0; k < hubPool.length; k++) {
+                        if (i === j || j === k || i === k) continue;
+                        const hub1 = StationData.getByCode(hubPool[i]);
+                        const hub2 = StationData.getByCode(hubPool[j]);
+                        const hub3 = StationData.getByCode(hubPool[k]);
+                        if (!hub1 || !hub2 || !hub3) continue;
+
+                        const dist1 = StationData.distance(origin.lat, origin.lng, hub1.lat, hub1.lng);
+                        const dist2 = StationData.distance(origin.lat, origin.lng, hub2.lat, hub2.lng);
+                        const dist3 = StationData.distance(origin.lat, origin.lng, hub3.lat, hub3.lng);
+
+                        if (dist1 < dist2 && dist2 < dist3) {
+                            hubTriples.push([hubPool[i], hubPool[j], hubPool[k]]);
+                        }
+                    }
+                }
+            }
+
+            const threeHopPromises = hubTriples.slice(0, 4).map(hubs =>
+                searchMultiLegSequence(origin, destination, hubs, date, time)
+                    .catch(e => { console.warn(`3-hop ${hubs.join('-')} failed:`, e); return []; })
+            );
+
+            const threeHopResults = await Promise.all(threeHopPromises);
+            threeHopResults.forEach(result => journeys.push(...result));
         }
 
         // Deduplicate and rank results
