@@ -49,8 +49,11 @@ const TrainApi = (function () {
 
         if (config.useMockData) {
             journeys = generateMockJourneys(origin, destination, date, time);
+        } else if (config.useTransportApi) {
+            // Try Transport API first
+            journeys = await fetchTransportApiJourneys(origin, destination, date, time);
         } else {
-            // Default to Huxley as Transport API is disabled/limited
+            // Fallback to Huxley
             journeys = await fetchHuxleyJourneys(origin, destination, date, time);
         }
 
@@ -646,7 +649,7 @@ const TrainApi = (function () {
         console.log(`Multi-leg debug: Leg 1 (${routeStops[0]}->${routeStops[1]}) found ${legs1.length} trains`);
         if (legs1.length === 0) return [];
 
-        for (const leg1 of legs1.slice(0, 3)) {
+        for (const leg1 of legs1.slice(0, 5)) {
             const journeys = await expandSequenceLegs([leg1], routeStops.slice(1));
             validJourneys.push(...journeys);
         }
@@ -660,21 +663,31 @@ const TrainApi = (function () {
         }
 
         const lastLeg = currentLegs[currentLegs.length - 1];
-        const lastArrTime = parseTimeToMinutes(lastLeg.arrivalTime.split('T')[1]);
-        const lastArrDate = lastLeg.arrivalTime.split('T')[0];
-        const minDepTime = lastArrTime + 7;
-        const nextDepStr = formatTimeFromMinutes(minDepTime);
+        const lastArrTime = new Date(lastLeg.arrivalTime);
+        // Minimum 7 minutes connection time
+        const minDepTime = new Date(lastArrTime.getTime() + 7 * 60 * 1000);
+
+        const nextDepStr = formatTimeFromMinutes(minDepTime.getHours() * 60 + minDepTime.getMinutes());
+        const nextDateStr = `${minDepTime.getFullYear()}-${(minDepTime.getMonth() + 1).toString().padStart(2, '0')}-${minDepTime.getDate().toString().padStart(2, '0')}`;
 
         const nextOrigin = remainingStops[0];
         const nextDest = remainingStops[1];
 
-        const nextLegs = await fetchLeg(nextOrigin, nextDest, lastArrDate, nextDepStr);
+        const nextLegs = await fetchLeg(nextOrigin, nextDest, nextDateStr, nextDepStr);
         console.log(`Multi-leg debug: Leg ${currentLegs.length + 1} (${nextOrigin}->${nextDest} @ ${nextDepStr}) found ${nextLegs.length} trains`);
 
         const journeys = [];
-        for (const nextLeg of nextLegs.slice(0, 3)) {
-            const nextDepTime = parseTimeToMinutes(nextLeg.departureTime.split('T')[1]);
-            if (nextDepTime < minDepTime || nextDepTime > minDepTime + 120) continue;
+        for (const nextLeg of nextLegs.slice(0, 5)) {
+            const nextDepTime = new Date(nextLeg.departureTime);
+
+            // Allow connections up to 3 hours after minDepTime
+            const maxDepTime = new Date(minDepTime.getTime() + 180 * 60 * 1000);
+
+            if (nextDepTime < minDepTime || nextDepTime > maxDepTime) {
+                // Special case: if the train is actually on the next day, it might still be okay
+                // but nextDepTime from fetchLeg should already be on the correct date.
+                continue;
+            }
 
             const nextJourneys = await expandSequenceLegs([...currentLegs, nextLeg], remainingStops.slice(1));
             journeys.push(...nextJourneys);
@@ -684,15 +697,15 @@ const TrainApi = (function () {
     }
 
     function buildSequenceJourney(legs) {
-        const firstDep = parseTimeToMinutes(legs[0].departureTime.split('T')[1]);
-        const lastArr = parseTimeToMinutes(legs[legs.length - 1].arrivalTime.split('T')[1]);
-        const totalDuration = lastArr - firstDep;
+        const firstDep = new Date(legs[0].departureTime);
+        const lastArr = new Date(legs[legs.length - 1].arrivalTime);
+        const totalDuration = Math.round((lastArr - firstDep) / (1000 * 60));
 
         return {
             id: `seq-${legs.map(leg => leg.id).join('-')}`,
             departureTime: legs[0].departureTime,
             arrivalTime: legs[legs.length - 1].arrivalTime,
-            duration: totalDuration > 0 ? totalDuration : totalDuration + 1440,
+            duration: totalDuration,
             changes: Math.max(0, legs.length - 1),
             legs
         };
@@ -702,27 +715,78 @@ const TrainApi = (function () {
      * Helper to fetch a single leg (A->B)
      */
     async function fetchLeg(fromCode, toCode, date, time) {
+        // 1. Try Transport API first (Better for whole-day searches)
+        if (config.useTransportApi) {
+            try {
+                const { baseUrl, appId, appKey } = config.transportApi;
+                // Use calling_at to find direct trains between the two stations
+                const url = `${baseUrl}/train/station/${fromCode}/live.json?app_id=${appId}&app_key=${appKey}&calling_at=${toCode}&train_status=passenger&from_offset=PT00:00:00&date=${date}&time=${time}`;
+
+                const response = await fetch(url);
+                if (response.ok) {
+                    const data = await response.json();
+                    const departures = data.departures?.all || [];
+
+                    const fromStation = StationData.getByCode(fromCode) || { code: fromCode, name: fromCode };
+                    const toStation = StationData.getByCode(toCode) || { code: toCode, name: toCode };
+
+                    const results = [];
+                    // Process top results
+                    for (const dep of departures.slice(0, 5)) {
+                        // For Transport API, we need the arrival time at 'toCode'
+                        // If it's a 'live' call with calling_at, some APIs return the arrival time in the object
+                        // but Transport API usually requires fetching the service timetable.
+
+                        try {
+                            const ttUrl = dep.service_timetable?.id;
+                            if (!ttUrl) continue;
+
+                            const ttResponse = await fetch(ttUrl);
+                            if (!ttResponse.ok) continue;
+
+                            const ttData = await ttResponse.json();
+                            const destStop = ttData.stops?.find(s => s.station_code === toCode);
+
+                            if (destStop) {
+                                const arrTime = destStop.aimed_arrival_time || destStop.aimed_departure_time;
+                                if (arrTime) {
+                                    results.push({
+                                        id: `tapi-${dep.train_uid}`,
+                                        departureTime: `${date}T${dep.aimed_departure_time}:00`,
+                                        arrivalTime: `${date}T${arrTime}:00`,
+                                        operator: dep.operator_name || dep.operator,
+                                        platform: dep.platform || null,
+                                        origin: fromStation,
+                                        destination: toStation
+                                    });
+                                }
+                            }
+                        } catch (e) {
+                            continue;
+                        }
+                    }
+
+                    if (results.length > 0) return results;
+                }
+            } catch (error) {
+                console.warn('Transport API leg fetch failed, falling back to Huxley:', error.message);
+            }
+        }
+
+        // 2. Fallback to Huxley (Darwin)
         let url = `${config.huxley.baseUrl}/departures/${fromCode}/to/${toCode}/5`;
         if (config.huxley.accessToken) url += `?accessToken=${config.huxley.accessToken}`;
-
-        // Add time params
-        // Calculate offset if needed (reusing logic from fetchHuxleyJourneys effectively)
-        // For simplicity here, assume direct Huxley "timeOffset" isn't needed if we trust the API to return near-future
-        // Actually, we DO need to pass time/offset.
-        // Let's rely on standard params logic or just simplified:
-
-        // Simplification: just call fetch and filter locally or assume "now" + offset if strictly needed.
-        // But `time` arg is HH:MM literal. Huxley takes `timeOffset` (mins from now).
-        // We need to convert `time` (HH:MM on `date`) to `timeOffset` relative to `now`.
 
         const now = new Date();
         const searchDate = new Date(`${date}T${time}:00`);
         let diffMinutes = Math.floor((searchDate - now) / (1000 * 60));
 
-        // Cap
-        if (diffMinutes > 119) diffMinutes = 119;
-        // If searching past, allow it? Huxley takes negative? likely yes.
-        if (diffMinutes < -119) diffMinutes = -119;
+        // Huxley only works for near-real-time searches (±119 min)
+        // For searches outside this window, skip Huxley and rely on Transport API
+        if (Math.abs(diffMinutes) > 119) {
+            console.log(`Skipping Huxley for ${fromCode}->${toCode} - time ${time} is outside ±119min window`);
+            return [];
+        }
 
         if (Math.abs(diffMinutes) > 2) {
             url += `&timeOffset=${diffMinutes}`;
@@ -967,8 +1031,21 @@ const TrainApi = (function () {
 
                 if (!leg1ArrTime) continue;
 
+                // Calculate time offset for leg 2 based on connection arrival time
+                const now = new Date();
+                const leg1ArrMins = parseTimeToMinutes(leg1ArrTime);
+                const nowMins = now.getHours() * 60 + now.getMinutes();
+                let leg2TimeOffset = leg1ArrMins - nowMins;
+
+                // Huxley only supports ±119 minute offsets
+                if (leg2TimeOffset > 119) leg2TimeOffset = 119;
+                if (leg2TimeOffset < -119) leg2TimeOffset = -119;
+
                 let url2 = `${config.huxley.baseUrl}/departures/${hubCode}/to/${destination.code}/5`;
                 if (config.huxley.accessToken) url2 += `?accessToken=${config.huxley.accessToken}`;
+                if (Math.abs(leg2TimeOffset) > 2) {
+                    url2 += `&timeOffset=${leg2TimeOffset}`;
+                }
 
                 const resp2 = await fetch(url2);
                 if (!resp2.ok) continue;
@@ -976,14 +1053,14 @@ const TrainApi = (function () {
 
                 if (!data2.trainServices || data2.trainServices.length === 0) continue;
 
-                const leg1ArrMins = parseTimeToMinutes(leg1ArrTime);
+                const leg1ArrMinsForConn = parseTimeToMinutes(leg1ArrTime);
 
                 for (const leg2Service of data2.trainServices) {
                     const leg2DepTime = leg2Service.std;
                     const leg2DepMins = parseTimeToMinutes(leg2DepTime);
 
                     // Need at least 5 mins connection time
-                    if (leg2DepMins >= leg1ArrMins + 5 && leg2DepMins <= leg1ArrMins + 120) {
+                    if (leg2DepMins >= leg1ArrMinsForConn + 5 && leg2DepMins <= leg1ArrMinsForConn + 120) {
                         const leg2Details = await fetchServiceDetails(leg2Service.serviceIdUrlSafe);
                         const leg2ArrTime = findArrivalTime(leg2Details, destination.code, date);
 
@@ -1056,16 +1133,27 @@ const TrainApi = (function () {
                 const leg1ArrTime = findArrivalTimeAtHub(leg1Details, hub1Code);
                 if (!leg1ArrTime) continue;
 
+                // Calculate time offset for leg 2 based on connection arrival time
+                const now = new Date();
+                const leg1ArrMins = parseTimeToMinutes(leg1ArrTime);
+                const nowMins = now.getHours() * 60 + now.getMinutes();
+                let leg2TimeOffset = leg1ArrMins - nowMins;
+
+                // Huxley only supports ±119 minute offsets
+                if (leg2TimeOffset > 119) leg2TimeOffset = 119;
+                if (leg2TimeOffset < -119) leg2TimeOffset = -119;
+
                 // Leg 2: Hub1 to Hub2
                 let url2 = `${config.huxley.baseUrl}/departures/${hub1Code}/to/${hub2Code}/3`;
                 if (config.huxley.accessToken) url2 += `?accessToken=${config.huxley.accessToken}`;
+                if (Math.abs(leg2TimeOffset) > 2) {
+                    url2 += `&timeOffset=${leg2TimeOffset}`;
+                }
 
                 const resp2 = await fetch(url2);
                 if (!resp2.ok) continue;
                 const data2 = await resp2.json();
                 if (!data2.trainServices || data2.trainServices.length === 0) continue;
-
-                const leg1ArrMins = parseTimeToMinutes(leg1ArrTime);
 
                 for (const leg2Service of data2.trainServices) {
                     const leg2DepTime = leg2Service.std;
@@ -1076,22 +1164,33 @@ const TrainApi = (function () {
                         const leg2ArrTime = findArrivalTimeAtHub(leg2Details, hub2Code);
                         if (!leg2ArrTime) continue;
 
+                        // Calculate time offset for leg 3 based on leg 2 arrival time
+                        const leg2ArrMins = parseTimeToMinutes(leg2ArrTime);
+                        let leg3TimeOffset = leg2ArrMins - nowMins;
+
+                        // Huxley only supports ±119 minute offsets
+                        if (leg3TimeOffset > 119) leg3TimeOffset = 119;
+                        if (leg3TimeOffset < -119) leg3TimeOffset = -119;
+
                         // Leg 3: Hub2 to Destination
                         let url3 = `${config.huxley.baseUrl}/departures/${hub2Code}/to/${destination.code}/3`;
                         if (config.huxley.accessToken) url3 += `?accessToken=${config.huxley.accessToken}`;
+                        if (Math.abs(leg3TimeOffset) > 2) {
+                            url3 += `&timeOffset=${leg3TimeOffset}`;
+                        }
 
                         const resp3 = await fetch(url3);
                         if (!resp3.ok) continue;
                         const data3 = await resp3.json();
                         if (!data3.trainServices || data3.trainServices.length === 0) continue;
 
-                        const leg2ArrMins = parseTimeToMinutes(leg2ArrTime);
+                        const leg2ArrMinsForConn = parseTimeToMinutes(leg2ArrTime);
 
                         for (const leg3Service of data3.trainServices) {
                             const leg3DepTime = leg3Service.std;
                             const leg3DepMins = parseTimeToMinutes(leg3DepTime);
 
-                            if (leg3DepMins >= leg2ArrMins + 5) {
+                            if (leg3DepMins >= leg2ArrMinsForConn + 5) {
                                 const leg3Details = await fetchServiceDetails(leg3Service.serviceIdUrlSafe);
                                 const leg3ArrTime = findArrivalTime(leg3Details, destination.code, date);
                                 if (!leg3ArrTime) continue;
@@ -1151,16 +1250,34 @@ const TrainApi = (function () {
      * Find arrival time at a hub station from service details
      */
     function findArrivalTimeAtHub(serviceDetails, hubCode) {
-        if (!serviceDetails || !serviceDetails.subsequentCallingPoints) return null;
+        if (!serviceDetails) return null;
 
-        for (const cpList of serviceDetails.subsequentCallingPoints) {
-            if (!cpList.callingPoint) continue;
-            for (const cp of cpList.callingPoint) {
-                if (cp.crs === hubCode) {
-                    return cp.st || cp.at; // Return just HH:MM format
+        // 1. Check if the hub is the terminal station
+        if (serviceDetails.crs === hubCode) {
+            return serviceDetails.sta || serviceDetails.ata;
+        }
+
+        // 2. Check subsequent calling points
+        if (serviceDetails.subsequentCallingPoints) {
+            for (const cpList of serviceDetails.subsequentCallingPoints) {
+                if (!cpList.callingPoint) continue;
+                for (const cp of cpList.callingPoint) {
+                    if (cp.crs === hubCode) {
+                        return cp.st || cp.at || cp.et;
+                    }
                 }
             }
         }
+
+        // 3. Check destinations explicitly
+        if (serviceDetails.destination) {
+            for (const dest of serviceDetails.destination) {
+                if (dest.crs === hubCode) {
+                    return dest.st || dest.at;
+                }
+            }
+        }
+
         return null;
     }
 
